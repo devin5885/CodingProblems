@@ -29,6 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>CodingProblems.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\CodingProblems.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,11 +52,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queue\Stacks\QueueViaStacks1SimpleComplete.cs" />
+    <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
+    <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.cs" />
+    <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedCompleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CodingProblems.ruleset" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
+    <None Include="Queue\Stacks\QueueViaStacks.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
