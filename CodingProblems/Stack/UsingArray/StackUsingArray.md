@@ -3,18 +3,44 @@
 ### Problem
 Implement a stack using an array (fixed size).
 
+### Defintions
+
+- An array:
+1. Is a fixed size data structure, the size (# of elements) is determined when the array is constructed.
+2. Typically the amount of space used by the array is allocated immediately.
+3. Array elements are uninitialized by default. (Language specific).
+4. Array elements can be set appropriately.
+5. Any array element can be accessed directly by index.
+
+- A stack:
+1. Is a first in-first out (FIFO) data structure.
+2. A stack stores elements of a specific type.
+3. A stack has a front and back.
+4. Elements are added (pushed) in the front of the stack and removed
+(pulled) from the front of the stack as well.
+5. It is also possible to peek (retrieve) the first element in the stack w/o removing it.
+6. It is possible to get the count of items in stck.
+7. It is not possible to access an item from any place but the front of the stack.
+
 ### Notes
-- If a variable sized data structure is used then the problem is trivial, just add & take from the DS as needed.
+- If a variable sized data structure is used then the problem is trivial,
+just add & take from the DS as needed.
 - The following operations should be defined: Push, Pop, Peek, Count
 - No need to clear removed elements in stack.
 
-### Solution 1 - Fixed Size
+### Solutions:
+1. Fixed size stack - A stack is implemented that has a maximum size set during construction.
+2. Variable size stack - A stack is implemented that can grow as needed.
+
+### Solution 1 - Fixed Size Stack
 
 #### Solution Specific Assumptions
 - Stack's capacity is fixed (Set at construction).
 
 ##### Overview
-Implement the stack using an array. When an item is pushed add to the array & increment the stack pointer. When an element is poped, get the element at the stack pointer & decrement the stack pointer.
+Implement the stack using an array. When an item is pushed add to the array
+& increment the stack pointer. When an element is poped, get the element at
+the stack pointer & decrement the stack pointer.
 
 #### Alg
 Push:  
@@ -54,7 +80,7 @@ Space - O(0)
 #### Notes
 - We could save space by waiting to construct the stack when an element is first added, but this would make the code more complex.
 
-### Solution 1 - Variable Size
+### Solution 1 - Variable Size Stack
 
 #### Solution Specific Assumptions
 - Stack can grow as needed.
