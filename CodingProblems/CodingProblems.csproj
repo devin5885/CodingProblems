@@ -59,6 +59,10 @@
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeComplete.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
+    <Compile Include="Graph\Graph\GraphGraph.cs" />
+    <Compile Include="Graph\Node\GraphNode.cs" />
+    <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSComplete.cs" />
+    <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +79,7 @@
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="CodingProblems.ruleset" />
+    <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
