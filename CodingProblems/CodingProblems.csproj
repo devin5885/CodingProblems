@@ -51,22 +51,41 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
+    <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveCompleteTests.cs" />
+    <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeCompleteTests.cs" />
+    <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight1RecursiveComplete.cs" />
+    <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight1RecursiveCompleteTests.cs" />
+    <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeComplete.cs" />
+    <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
+    <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
+    <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeComplete.cs" />
+    <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedCompleteTests.cs" />
+    <Compile Include="Stack\UsingArray\StackUsingArray1FixedSizeComplete.cs" />
+    <Compile Include="Stack\UsingArray\StackUsingArray1FixedSizeCompleteTests.cs" />
+    <Compile Include="Stack\UsingArray\StackUsingArray2VariableSizeComplete.cs" />
+    <Compile Include="Stack\UsingArray\StackUsingArray2VariableSizeCompleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
+    <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="CodingProblems.ruleset" />
+    <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Queue\Stacks\QueueViaStacks.md" />
+    <None Include="Stack\UsingArray\StackUsingArray.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
