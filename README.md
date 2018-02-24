@@ -36,8 +36,8 @@ Stack Using Array
 [Solution 2 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray2VariableSizeCompleteTests.cs)  
 
 Binary Tree Get Height  
-[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight.md)
-[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight1RecursiveComplete.cs)
-[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight1RecursiveCompleteTests.cs)
-[Solution 2 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight2IterativeComplete.cs)
-[Solution 2 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight2IterativeCompleteTests.cs)
+[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight.md)  
+[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight1RecursiveComplete.cs)  
+[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight1RecursiveCompleteTests.cs)  
+[Solution 2 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight2IterativeComplete.cs)   
+[Solution 2 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight2IterativeCompleteTests.cs)  
