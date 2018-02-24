@@ -1,5 +1,4 @@
-﻿using System;
-using CodingProblems.BinaryTree.Node;
+﻿using CodingProblems.BinaryTree.Node;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodingProblems.BinaryTree.CheckBalanced
