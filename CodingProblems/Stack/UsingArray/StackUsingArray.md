@@ -38,11 +38,22 @@ just add & take from the DS as needed.
 - Stack's capacity is fixed (Set at construction).
 
 ##### Overview
-Implement the stack using an array. When an item is pushed add to the array
-& increment the stack pointer. When an element is poped, get the element at
-the stack pointer & decrement the stack pointer.
+Implement the stack using an array.
+
+To keep track of the current front of the stack an integer stack pointer will
+be used this integer will contain the index of the current stack item or -1 if
+the stack is empty.
+
+When an item is pushed the element will be added & the stack pointer incremented. 
+When an element is poped, the element at the stack pointer will be retrieved and
+returned at the same time decrementing the stack pointer.
 
 #### Alg
+Constructor:
+1. Take the stack size as a parameter.
+2. Construct an array of the appropriate size.
+3. Initialize the Stack Pointer to -1.
+
 Push:  
 1. Check whether there is space in the stack for a new element, if not throw.
 2. Add the new element to the array element one past the stack pointer.
@@ -86,9 +97,15 @@ Space - O(0)
 - Stack can grow as needed.
 
 ##### Overview
-Implement the stack using an array. When an item is pushed check whether there is space in the array, if not update the array appropriately then add to the array & increment the stack pointer. When an element is poped, get the element at the stack pointer & decrement the stack pointer.
-
-Once a larger array is allocated it is never deallocated (i.e.) the array never shrinks in size.
+Implement the stacks using an array. Use the same algorithm as the fixed size
+stacks with the following changes:
+1. With fixed size the size is specified in the constructor & the array is
+allocated immediately, with variable size no size is specified and the array
+is not allocated until items are added.
+2. In the variable size case, if an attempt is made to add an item to the
+stack which will not fit, a new array of twice the size (or 2 if no existing array)
+is immediately allocated and the contents of the existing array copied.
+Then the new item is added.
 
 #### Alg
 Push:  
@@ -126,11 +143,4 @@ Time - O(1)
 Space - O(0)
 
 #### Notes
-- Key differences between fixed and variable size stack solutions:
-1. With fixed size the size is specified in the constructor & the array is
-allocated immediately, with variable size no size is specified and the array
-is not allocated until items are added.
-2. In the variable size case, if an attempt is made to add an item to the
-stack which will not fit, a new array of twice the size (or 2 if no existing array)
-is immediately allocated and the contents of the existing array copied.
-Then the new item is added.
+- Note that Once a larger array is allocated it is never deallocated (i.e.) the array never shrinks in size.
