@@ -1,4 +1,4 @@
-﻿# BinaryTreeCheckBalanced
+﻿# Check Balanced
 
 ### Problem
 Impement a function to check if a binary tree is balanced. For the purpose of

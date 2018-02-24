@@ -1,4 +1,4 @@
-﻿# QueueViaStacks
+﻿# Queue Via Stacks
 
 ### Problem
 Implement a queue using two stacks.

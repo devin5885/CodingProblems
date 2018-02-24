@@ -1,9 +1,11 @@
-﻿# Multiple Stacks Using Single Array
+﻿# Three in One
 
 ### Problem
 Implement multiple (3) stacks using a single array.
 
 ### Notes
+- From Cracking the Coding Interview, Interview Questions 3.1
+
 - The following operations should be defined: Push, Pop, Peek, Count. The
 stack # should be able to be specified in the call.
 - No need to clear removed elements in stack.

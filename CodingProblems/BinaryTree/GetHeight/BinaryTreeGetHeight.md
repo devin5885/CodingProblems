@@ -1,4 +1,4 @@
-﻿# BinaryTreeGetHeight
+﻿# Get Height
 
 ### Problem
 Impement a function to get the height of a binary tree (or subtree). The
