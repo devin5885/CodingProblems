@@ -84,6 +84,8 @@
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
+    <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight1Recursive.md" />
+    <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight2Iterative.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
