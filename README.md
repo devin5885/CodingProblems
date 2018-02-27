@@ -4,10 +4,7 @@
 
 ### Cracking the Coding Interview Interview Questions
 
-3.1 - Three In One  
-[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/MultipleStacksUsingSingleArray/MultipleStacksUsingSingleArray.md)  
-[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/MultipleStacksUsingSingleArray/MultipleStacksUsingSingleArray1FixedSizeComplete.cs)  
-[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/MultipleStacksUsingSingleArray/MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs)  
+[3.1 - Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
 
 3.4 - Queue via Stacks  
 [Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks.md)  
@@ -28,12 +25,7 @@
 
 ### Misc Problems
 
-Stack Using Array  
-[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray.md)  
-[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray1FixedSizeComplete.cs)  
-[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray1FixedSizeCompleteTests.cs)  
-[Solution 2 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray2VariableSizeComplete.cs)  
-[Solution 2 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Stack/UsingArray/StackUsingArray2VariableSizeCompleteTests.cs)  
+[Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray)  
 
 Binary Tree Get Height  
 [Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight.md)  
