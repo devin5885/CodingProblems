@@ -13,7 +13,7 @@ namespace CodingProblems.Stack.UsingArray
         /// </summary>
         public StackUsingArray2VariableSizeComplete()
         {
-            // Init stack.
+            // Initialize stack.
             StackPointer = -1;
             Items = new T[0];
         }
@@ -50,7 +50,7 @@ namespace CodingProblems.Stack.UsingArray
                 // Double the count each time.
                 var newCount = Items.Length == 0 ? 2 : Items.Length * 2;
 
-                // Init new array.
+                // Initialize new array.
                 var itemsTemp = new T[newCount];
                 Array.Copy(Items, itemsTemp, oldCount);
                 Items = itemsTemp;

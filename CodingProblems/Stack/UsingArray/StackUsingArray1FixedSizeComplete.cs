@@ -14,7 +14,7 @@ namespace CodingProblems.Stack.UsingArray
         /// <param name="capacity">The capacity of the stack.</param>
         public StackUsingArray1FixedSizeComplete(int capacity)
         {
-            // Init stack.
+            // Initialize stack.
             StackPointer = -1;
             Items = new T[capacity];
         }

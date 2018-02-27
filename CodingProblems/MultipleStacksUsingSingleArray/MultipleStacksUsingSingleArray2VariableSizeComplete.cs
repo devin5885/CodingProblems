@@ -6,14 +6,13 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
     /// Implements a fixed size stack using an fixed size array.
     /// </summary>
     /// <typeparam name="T">The type of elements stored in the stack.</typeparam>
-    public class MultipleStacksUsingSingleArray1FixedSizeComplete<T>
+    public class MultipleStacksUsingSingleArray2VariableSizeComplete<T>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MultipleStacksUsingSingleArray1FixedSizeComplete{T}"/> class.
+        /// Initializes a new instance of the <see cref="MultipleStacksUsingSingleArray2VariableSizeComplete{T}"/> class.
         /// </summary>
-        /// <param name="capacityPerStack">The capacity of the individual stacks.</param>
         /// <param name="stackCount">The # of stacks to create.</param>
-        public MultipleStacksUsingSingleArray1FixedSizeComplete(int capacityPerStack, int stackCount = 3)
+        public MultipleStacksUsingSingleArray2VariableSizeComplete(int stackCount = 3)
         {
             // Store stack count.
             StackCount = stackCount;
@@ -24,19 +23,18 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
                 StackPointer[i] = -1;
 
             // Initialize StackPointerOffset array.
+            // Not initialized for empty stack.
             StackPointerOffset = new int[stackCount];
-            for (int i = 0; i < StackPointerOffset.Length; i++)
-                StackPointerOffset[i] = capacityPerStack * i;
 
             // Initialize stack.
-            Items = new T[capacityPerStack * stackCount];
+            Items = new T[0];
         }
 
         /// <summary>
-        /// Gets the items array.
+        /// Gets or sets the items array.
         /// </summary>
         /// <value>The items array.</value>
-        private T[] Items { get; }
+        private T[] Items { get; set; }
 
         /// <summary>
         /// Gets the count of stacks.
@@ -84,9 +82,32 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             if (stackNumber < 0 || stackNumber >= StackCount)
                 throw new ArgumentException("Invalid Stack Number Specified.");
 
-            // Error check.
-            if (StackPointer[stackNumber] >= (Items.Length - 1) / StackCount)
-                throw new InvalidOperationException("No room on the stack.");
+            // See if we need to increase the stack size.
+            if (Items.Length == 0 || StackPointer[stackNumber] >= (Items.Length - 1) / StackCount)
+            {
+                var oldCount = Items.Length;
+
+                // Double the count * the number of stacks each time.
+                var newCount = Items.Length == 0 ? (2 * StackCount) : Items.Length * 2 * StackCount;
+
+                // Determine the new capacity.
+                var newCapacityPerStack = newCount / StackCount;
+
+                // Initialize new array.
+                var itemsTemp = new T[newCount];
+
+                // Copy existing items.
+                if (oldCount != 0)
+                    for (int i = 0; i < StackCount; i++)
+                        Array.Copy(Items, StackPointerOffset[i], itemsTemp, newCapacityPerStack * i, StackPointer[i] + 1);
+
+                // Update the ref.
+                Items = itemsTemp;
+
+                // Update StackPointerOffset array (After copy).
+                for (int i = 0; i < StackPointerOffset.Length; i++)
+                    StackPointerOffset[i] = newCapacityPerStack * i;
+            }
 
             // Push item.
             Items[++StackPointer[stackNumber] + StackPointerOffset[stackNumber]] = item;

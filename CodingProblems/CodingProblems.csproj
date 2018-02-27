@@ -65,6 +65,8 @@
     <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
+    <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeComplete.cs" />
+    <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
@@ -81,16 +83,24 @@
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
+    <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSize.md" />
+    <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Stack\UsingArray\StackUsingArray.md" />
+    <None Include="Stack\UsingArray\StackUsingArray1FixedSize.md" />
+    <None Include="Stack\UsingArray\StackUsingArray2VariableSize.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Stack\UsingArray\StackUsingArray.html">
+      <DependentUpon>StackUsingArray.md</DependentUpon>
+    </Content>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
