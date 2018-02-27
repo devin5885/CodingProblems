@@ -19,7 +19,8 @@
 
 ### Misc Problems
 
-[Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray)  
+[Fixed Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/FixedSize)  
+[Unlimited Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/UnlimitedSize)  
 
 Binary Tree Get Height  
 [Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/BinaryTree/GetHeight/BinaryTreeGetHeight.md)  
