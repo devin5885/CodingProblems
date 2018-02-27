@@ -88,6 +88,7 @@
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight2Iterative.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
+    <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFS.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSize.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
