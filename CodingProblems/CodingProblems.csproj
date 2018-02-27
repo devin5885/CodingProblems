@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveCompleteTests.cs" />
+    <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.cs" />
+    <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedCompleteTests.cs" />
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeCompleteTests.cs" />
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight1RecursiveComplete.cs" />
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight1RecursiveCompleteTests.cs" />
@@ -80,6 +82,7 @@
   <ItemGroup>
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
+    <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
