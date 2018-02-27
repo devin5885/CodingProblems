@@ -6,12 +6,12 @@ namespace CodingProblems.Stack.UsingArray
     /// Implements a variable size stack using a fixed size arrays.
     /// </summary>
     /// <typeparam name="T">The type of elements stored in the stack.</typeparam>
-    public class StackUsingArray2VariableSizeComplete<T>
+    public class StackUsingArray2UnlimitedSizeComplete<T>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="StackUsingArray2VariableSizeComplete{T}"/> class.
+        /// Initializes a new instance of the <see cref="StackUsingArray2UnlimitedSizeComplete{T}"/> class.
         /// </summary>
-        public StackUsingArray2VariableSizeComplete()
+        public StackUsingArray2UnlimitedSizeComplete()
         {
             // Initialize stack.
             StackPointer = -1;

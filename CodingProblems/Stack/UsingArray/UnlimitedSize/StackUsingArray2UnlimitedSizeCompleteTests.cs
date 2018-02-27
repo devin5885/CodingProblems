@@ -7,16 +7,16 @@ namespace CodingProblems.Stack.UsingArray
     /// Tests for StackUsingArray1VariableSizeComplete class.
     /// </summary>
     [TestClass]
-    public class StackUsingArray2VariableSizeCompleteTests
+    public class StackUsingArray2UnlimitedSizeCompleteTests
     {
         /// <summary>
         /// Tests push, pop, peek, count with an array with one item.
         /// </summary>
         [TestMethod]
-        public void StackUsingArray1VariableSizeTestOneItem()
+        public void StackUsingArray1UnlimitedSizeTestOneItem()
         {
             // Create stack with capacity of 1.
-            var st = new StackUsingArray2VariableSizeComplete<int>();
+            var st = new StackUsingArray2UnlimitedSizeComplete<int>();
 
             // Check the count.
             Assert.AreEqual(0, st.Count);
@@ -41,10 +41,10 @@ namespace CodingProblems.Stack.UsingArray
         /// Tests push, pop, peek, count with an array with multiple items.
         /// </summary>
         [TestMethod]
-        public void StackUsingArray1VariableSizeTestMultipleItems()
+        public void StackUsingArray1UnlimitedSizeTestMultipleItems()
         {
             // Create stack.
-            var st = new StackUsingArray2VariableSizeComplete<int>();
+            var st = new StackUsingArray2UnlimitedSizeComplete<int>();
 
             // Check the count.
             Assert.AreEqual(0, st.Count);
@@ -152,10 +152,10 @@ namespace CodingProblems.Stack.UsingArray
         /// Tests pop with an empty stack.
         /// </summary>
         [TestMethod]
-        public void StackUsingArray1VariableSizeTestPopEmptyStack()
+        public void StackUsingArray1UnlimitedSizeTestPopEmptyStack()
         {
             // Create stack & push three items.
-            var st = new StackUsingArray2VariableSizeComplete<int>();
+            var st = new StackUsingArray2UnlimitedSizeComplete<int>();
 
             try
             {
@@ -176,10 +176,10 @@ namespace CodingProblems.Stack.UsingArray
         /// Tests peek with an empty stack.
         /// </summary>
         [TestMethod]
-        public void StackUsingArray1VariableSizeTestPeekEmptyStack()
+        public void StackUsingArray1UnlimitedSizeTestPeekEmptyStack()
         {
             // Create stack & push three items.
-            var st = new StackUsingArray2VariableSizeComplete<int>();
+            var st = new StackUsingArray2UnlimitedSizeComplete<int>();
 
             try
             {

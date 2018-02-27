@@ -72,13 +72,14 @@
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks2OptimizedCompleteTests.cs" />
-    <Compile Include="Stack\UsingArray\StackUsingArray1FixedSizeComplete.cs" />
-    <Compile Include="Stack\UsingArray\StackUsingArray1FixedSizeCompleteTests.cs" />
-    <Compile Include="Stack\UsingArray\StackUsingArray2VariableSizeComplete.cs" />
-    <Compile Include="Stack\UsingArray\StackUsingArray2VariableSizeCompleteTests.cs" />
+    <Compile Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSizeComplete.cs" />
+    <Compile Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSizeCompleteTests.cs" />
+    <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeComplete.cs" />
+    <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeCompleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
+    <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
@@ -90,18 +91,12 @@
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
-    <None Include="Stack\UsingArray\StackUsingArray.md" />
-    <None Include="Stack\UsingArray\StackUsingArray1FixedSize.md" />
-    <None Include="Stack\UsingArray\StackUsingArray2VariableSize.md" />
+    <None Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSize.md" />
+    <None Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSize.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Stack\UsingArray\StackUsingArray.html">
-      <DependentUpon>StackUsingArray.md</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
