@@ -88,6 +88,8 @@
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Queue\Stacks\QueueViaStacks.md" />
+    <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
+    <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
     <None Include="Stack\UsingArray\StackUsingArray.md" />
     <None Include="Stack\UsingArray\StackUsingArray1FixedSize.md" />
     <None Include="Stack\UsingArray\StackUsingArray2VariableSize.md" />

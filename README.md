@@ -5,13 +5,7 @@
 ### Cracking the Coding Interview Interview Questions
 
 [3.1 - Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
-
-3.4 - Queue via Stacks  
-[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks.md)  
-[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks1SimpleComplete.cs)  
-[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks1SimpleCompleteTests.cs)  
-[Solution 2 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks2OptimizedComplete.cs)  
-[Solution 2 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Queue/Stacks/QueueViaStacks2OptimizedCompleteTests.cs)  
+[3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
 
 4.1 - Route Between Nodes  
 [Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Graph/RouteBetweenNodes/GraphIsRouteBetweenNodes.md)  

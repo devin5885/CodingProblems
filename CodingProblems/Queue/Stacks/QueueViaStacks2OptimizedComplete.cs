@@ -55,7 +55,7 @@ namespace CodingProblems.Queue.Stacks
             if (Count == 0)
                 throw new InvalidOperationException();
 
-            // Init temporary stack & copy to it.
+            // Initialize temporary stack & copy to it.
             MoveStack();
 
             // Pop for temp stack.
