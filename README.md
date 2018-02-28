@@ -5,6 +5,7 @@
 ### Cracking the Coding Interview Problems
 
 [1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)
+[1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)
 [3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
 [3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
 [4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
