@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CodingProblems.Stack.UsingArray
+namespace CodingProblems.Stack.UsingArray.FixedSize
 {
     /// <summary>
     /// Implements a fixed size stack using an fixed size array.

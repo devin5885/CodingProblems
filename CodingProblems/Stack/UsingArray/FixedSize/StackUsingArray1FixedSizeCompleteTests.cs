@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodingProblems.Stack.UsingArray
+namespace CodingProblems.Stack.UsingArray.FixedSize
 {
     /// <summary>
     /// Tests for StackUsingArray1FixedSizeComplete class.
