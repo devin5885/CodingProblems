@@ -1,5 +1,4 @@
 ﻿using System;
-using CodingProblems.BinaryTree.GetHeight;
 using CodingProblems.BinaryTree.Node;
 
 namespace CodingProblems.BinaryTree.CheckBalanced
