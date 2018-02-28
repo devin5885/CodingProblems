@@ -2,16 +2,11 @@
 
 ## Index
 
-### Cracking the Coding Interview Interview Questions
+### Cracking the Coding Interview Problems
 
-[3.1 - Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
+[3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
 [3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
-
-4.1 - Route Between Nodes  
-[Docs](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Graph/RouteBetweenNodes/GraphIsRouteBetweenNodes.md)  
-[Solution 1 Code](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Graph/RouteBetweenNodes/GraphIsRouteBetweenNodes1DFSComplete.cs)  
-[Solution 1 Tests](https://github.com/devin5885/CodingProblems/blob/master/CodingProblems/Graph/RouteBetweenNodes/GraphIsRouteBetweenNodes1DFSCompleteTests.cs)  
-
+[4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
 [4.4 - (Binary Tree) Check Balanced](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/CheckBalanced)  
 
 ### Misc Problems

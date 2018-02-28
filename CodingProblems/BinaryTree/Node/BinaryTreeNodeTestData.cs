@@ -372,7 +372,7 @@
                 }
             };
 
-            // Tree14 (4 level, perfect)
+            // Tree14 (4 level)
             //          1
             //        2 | 3
             //      4 |   | 5
