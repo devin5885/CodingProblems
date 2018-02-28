@@ -79,6 +79,10 @@
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
+    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
+    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
+    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
+    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountTestsComplete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
@@ -110,6 +114,9 @@
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
+    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
+    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
+    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
