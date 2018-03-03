@@ -75,6 +75,9 @@
     <Compile Include="IsUnique\String\IsUniqueString4BoolArrayCompleteTests.cs" />
     <Compile Include="IsUnique\String\IsUniqueString5BitArrayComplete.cs" />
     <Compile Include="IsUnique\String\IsUniqueString5BitArrayCompleteTests.cs" />
+    <Compile Include="Matrix\Helpers\MatrixHelpers.cs" />
+    <Compile Include="Matrix\Rotate\MatrixRotate1Complete.cs" />
+    <Compile Include="Matrix\Rotate\MatrixRotate1CompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeComplete.cs" />
@@ -109,6 +112,8 @@
     <None Include="IsUnique\String\IsUniqueString3SortFirst.md" />
     <None Include="IsUnique\String\IsUniqueString4BoolArray.md" />
     <None Include="IsUnique\String\IsUniqueString5BitArray.md" />
+    <None Include="Matrix\Rotate\MatrixRotate.md" />
+    <None Include="Matrix\Rotate\MatrixRotate1.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSize.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
