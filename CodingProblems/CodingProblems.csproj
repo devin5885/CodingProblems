@@ -75,6 +75,15 @@
     <Compile Include="IsUnique\String\IsUniqueString4BoolArrayCompleteTests.cs" />
     <Compile Include="IsUnique\String\IsUniqueString5BitArrayComplete.cs" />
     <Compile Include="IsUnique\String\IsUniqueString5BitArrayCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkNode.cs" />
+    <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkCompareTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkCreateFromDataTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1StableComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1StableCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodesComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodesCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStableComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStableCompleteTests.cs" />
     <Compile Include="Matrix\Helpers\MatrixHelpers.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1Complete.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1CompleteTests.cs" />
@@ -112,6 +121,10 @@
     <None Include="IsUnique\String\IsUniqueString3SortFirst.md" />
     <None Include="IsUnique\String\IsUniqueString4BoolArray.md" />
     <None Include="IsUnique\String\IsUniqueString5BitArray.md" />
+    <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition.md" />
+    <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1Stable.md" />
+    <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodes.md" />
+    <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStable.md" />
     <None Include="Matrix\Rotate\MatrixRotate.md" />
     <None Include="Matrix\Rotate\MatrixRotate1.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
