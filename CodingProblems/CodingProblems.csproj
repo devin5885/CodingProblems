@@ -78,6 +78,10 @@
     <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkNode.cs" />
     <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkCompareTests.cs" />
     <Compile Include="LinkedList\SingleLink\Helpers\LinkedListSingleLinkCreateFromDataTests.cs" />
+    <Compile Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection1BruteForceComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection1BruteForceCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection2OptimizedComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection2OptimizedCompleteTests.cs" />
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1StableComplete.cs" />
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1StableCompleteTests.cs" />
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodesComplete.cs" />
@@ -121,6 +125,9 @@
     <None Include="IsUnique\String\IsUniqueString3SortFirst.md" />
     <None Include="IsUnique\String\IsUniqueString4BoolArray.md" />
     <None Include="IsUnique\String\IsUniqueString5BitArray.md" />
+    <None Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection.md" />
+    <None Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection1BruteForce.md" />
+    <None Include="LinkedList\SingleLink\FindIntersection\LinkedListSingleLinkFindIntersection2Optimized.md" />
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition.md" />
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1Stable.md" />
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodes.md" />
