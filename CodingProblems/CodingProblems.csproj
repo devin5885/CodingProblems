@@ -88,6 +88,10 @@
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodesCompleteTests.cs" />
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStableComplete.cs" />
     <Compile Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStableCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates1HashSetComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates1HashSetCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTests.cs" />
     <Compile Include="Matrix\Helpers\MatrixHelpers.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1Complete.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1CompleteTests.cs" />
@@ -132,6 +136,9 @@
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition1Stable.md" />
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition2StableUseDummyNodes.md" />
     <None Include="LinkedList\SingleLink\Partition\LinkedListSingleLinkPartition3NonStable.md" />
+    <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates.md" />
+    <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates1HashSet.md" />
+    <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDS.md" />
     <None Include="Matrix\Rotate\MatrixRotate.md" />
     <None Include="Matrix\Rotate\MatrixRotate1.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
