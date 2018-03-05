@@ -16,9 +16,8 @@ namespace CodingProblems.LinkedList.SingleLink.Partition
         public void LinkedListSingleLinkPartition3NonStableCompleteTest1NullList()
         {
             LinkedListSingleLinkNode<int> actual = null;
-            LinkedListSingleLinkNode<int> expected = null;
             LinkedListSingleLinkPartition3NonStableComplete.Partition(ref actual, 7);
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(expected, actual));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(null, actual));
         }
 
         /// <summary>

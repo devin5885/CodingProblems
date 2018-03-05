@@ -15,7 +15,6 @@ namespace CodingProblems.LinkedList.SingleLink.Partition
         public static void Partition(ref LinkedListSingleLinkNode<int> head, int x)
         {
             // Use dummy nodes to simply code.
-
             var beforeTop = new LinkedListSingleLinkNode<int>(-1);
             var beforeBottom = beforeTop;
             var afterTop = new LinkedListSingleLinkNode<int>(-1);
