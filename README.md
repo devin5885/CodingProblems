@@ -1,22 +1,28 @@
 # Coding Problems
 
-## Index
+## Arrays & Strings
 
-### Cracking the Coding Interview Problems
+[CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
+[CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
+[CtCI 1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
 
-[1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
-[1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
-[1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
-[2.1 - (Linked List) Remove Duplicates](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/RemoveDuplicates)
-[2.4 - (Linked List) Partition](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Partition)
-[2.7 - (Linked List) Find Intersection](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/FindIntersection)
-[3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
-[3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
-[4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
-[4.4 - (Binary Tree) Check Balanced](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/CheckBalanced)  
+## Linked List (Single)
 
-### Misc Problems
+[CtCI 2.1 - Remove Duplicates](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/RemoveDuplicates)  
+[CtCI 2.4 - Partition](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Partition)  
+[CtCI 2.7 - Find Intersection](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/FindIntersection)  
+
+## Stacks & Queues
 
 [Fixed Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/FixedSize)  
 [Unlimited Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/UnlimitedSize)  
-[Binary Tree Get Height](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/GetHeight)  
+[CtCI 3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
+[CtCI 3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
+
+## Trees & Graphs
+
+[(Binary Tree) Get Height](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/GetHeight)  
+[CtCI 4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
+[CtCI 4.4 - (Binary Tree) Check Balanced](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/CheckBalanced)  
+
+CtCI is Cracking the Coding Interview
