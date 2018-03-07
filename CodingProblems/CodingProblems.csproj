@@ -176,6 +176,7 @@
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
+    <None Include="README.md" />
     <None Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSize.md" />
     <None Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSize.md" />
   </ItemGroup>
