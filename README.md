@@ -25,4 +25,8 @@
 [CtCI 4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
 [CtCI 4.4 - (Binary Tree) Check Balanced](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/CheckBalanced)  
 
+## Bit Manipulation
+
+[Get Most Significant Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetMostSignificantBit)  
+
 CtCI is Cracking the Coding Interview
