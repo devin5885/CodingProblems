@@ -27,7 +27,8 @@
 
 ## Bit Manipulation
 
-[Get Most Significant Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetMostSignificantBit)  
 [Get Bit Count](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetBitCount)
+[Get Most Significant Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetMostSignificantBit)  
+[Get Set Clear Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetSetClearBit)
 
 CtCI is Cracking the Coding Interview
