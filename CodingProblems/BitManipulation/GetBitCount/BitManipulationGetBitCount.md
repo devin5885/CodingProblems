@@ -13,3 +13,4 @@ Returns: The count of set bits.
 ## Solutions
 1. Convert to string.
 2. Shift the mask.
+3. Shift the number.
