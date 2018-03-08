@@ -1,5 +1,5 @@
 ﻿using System;
-using CodingProblems.BitManipulation.Helpers;
+using CodingProblems.BitManipulation.GetSetClearBit;
 
 namespace CodingProblems.BitManipulation.GetMostSignificantBit
 {
@@ -32,7 +32,7 @@ namespace CodingProblems.BitManipulation.GetMostSignificantBit
             var right = 0;
 
             // Get initial mask.
-            uint mask = GetMask(left, middle);
+            int mask = GetMask(left, middle);
 
             while (true)
             {
@@ -72,12 +72,12 @@ namespace CodingProblems.BitManipulation.GetMostSignificantBit
         /// <param name="left">1 more than the first bit to set.</param>
         /// <param name="middle">The last bit to set.</param>
         /// <returns>The mask.</returns>
-        private static uint GetMask(int left, int middle)
+        private static int GetMask(int left, int middle)
         {
             // Build new mask.
-            uint mask = 0;
+            int mask = 0;
             for (int set = left - 1; set >= middle; set--)
-                mask = mask.SetBit(set);
+                mask = BitManipulationGetSetClearBit1Complete.SetClearBit(mask, set);
             return mask;
         }
     }

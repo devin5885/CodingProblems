@@ -75,7 +75,8 @@
     <Compile Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit3MaskShiftCompleteTests.cs" />
     <Compile Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit4BinarySearchComplete.cs" />
     <Compile Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit4BinarySearchCompleteTests.cs" />
-    <Compile Include="BitManipulation\Helpers\BitManipulationHelpers.cs" />
+    <Compile Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1Complete.cs" />
+    <Compile Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1CompleteTests.cs" />
     <Compile Include="Graph\Graph\GraphGraph.cs" />
     <Compile Include="Graph\Node\GraphNode.cs" />
     <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSComplete.cs" />
@@ -144,6 +145,8 @@
     <None Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit2BitShift.md" />
     <None Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit3MaskShift.md" />
     <None Include="BitManipulation\GetMostSignificantBit\BitManipulationGetMostSignificantBit4BinarySearch.md" />
+    <None Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit.md" />
+    <None Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFS.md" />
