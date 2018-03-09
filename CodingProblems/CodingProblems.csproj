@@ -83,6 +83,10 @@
     <Compile Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1CompleteTests.cs" />
     <Compile Include="BitManipulation\Insertion\BitManipulationInsertion1Complete.cs" />
     <Compile Include="BitManipulation\Insertion\BitManipulationInsertion1CompleteTests.cs" />
+    <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForceComplete.cs" />
+    <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForceCompleteTests.cs" />
+    <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap2ClearAndShiftComplete.cs" />
+    <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap2ClearAndShiftCompleteTests.cs" />
     <Compile Include="Graph\Graph\GraphGraph.cs" />
     <Compile Include="Graph\Node\GraphNode.cs" />
     <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSComplete.cs" />
@@ -158,6 +162,9 @@
     <None Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1.md" />
     <None Include="BitManipulation\Insertion\BitManipulationInsertion.md" />
     <None Include="BitManipulation\Insertion\BitManipulationInsertion1.md" />
+    <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap.md" />
+    <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForce.md" />
+    <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap2ClearAndShift.md" />
     <None Include="CodingProblems.ruleset" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes.md" />
     <None Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFS.md" />
