@@ -27,10 +27,10 @@
 
 ## Bit Manipulation
 
-[Create Mask](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/CreateMask)
-[Get Bit Count](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetBitCount)
+[Create Mask](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/CreateMask)  
+[Get Bit Count](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetBitCount)  
 [Get Most Significant Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetMostSignificantBit)  
-[Get Set Clear Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetSetClearBit)
-[CtCI 5.1](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/Insertion)
+[Get Set Clear Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetSetClearBit)  
+[CtCI 5.1 - Insertion](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/Insertion)  
 
 CtCI is Cracking the Coding Interview
