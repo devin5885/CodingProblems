@@ -146,6 +146,9 @@
     <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeCompleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Link>README.md</Link>
+    </None>
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
@@ -207,7 +210,6 @@
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
-    <None Include="README.md" />
     <None Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSize.md" />
     <None Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSize.md" />
   </ItemGroup>
