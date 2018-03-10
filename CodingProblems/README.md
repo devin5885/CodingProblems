@@ -32,6 +32,7 @@
 [Get Most Significant Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetMostSignificantBit)  
 [Get Set Clear Bit](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/GetSetClearBit)  
 [CtCI 5.1 - Insertion](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/Insertion)  
+[CtCI 5.4 - NextNumber](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/NextNumber)  
 [CtCI 5.7 - PairwiseSwap](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/PairwiseSwap)  
 
 CtCI is Cracking the Coding Interview
