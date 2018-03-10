@@ -83,6 +83,12 @@
     <Compile Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1CompleteTests.cs" />
     <Compile Include="BitManipulation\Insertion\BitManipulationInsertion1Complete.cs" />
     <Compile Include="BitManipulation\Insertion\BitManipulationInsertion1CompleteTests.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber1BruteForceComplete.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber1BruteForceCompleteTests.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber2BitAdjustComplete.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber2BitAdjustCompleteTests.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber3ArithmeticCompleteTests.cs" />
+    <Compile Include="BitManipulation\NextNumber\BitManipulationNextNumber3ArithmeticComplete.cs" />
     <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForceComplete.cs" />
     <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForceCompleteTests.cs" />
     <Compile Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap2ClearAndShiftComplete.cs" />
@@ -162,6 +168,10 @@
     <None Include="BitManipulation\GetSetClearBit\BitManipulationGetSetClearBit1.md" />
     <None Include="BitManipulation\Insertion\BitManipulationInsertion.md" />
     <None Include="BitManipulation\Insertion\BitManipulationInsertion1.md" />
+    <None Include="BitManipulation\NextNumber\BitManipulationNextNumber.md" />
+    <None Include="BitManipulation\NextNumber\BitManipulationNextNumber1BruteForce.md" />
+    <None Include="BitManipulation\NextNumber\BitManipulationNextNumber2BitAdjust.md" />
+    <None Include="BitManipulation\NextNumber\BitManipulationNextNumber3Arithmetic.md" />
     <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap.md" />
     <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap1BruteForce.md" />
     <None Include="BitManipulation\PairwiseSwap\BitManipulationPairwiseSwap2ClearAndShift.md" />
