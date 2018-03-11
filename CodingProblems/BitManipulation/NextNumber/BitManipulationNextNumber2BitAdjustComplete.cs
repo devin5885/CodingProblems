@@ -1,5 +1,5 @@
 ﻿using System;
-using CodingProblems.BitManipulation.CreateMask;
+using CodingProblems.BitManipulation.CreateSimpleMask;
 using CodingProblems.BitManipulation.GetSetClearBit;
 
 namespace CodingProblems.BitManipulation.NextNumber
@@ -70,7 +70,7 @@ namespace CodingProblems.BitManipulation.NextNumber
             num = BitManipulationGetSetClearBit1Complete.SetClearBit(num, posSet);
 
             // Clear all bits to the right of p.
-            var maskClear = BitManipulationCreateMask1Complete.CreateMask(31, posSet);
+            var maskClear = BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(31, posSet);
             num &= maskClear;
 
             // Determine the # of bits to set to make the #'s match again, note that we reduce
@@ -82,7 +82,7 @@ namespace CodingProblems.BitManipulation.NextNumber
             // accounted for.
             if (bitsToSetCount > 0)
             {
-                var maskSet = BitManipulationCreateMask1Complete.CreateMask(bitsToSetCount - 1, 0);
+                var maskSet = BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(bitsToSetCount - 1, 0);
                 num |= maskSet;
             }
 
@@ -141,7 +141,7 @@ namespace CodingProblems.BitManipulation.NextNumber
             num = BitManipulationGetSetClearBit1Complete.SetClearBit(num, posClear, false);
 
             // Clear all bits to the right of posClear.
-            var maskClear = BitManipulationCreateMask1Complete.CreateMask(31, posClear);
+            var maskClear = BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(31, posClear);
             num &= maskClear;
 
             // Determine the # of bits to set to make the #'s match again, note that we increment
@@ -153,7 +153,7 @@ namespace CodingProblems.BitManipulation.NextNumber
             // accounted for.
             if (bitsToSetCount > 0)
             {
-                var maskSet = BitManipulationCreateMask1Complete.CreateMask(posClear - 1, posClear - 1 - bitsToSetCount + 1);
+                var maskSet = BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(posClear - 1, posClear - 1 - bitsToSetCount + 1);
                 num |= maskSet;
             }
 

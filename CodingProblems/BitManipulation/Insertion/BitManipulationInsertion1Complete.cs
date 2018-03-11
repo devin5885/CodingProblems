@@ -1,5 +1,5 @@
 ﻿using System;
-using CodingProblems.BitManipulation.CreateMask;
+using CodingProblems.BitManipulation.CreateSimpleMask;
 
 namespace CodingProblems.BitManipulation.Insertion
 {
@@ -32,7 +32,7 @@ namespace CodingProblems.BitManipulation.Insertion
                 throw new ArgumentException($"i cannot be greater than j. i: {i}, j: {j}");
 
             // Build a mask to clear the appropriate bits in n.
-            int mask = ~BitManipulationCreateMask1Complete.CreateMask(j, i);
+            int mask = ~BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(j, i);
 
             // Clear the appropriate bits in n.
             var cleared = n & mask;

@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace CodingProblems.BitManipulation.CreateMask
+namespace CodingProblems.BitManipulation.CreateSimpleMask
 {
     /// <summary>
-    /// Implements CreateMask
+    /// Implements CreateSimpleMask
     /// </summary>
-    public static class BitManipulationCreateMask1Complete
+    public static class BitManipulationCreateSimpleMask1Complete
     {
         /// <summary>
         /// Creates a mask.
@@ -16,7 +16,7 @@ namespace CodingProblems.BitManipulation.CreateMask
         ///  bit to set. Must be between 0 and the max index of an int (31) and
         ///  less than or equal to the most significant bit index.</param>
         /// <returns>The resulting mask.</returns>
-        public static int CreateMask(int msbindex, int lsbindex)
+        public static int CreateSimpleMask(int msbindex, int lsbindex)
         {
             // Determine the max index.
             var indexmax = (sizeof(int) * 8) - 1;
