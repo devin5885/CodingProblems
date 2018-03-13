@@ -61,6 +61,8 @@
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeComplete.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
+    <Compile Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1Complete.cs" />
+    <Compile Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1CompleteTests.cs" />
     <Compile Include="BitManipulation\CreateSimpleMask\BitManipulationCreateSimpleMask2UseSetClearBitComplete.cs" />
     <Compile Include="BitManipulation\CreateSimpleMask\BitManipulationCreateSimpleMask2UseSetClearBitCompleteTests.cs" />
     <Compile Include="BitManipulation\GetBitCount\BitManipulationGetBitCount1ConvertToStringComplete.cs" />
@@ -155,6 +157,8 @@
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight1Recursive.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight2Iterative.md" />
+    <None Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask.md" />
+    <None Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1.md" />
     <None Include="BitManipulation\CreateSimpleMask\BitManipulationCreateSimpleMask2UseSetClearBit.md" />
     <None Include="BitManipulation\GetBitCount\BitManipulationGetBitCount.md" />
     <None Include="BitManipulation\GetBitCount\BitManipulationGetBitCount1ConvertToString.md" />
