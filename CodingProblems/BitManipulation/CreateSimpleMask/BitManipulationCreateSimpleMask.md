@@ -11,7 +11,7 @@ non-opposite mask & using the binary not ~ operator.
 
 - Method to implement:  
 
-Name: CreateMask
+Name: CreateSimpleMask
 Parameters: The most and least significant bit indexes to set.
 Returns: The resulting mask (as a signed integer).
 
