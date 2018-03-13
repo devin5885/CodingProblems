@@ -17,4 +17,3 @@ Returns: The resulting mask (as a signed integer).
 
 ## Solutions
 1. Standard - Create the mask using bit shifting. (Very efficient)
-2. Use SetClearBit. (Not efficient)
