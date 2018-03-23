@@ -45,8 +45,10 @@ namespace CodingProblems.TripleStep
         }
 
         /// <summary>
-        /// Helper that takes a list of hops, adds a new hop, then checks what should be done with the resulting list of hops (i.e.)
-        /// either call CountWaysHelper recursively, add to the result list, or drop.
+        /// Helper that takes a list of hops, adds a new hop, then checks what
+        /// should be done with the resulting list of hops (i.e.)
+        /// either call CountWaysHelper recursively, add to the result list, or
+        /// drop.
         /// </summary>
         /// <param name="hops">The number of hops to add.</param>
         /// <param name="steps">The target number of steps.</param>

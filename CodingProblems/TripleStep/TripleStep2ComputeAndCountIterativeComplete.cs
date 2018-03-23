@@ -53,13 +53,15 @@ namespace CodingProblems.TripleStep
         }
 
         /// <summary>
-        /// Helper that takes a list of hops, adds a new hop, then checks what should be done with the resulting list of hops (i.e.)
+        /// Helper that takes a list of hops, adds a new hop, then checks what
+        /// should be done with the resulting list of hops (i.e.)
         /// either add to the resultList, add to the next list, or drop.
         /// </summary>
         /// <param name="hops">The number of hops to add.</param>
         /// <param name="steps">The target number of steps.</param>
         /// <param name="hopsCurr">The list of hops.</param>
-        /// <param name="currListNext">The list of lists to process in the next iteration.</param>
+        /// <param name="currListNext">The list of lists to process in the next
+        /// iteration.</param>
         /// <param name="resultList">The result list.</param>
         private static void CheckAndAddHelper(int hops, int steps, List<int> hopsCurr, List<List<int>> currListNext, List<List<int>> resultList)
         {
