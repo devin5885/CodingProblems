@@ -144,6 +144,14 @@
     <Compile Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSizeCompleteTests.cs" />
     <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeComplete.cs" />
     <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeCompleteTests.cs" />
+    <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeComplete.cs" />
+    <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeCompleteTests.cs" />
+    <Compile Include="TripleStep\TripleStep1ComputeAndCountRecursiveComplete.cs" />
+    <Compile Include="TripleStep\TripleStep1ComputeAndCountRecursiveCompleteTests.cs" />
+    <Compile Include="TripleStep\TripleStep3CountRecursiveComplete.cs" />
+    <Compile Include="TripleStep\TripleStep3CountRecursiveCompleteTests.cs" />
+    <Compile Include="TripleStep\TripleStep4CountMemoizationRecursiveComplete.cs" />
+    <Compile Include="TripleStep\TripleStep4CountMemoizationRecursiveCompleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
@@ -213,6 +221,11 @@
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
     <None Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSize.md" />
     <None Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSize.md" />
+    <None Include="TripleStep\TripleStep.md" />
+    <None Include="TripleStep\TripleStep2ComputeAndCountIterative.md" />
+    <None Include="TripleStep\TripleStep1ComputeAndCountRecursive.md" />
+    <None Include="TripleStep\TripleStep3CountRecursive.md" />
+    <None Include="TripleStep\TripleStep4CountMemoizationRecursive.md" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
