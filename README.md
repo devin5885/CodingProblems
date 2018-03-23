@@ -1,6 +1,6 @@
 # Coding Problems
 
-## Arrays & Strings
+## Arrays and Strings
 
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
@@ -12,14 +12,14 @@
 [CtCI 2.4 - Partition](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Partition)  
 [CtCI 2.7 - Find Intersection](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/FindIntersection)  
 
-## Stacks & Queues
+## Stacks and Queues
 
 [Fixed Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/FixedSize)  
 [Unlimited Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/UnlimitedSize)  
 [CtCI 3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
 [CtCI 3.4 - Queue via Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Queue/Stacks)  
 
-## Trees & Graphs
+## Trees and Graphs
 
 [(Binary Tree) Get Height](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/GetHeight)  
 [CtCI 4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
@@ -35,5 +35,9 @@
 [CtCI 5.1 - Insertion](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/Insertion)  
 [CtCI 5.4 - NextNumber](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/NextNumber)  
 [CtCI 5.7 - PairwiseSwap](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BitManipulation/PairwiseSwap)  
+
+## Recursion and Dynamic Programming
+
+[CtCI 8.1 - Triple Step](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/TripleStep)  
 
 CtCI is Cracking the Coding Interview
