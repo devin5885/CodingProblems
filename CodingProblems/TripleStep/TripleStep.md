@@ -17,9 +17,11 @@ The method should throw an exception if this is not the case.
 
 - Method to implement:  
 
-Name: CountWays  
-Parameters: The number of steps.  
-Returns: The number of combinations.
+|            |                             |
+|------------|-----------------------------|
+| Name       | CountWays                   |
+| Parameters | The number of steps         |
+| Returns    | The number of combinations  |
 
 ---
 
