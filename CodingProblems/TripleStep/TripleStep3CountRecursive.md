@@ -4,6 +4,8 @@
 - Use recursion.
 - Don't calculate the combinations, instead just count possible combinations.
 
+---
+
 ## Implementation
 For this solution we will work backwards from the # of steps (n) recursively calculating
 the # of steps for n-1, n-2, and n-3. (Similar to the Fibonacci sequence). When all
@@ -32,10 +34,18 @@ Note: n = # of steps passed in.
 
 ---
 
-#### Complexity
+## Complexity
 Time: O(3^n^) where n is the # of steps.  
 Space: O(3^n^) where n is the # of steps.  
+
+---
 
 ## Notes
 - This algorithm is still inefficient, but is better than the previous
 solutions because the amount of calculations per recursive call is smaller.
+
+- This algorithm is in CrCI, this version has the following changes:
+1. We throw an exception when the passed in number of step is not positive and greater than 0.
+2. Since we need to throw an exception for 0 being passed in, but this
+valid for the recursive call, we need to move the recursive code to a helper
+ method.

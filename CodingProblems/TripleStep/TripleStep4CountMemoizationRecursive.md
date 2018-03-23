@@ -5,6 +5,8 @@
 - Don't calculate the combinations, instead just count possible combinations.
 - Use Memoization to cache recursive call results.
 
+---
+
 ## Implementation
 Same as Solution #3 except that for this solution we will use an array to
 keep track of previous results to minimize the amount of recalculation &
@@ -33,11 +35,18 @@ Note: n = # of steps passed in.
 
 ---
 
-#### Complexity
+## Complexity
 Time: O(3^n^) where n is the # of steps.  
 Space: O(3^n^) where n is the # of steps.  
+
+---
 
 ## Notes
 - This algorithm is much more efficient than the previous algorithms because the
 number of recursive calls is minimized.
-- This algorithm could also be done iteratively.
+
+- This algorithm is in CrCI, this version has the following changes:
+1. We throw an exception when the passed in number of step is not positive and greater than 0.
+2. The array is automatically initialized to all 0's.
+3. We populate the first entry in the array with 1, this prevents us from needing to hard code this case in the helper method.
+4. Since the array is auto-populated with 0's we check for this instead of -1.
