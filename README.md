@@ -39,5 +39,6 @@
 ## Recursion and Dynamic Programming
 
 [CtCI 8.1 - Triple Step](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/TripleStep)  
+[CtCI 8.3 - MagicIndex](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/MagicIndex)   
 
 CtCI is Cracking the Coding Interview
