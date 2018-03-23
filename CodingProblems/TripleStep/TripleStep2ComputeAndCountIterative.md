@@ -1,4 +1,4 @@
-# Solution 1 - Compute And Count Iterative
+# # Triple Step - Solution 2 - Compute And Count Iterative
 
 ## Additional Requirements
 - Do not use recursion.
