@@ -1,4 +1,4 @@
-﻿# GetBitCount
+# GetBitCount
 
 ## Problem
 Given a positive signed integer return the number of set bits.

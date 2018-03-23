@@ -1,4 +1,4 @@
-﻿# Solution 4 - Use Bool Array
+# Solution 4 - Use Bool Array
 
 ## Implementation
 

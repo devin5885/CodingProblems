@@ -1,4 +1,4 @@
-﻿# IsPalidromePermutation
+# IsPalidromePermutation
 - From Cracking the Coding Interview, Interview Questions 1.4
 
 ## Problem

@@ -1,4 +1,4 @@
-﻿# Solution 5 - Use Bit Array
+# Solution 5 - Use Bit Array
 
 ## Implementation 
 This solution is similar to the boolean array solution, but uses a bit array to save space.

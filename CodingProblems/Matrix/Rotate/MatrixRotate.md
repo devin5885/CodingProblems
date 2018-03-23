@@ -1,4 +1,4 @@
-﻿# MatrixRotate
+# MatrixRotate
 - From Cracking the Coding Interview, Interview Questions 1.7
 
 ## Problem

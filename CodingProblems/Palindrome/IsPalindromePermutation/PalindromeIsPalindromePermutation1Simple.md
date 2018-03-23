@@ -1,4 +1,4 @@
-﻿# Solution 1 - Simple
+# Solution 1 - Simple
 
 ## Requirements
 

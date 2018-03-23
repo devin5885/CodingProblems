@@ -1,4 +1,4 @@
-﻿# Unlimited Sized Stack Using Array
+# Unlimited Sized Stack Using Array
 
 ## Problem Summary
 Implement a unlimited size stack using a fixed size array.

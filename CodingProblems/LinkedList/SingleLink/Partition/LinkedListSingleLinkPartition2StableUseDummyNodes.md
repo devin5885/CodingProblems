@@ -1,4 +1,4 @@
-﻿# Solution 2 - Stable - Use Dummy Nodes
+# Solution 2 - Stable - Use Dummy Nodes
 
 ## Requirements
 - The algorithm should use 'Dummy' nodes to simplify the code.

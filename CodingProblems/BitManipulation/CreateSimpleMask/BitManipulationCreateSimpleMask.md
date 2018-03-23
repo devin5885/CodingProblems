@@ -1,4 +1,4 @@
-﻿# Create Simple Mask
+# Create Simple Mask
 
 ## Problem
 Implement a method to create a simple mask. A simple mask is defined a mask

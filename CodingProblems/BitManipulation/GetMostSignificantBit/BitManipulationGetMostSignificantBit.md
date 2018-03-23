@@ -1,4 +1,4 @@
-﻿# GetMostSignificantBit
+# GetMostSignificantBit
 
 ## Problem
 Given a positive signed integer determine return the 1-based index of the most

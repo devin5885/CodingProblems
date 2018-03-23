@@ -1,4 +1,4 @@
-﻿# Route Between Nodes
+# Route Between Nodes
 - From Cracking the Coding Interview, Interview Questions 4.1
 
 ## Problem

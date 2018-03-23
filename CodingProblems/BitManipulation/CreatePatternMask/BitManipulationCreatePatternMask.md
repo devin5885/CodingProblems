@@ -1,4 +1,4 @@
-﻿# Create Pattern Mask
+# Create Pattern Mask
 
 ## Problem
 Implement a method to create a pattern mask. A pattern mask is defined a mask

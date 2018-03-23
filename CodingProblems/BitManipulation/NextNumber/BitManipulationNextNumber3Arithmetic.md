@@ -1,4 +1,4 @@
-﻿# Solution 1 - Use Arithmetic
+# Solution 1 - Use Arithmetic
 
 ## Requirements
 

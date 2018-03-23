@@ -1,4 +1,4 @@
-﻿# Solution 4 - Binary Search
+# Solution 4 - Binary Search
 
 ## Requirements
 

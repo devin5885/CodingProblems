@@ -1,4 +1,4 @@
-﻿# GetSetClearBit
+# GetSetClearBit
 
 ## Problem
 Implement methods to check whether a particular bit is set & to clear or set

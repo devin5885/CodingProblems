@@ -1,4 +1,4 @@
-﻿# Solution 2 - Optimized
+# Solution 2 - Optimized
 
 ## Requirements
 

@@ -1,4 +1,4 @@
-﻿# Solution 2 - Running Count
+# Solution 2 - Running Count
 
 ## Requirements
 

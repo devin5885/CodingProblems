@@ -1,4 +1,4 @@
-﻿# Solution 2 - Use Bit Shift
+# Solution 2 - Use Bit Shift
 
 ## Requirements
 

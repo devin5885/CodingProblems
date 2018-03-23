@@ -1,4 +1,4 @@
-﻿# Three in One
+# Three in One
 
 ## Problem
 Implement multiple (3) stacks using a single array.

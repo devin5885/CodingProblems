@@ -1,4 +1,4 @@
-﻿# Solution 2 - Variable Size Stacks
+# Solution 2 - Variable Size Stacks
 
 ## Solution Specific Assumptions
 - Stack can grow as needed.

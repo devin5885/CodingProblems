@@ -1,4 +1,4 @@
-﻿# Insertion
+# Insertion
 - From Cracking the Coding Interview, Interview Questions 5.1
 
 ## Problem

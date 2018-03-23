@@ -1,4 +1,4 @@
-﻿# Solution 1 - Use Hash Set
+# Solution 1 - Use Hash Set
 
 ## Requirements
 - For this solution additional data structures are allowed.

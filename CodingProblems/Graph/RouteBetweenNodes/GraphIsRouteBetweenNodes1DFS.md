@@ -1,4 +1,4 @@
-﻿# Solution 1 - Simple Iterative DFS
+# Solution 1 - Simple Iterative DFS
 
 ## Requirements
 

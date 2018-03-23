@@ -1,4 +1,4 @@
-﻿# Solution 1 - Stable
+# Solution 1 - Stable
 
 ## Requirements
 - The list should remain 'stable' (i.e.) no elements are reordered except as

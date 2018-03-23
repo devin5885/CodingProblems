@@ -1,4 +1,4 @@
-﻿# Solution 1 - Compute And Count Recursive
+# Solution 1 - Compute And Count Recursive
 
 ## Additional Requirements
 - Use recursion.

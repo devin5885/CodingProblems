@@ -1,4 +1,4 @@
-﻿# Solution 1 - Brute Force
+# Solution 1 - Brute Force
 
 ## Requirements
 

@@ -1,4 +1,4 @@
-﻿# Solution 1 - Bit Adjust
+# Solution 1 - Bit Adjust
 
 ## Requirements
 

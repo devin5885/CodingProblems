@@ -1,4 +1,4 @@
-﻿# Solution 2 - No Additional DS
+# Solution 2 - No Additional DS
 
 ## Requirements
 - For this solution no additional data structures are allowed.

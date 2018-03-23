@@ -1,4 +1,4 @@
-﻿# Solution 3 - Sort First
+# Solution 3 - Sort First
 
 ## Requirements
 - Additional data structures NOT allowed.

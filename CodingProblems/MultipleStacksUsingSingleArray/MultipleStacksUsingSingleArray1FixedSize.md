@@ -1,4 +1,4 @@
-﻿# Solution 1 - Fixed Size Stacks
+# Solution 1 - Fixed Size Stacks
 
 ## Solution Specific Assumptions
 - The capacity of the stacks in the same for each stack & is fixed (Set at construction).

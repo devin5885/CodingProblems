@@ -1,4 +1,4 @@
-﻿# Solution 3 - Count Recursive with Memoization
+# Solution 3 - Count Recursive with Memoization
 
 ## Additional Requirements
 - Use recursion.

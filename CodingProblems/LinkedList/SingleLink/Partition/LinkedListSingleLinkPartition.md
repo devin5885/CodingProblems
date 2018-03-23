@@ -1,4 +1,4 @@
-﻿# (Linked List Single) Partition
+# (Linked List Single) Partition
 - From Cracking the Coding Interview, Interview Questions 2.4
 
 ## Problem

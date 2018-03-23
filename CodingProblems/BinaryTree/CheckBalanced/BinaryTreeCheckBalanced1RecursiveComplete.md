@@ -1,4 +1,4 @@
-﻿## Solution 1 - Use GetHeight Recursive
+## Solution 1 - Use GetHeight Recursive
 
 ## Requirements
 - Recursion is allowed.

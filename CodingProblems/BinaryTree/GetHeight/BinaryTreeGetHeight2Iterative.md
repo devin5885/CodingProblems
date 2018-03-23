@@ -1,4 +1,4 @@
-﻿# Solution 2 - Iterative
+# Solution 2 - Iterative
 
 ## Requirements
 - Recursion is not allowed.

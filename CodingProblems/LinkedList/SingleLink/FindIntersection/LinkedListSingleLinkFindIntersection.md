@@ -1,4 +1,4 @@
-﻿# (Linked List Single) Find Intersection
+# (Linked List Single) Find Intersection
 - From Cracking the Coding Interview, Interview Questions 2.7
 
 ## Problem

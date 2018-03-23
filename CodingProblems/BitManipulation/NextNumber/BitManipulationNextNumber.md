@@ -1,4 +1,4 @@
-﻿# Next Number
+# Next Number
 - From Cracking the Coding Interview, Interview Questions 5.4
 
 ## Problem

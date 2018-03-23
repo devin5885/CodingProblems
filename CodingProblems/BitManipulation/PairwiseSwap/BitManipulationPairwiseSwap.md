@@ -1,4 +1,4 @@
-﻿# Pairwise Swap
+# Pairwise Swap
 - From Cracking the Coding Interview, Interview Questions 5.7
 
 ## Problem

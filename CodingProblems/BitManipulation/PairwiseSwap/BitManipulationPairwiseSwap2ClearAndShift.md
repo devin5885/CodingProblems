@@ -1,4 +1,4 @@
-﻿# Solution 1 - Clear And Shift
+# Solution 1 - Clear And Shift
 
 ## Requirements
 

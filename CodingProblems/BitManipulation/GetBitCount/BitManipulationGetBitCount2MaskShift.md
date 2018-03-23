@@ -1,4 +1,4 @@
-﻿# Solution 2 - Shift the Mask
+# Solution 2 - Shift the Mask
 
 ## Requirements
 

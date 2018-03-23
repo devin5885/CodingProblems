@@ -1,4 +1,4 @@
-﻿# Solution 1 - Convert to String
+# Solution 1 - Convert to String
 
 ## Requirements
 

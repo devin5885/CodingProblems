@@ -1,4 +1,4 @@
-﻿# Solution 2 - Shift the Number
+# Solution 2 - Shift the Number
 
 ## Requirements
 

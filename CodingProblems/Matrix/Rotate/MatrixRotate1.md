@@ -1,4 +1,4 @@
-﻿# Solution 1 - Standard
+# Solution 1 - Standard
 
 ## Requirements
 

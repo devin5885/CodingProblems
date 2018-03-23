@@ -1,4 +1,4 @@
-﻿# Solution 1 - Recursive
+# Solution 1 - Recursive
 
 ## Requirements
 - Recursion is allowed.

@@ -1,4 +1,4 @@
-﻿# Fixed Size Stack Using Array
+# Fixed Size Stack Using Array
 
 ## Problem Summary
 Implement a fixed size stack using a fixed size array.

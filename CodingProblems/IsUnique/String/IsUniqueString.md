@@ -1,4 +1,4 @@
-﻿# IsUnique
+# IsUnique
 - From Cracking the Coding Interview, Interview Questions 1.1
 
 ## Problem

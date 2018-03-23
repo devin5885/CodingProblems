@@ -1,4 +1,4 @@
-﻿# Solution 3 - Non-Stable
+# Solution 3 - Non-Stable
 
 ## Requirements
 - The list does not need to remain 'stable' (i.e.) elements can be reordered

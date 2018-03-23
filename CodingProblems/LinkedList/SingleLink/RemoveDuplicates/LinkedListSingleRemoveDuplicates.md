@@ -1,4 +1,4 @@
-﻿# (Linked List Single) Remove Duplicates
+# (Linked List Single) Remove Duplicates
 - From Cracking the Coding Interview, Interview Questions 2.1
 
 ## Problem

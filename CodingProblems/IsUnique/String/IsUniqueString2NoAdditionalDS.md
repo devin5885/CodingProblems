@@ -1,4 +1,4 @@
-﻿# Solution 2 - Use no additional data structures
+# Solution 2 - Use no additional data structures
 
 ## Requirements
 - Additional data structures NOT allowed.
