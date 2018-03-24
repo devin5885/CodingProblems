@@ -61,6 +61,9 @@
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsCompleteTests.cs" />
+    <Compile Include="Array_\StackOfBoxes\Box.cs" />
+    <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
+    <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.cs" />
@@ -178,6 +181,8 @@
     <None Include="Array_\PowerSet\PowerSet.md" />
     <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
     <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
+    <None Include="Array_\StackOfBoxes\StackOfBoxes.md" />
+    <None Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCount.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
