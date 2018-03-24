@@ -42,5 +42,6 @@
 [CtCI 8.3 - Magic Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/MagicIndex)   
 [CtCI 8.4 - Power Set](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/PowerSet)   
 [CtCI 8.7 - Permutations (String) without Duplicates](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Permutations/NoDuplicates)   
+[CtCI 8.10 - Paint Fill](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/PaintFill)   
 
 CtCI is Cracking the Coding Interview
