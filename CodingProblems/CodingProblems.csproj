@@ -141,6 +141,8 @@
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
+    <Compile Include="Matrix\PaintFill\PaintFill1RecursiveComplete.cs" />
+    <Compile Include="Matrix\PaintFill\PaintFill1RecursiveCompleteTests.cs" />
     <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
     <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
     <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
@@ -232,6 +234,8 @@
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
+    <None Include="Matrix\PaintFill\PaintFill.md" />
+    <None Include="Matrix\PaintFill\PaintFill1Recursive.md" />
     <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
     <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
     <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
