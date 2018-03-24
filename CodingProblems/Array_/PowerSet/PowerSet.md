@@ -17,7 +17,7 @@ Write a method to return all subsets of a set.
 
 |            |                                                 |
 |------------|-------------------------------------------------|
-| Name       | GeetPowerSet                                    |
+| Name       | GetPowerSet                                     |
 | Parameters | The set represented as an array                 |
 | Returns    | The power set represented as a list of lists    |
 
@@ -25,3 +25,4 @@ Write a method to return all subsets of a set.
 
 ## Solutions
 1. Recursive - Generate all possible power sets.
+2. Combinatorics - Generate a list of integers and generate the power sets from the bit pattern of the integers.

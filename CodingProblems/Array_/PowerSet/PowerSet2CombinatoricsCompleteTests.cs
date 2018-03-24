@@ -38,7 +38,7 @@ namespace CodingProblems.Array_.PowerSet
                 new List<int>(),
                 new List<int>() { 1 }
             };
-            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new int[] { 1 });
+            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1 });
 
             Assert.AreEqual(actual.Count, expected.Count);
             for (var i = 0; i < expected.Count; i++)
@@ -58,7 +58,7 @@ namespace CodingProblems.Array_.PowerSet
                 new List<int>() { 2 },
                 new List<int>() { 1, 2 }
             };
-            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new int[] { 1, 2 });
+            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1, 2 });
 
             Assert.AreEqual(actual.Count, expected.Count);
             for (var i = 0; i < expected.Count; i++)
@@ -82,7 +82,7 @@ namespace CodingProblems.Array_.PowerSet
                 new List<int>() { 2, 3 },
                 new List<int>() { 1, 2, 3 }
             };
-            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new int[] { 1, 2, 3 });
+            var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1, 2, 3 });
 
             Assert.AreEqual(actual.Count, expected.Count);
             for (var i = 0; i < expected.Count; i++)
