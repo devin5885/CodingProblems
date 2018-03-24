@@ -154,6 +154,8 @@
     <Compile Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSizeCompleteTests.cs" />
     <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeComplete.cs" />
     <Compile Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSizeCompleteTests.cs" />
+    <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeComplete.cs" />
+    <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeComplete.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep1ComputeAndCountRecursiveComplete.cs" />
@@ -238,6 +240,8 @@
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
     <None Include="Stack\UsingArray\FixedSize\StackUsingArray1FixedSize.md" />
     <None Include="Stack\UsingArray\UnlimitedSize\StackUsingArray2UnlimitedSize.md" />
+    <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates.md" />
+    <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterative.md" />
     <None Include="TripleStep\TripleStep.md" />
     <None Include="TripleStep\TripleStep2ComputeAndCountIterative.md" />
     <None Include="TripleStep\TripleStep1ComputeAndCountRecursive.md" />
