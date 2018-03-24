@@ -57,6 +57,10 @@
     <Compile Include="Array_\MagicIndex\MagicIndex2BinarySearchCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicatesComplete.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicatesCompleteTests.cs" />
+    <Compile Include="Array_\PowerSet\PowerSet1RecursiveComplete.cs" />
+    <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
+    <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
+    <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.cs" />
@@ -167,6 +171,9 @@
     <None Include="Array_\MagicIndex\MagicIndex1BruteForce.md" />
     <None Include="Array_\MagicIndex\MagicIndex2BinarySearch.md" />
     <None Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicates.md" />
+    <None Include="Array_\PowerSet\PowerSet.md" />
+    <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
+    <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
