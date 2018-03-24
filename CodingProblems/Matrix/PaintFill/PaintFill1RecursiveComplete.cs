@@ -8,12 +8,15 @@ namespace CodingProblems.Matrix.PaintFill
     public static class PaintFill1RecursiveComplete
     {
         /// <summary>
-        /// "Fills in" the specified cell and all adjoining cells that have the same color
+        /// "Fills in" the specified cell and all adjoining cells that have
+        /// the same color
         /// as the specified cell with newColor.
         /// </summary>
         /// <param name="image">The image to update.</param>
-        /// <param name="rowIndex">The rowIndex index of the cell to update.</param>
-        /// <param name="columnIndex">The column index of the cell to update.</param>
+        /// <param name="rowIndex">The rowIndex index of the cell
+        ///  to update.</param>
+        /// <param name="columnIndex">The column index of the cell
+        ///  to update.</param>
         /// <param name="newColor">The new color.</param>
         /// <returns>True if the cell was updated, false otherwise.</returns>
         public static bool PaintFill(int[,] image, int rowIndex, int columnIndex, int newColor)
@@ -26,12 +29,15 @@ namespace CodingProblems.Matrix.PaintFill
         }
 
         /// <summary>
-        /// Helper for PaintFill that takes the oldColor as well and only updates if the cell
+        /// Helper for PaintFill that takes the oldColor as well and only
+        ///  updates if the cell
         /// initially matches the old color.
         /// </summary>
         /// <param name="image">The image to update.</param>
-        /// <param name="rowIndex">The rowIndex index of the cell to update.</param>
-        /// <param name="columnIndex">The column index of the cell to update.</param>
+        /// <param name="rowIndex">The rowIndex index of the cell to
+        ///  update.</param>
+        /// <param name="columnIndex">The column index of the cell to
+        ///  update.</param>
         /// <param name="oldColor">The old color.</param>
         /// <param name="newColor">The new color.</param>
         /// <returns>True if the cell was updated, false otherwise.</returns>
