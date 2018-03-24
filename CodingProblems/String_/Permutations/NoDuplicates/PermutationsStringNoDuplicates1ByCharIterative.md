@@ -1,4 +1,4 @@
-# Permutations without Duplicates - Solution 1 - By Char Recursive
+# Permutations without Duplicates - Solution 1 - By Char Iterative
 
 ## Additional Requirements
 

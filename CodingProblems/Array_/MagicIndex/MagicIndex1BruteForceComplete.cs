@@ -8,7 +8,8 @@ namespace CodingProblems.Array_.MagicIndex
     public static class MagicIndex1BruteForceComplete
     {
         /// <summary>
-        /// Finds and returns the index for which the array contents matches the index.
+        /// Finds and returns the index for which the array contents matches
+        /// the index.
         /// </summary>
         /// <param name="array">The array.</param>
         /// <returns>The magic index.</returns>
