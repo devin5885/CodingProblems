@@ -167,6 +167,10 @@
     <Compile Include="String_\Fibonacci\Fibonacci2RecursiveMemoizationCompleteTests.cs" />
     <Compile Include="String_\Fibonacci\Fibonacci3IterativeComplete.cs" />
     <Compile Include="String_\Fibonacci\Fibonacci3IterativeCompleteTests.cs" />
+    <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSetComplete.cs" />
+    <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForceComplete.cs" />
+    <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForceCompleteTests.cs" />
+    <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSetCompleteTests.cs" />
     <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeComplete.cs" />
     <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeComplete.cs" />
@@ -263,6 +267,9 @@
     <None Include="String_\Fibonacci\Fibonacci1Recursive.md" />
     <None Include="String_\Fibonacci\Fibonacci2RecursiveMemoization.md" />
     <None Include="String_\Fibonacci\Fibonacci3Iterative.md" />
+    <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex.md" />
+    <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForce.md" />
+    <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSet.md" />
     <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates.md" />
     <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterative.md" />
     <None Include="TripleStep\TripleStep.md" />
