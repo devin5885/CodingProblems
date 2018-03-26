@@ -51,6 +51,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array_\FizzBuzz\FizzBuzz1StandardComplete.cs" />
+    <Compile Include="Array_\FizzBuzz\FizzBuzz1STandardCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex1BruteForceComplete.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex1BruteForceCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex2BinarySearchComplete.cs" />
@@ -180,6 +182,8 @@
     <None Include="..\README.md">
       <Link>README.md</Link>
     </None>
+    <None Include="Array_\FizzBuzz\FizzBuzz.md" />
+    <None Include="Array_\FizzBuzz\FizzBuzz1Standard.md" />
     <None Include="Array_\MagicIndex\MagicIndex.md" />
     <None Include="Array_\MagicIndex\MagicIndex1BruteForce.md" />
     <None Include="Array_\MagicIndex\MagicIndex2BinarySearch.md" />
