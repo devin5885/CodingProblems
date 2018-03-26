@@ -2,6 +2,7 @@
 
 ## Arrays and Strings
 
+[Fizz Buzz](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FizzBuzz)  
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
 [CtCI 1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
