@@ -4,7 +4,8 @@
 
 [Fizz Buzz](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FizzBuzz)  
 [Find First Non-Repeated Character Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/FindFirstNonRepeatedCharIndex)  
-[Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)
+[Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
+[Compress Simple](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/CompressSimple)  
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
 [CtCI 1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
