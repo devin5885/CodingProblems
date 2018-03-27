@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodingProblems.Palindrome.IsPalindromePermutation
+namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
 {
     /// <summary>
     /// Class that implements IsPalidromePermutation

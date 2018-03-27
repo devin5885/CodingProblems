@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodingProblems.Palindrome.IsPalindromePermutation
+namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
 {
     /// <summary>
-    /// Tests for PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation.
+    /// Tests for PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation.
     /// </summary>
     [TestClass]
-    public class PalindromeIsPalindromePermutation2RunningCountTestsComplete
+    public class PalindromeIsPalindromePermutation1SimpleTestsComplete
     {
         /// <summary>
         /// Test empty string.
@@ -14,61 +14,61 @@ namespace CodingProblems.Palindrome.IsPalindromePermutation
         [TestMethod]
         public void PalindromeStringIsPalindromePermuation1TestEmptyString()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation(string.Empty));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation(string.Empty));
         }
 
         /// <summary>
         /// Test single char string.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test1Char()
+        public void PalindromeStringIsPalindromePermuation1Test1Char()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("a"));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("a"));
         }
 
         /// <summary>
         /// 2 char string, already Palindrome.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test2Char()
+        public void PalindromeStringIsPalindromePermuation1Test2Char()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("aa"));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("aa"));
         }
 
         /// <summary>
         /// 2 char string, not a Palindrome permutation.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test2CharNot()
+        public void PalindromeStringIsPalindromePermuation1Test2CharNot()
         {
-            Assert.IsFalse(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("ab"));
+            Assert.IsFalse(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("ab"));
         }
 
         /// <summary>
         /// 3 char string, not Palindrome permutation.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test3CharNot()
+        public void PalindromeStringIsPalindromePermuation1Test3CharNot()
         {
-            Assert.IsFalse(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("bcd"));
+            Assert.IsFalse(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("bcd"));
         }
 
         /// <summary>
         /// 3 char string, Palindrome permutation.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test3Char()
+        public void PalindromeStringIsPalindromePermuation1Test3Char()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("cbc"));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("cbc"));
         }
 
         /// <summary>
         /// 4 char string, Palindrome permutation.
         /// </summary>
         [TestMethod]
-        public void PalindromeStringIsPalindromePermuation2Test4Char()
+        public void PalindromeStringIsPalindromePermuation1Test4Char()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("cbbc"));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("cbbc"));
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace CodingProblems.Palindrome.IsPalindromePermutation
         [TestMethod]
         public void PalindromeStringIsPalindromePermuation1TestMultipleOdd()
         {
-            Assert.IsFalse(PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation("cbdbce"));
+            Assert.IsFalse(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("cbdbce"));
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace CodingProblems.Palindrome.IsPalindromePermutation
         {
             try
             {
-                PalindromeIsPalindromePermutation2RunningCountComplete.IsPalindromePermutation(null);
+                PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation(null);
             }
             catch
             {

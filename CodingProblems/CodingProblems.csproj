@@ -154,10 +154,10 @@
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveComplete.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveCompleteTests.cs" />
-    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
-    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
-    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
-    <Compile Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountTestsComplete.cs" />
+    <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
+    <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
+    <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
+    <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountTestsComplete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleComplete.cs" />
     <Compile Include="Queue\Stacks\QueueViaStacks1SimpleCompleteTests.cs" />
@@ -266,9 +266,9 @@
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Matrix\PaintFill\PaintFill.md" />
     <None Include="Matrix\PaintFill\PaintFill1Recursive.md" />
-    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
-    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
-    <None Include="Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
+    <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
+    <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
+    <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
     <None Include="Queue\Stacks\QueueViaStacks.md" />
     <None Include="Queue\Stacks\QueueViaStacks1SimpleComplete.md" />
     <None Include="Queue\Stacks\QueueViaStacks2OptimizedComplete.md" />
