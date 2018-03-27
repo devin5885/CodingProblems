@@ -51,6 +51,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMapsComplete.cs" />
+    <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMapsCompleteTests.cs" />
+    <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParseComplete.cs" />
+    <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParseCompleteTests.cs" />
     <Compile Include="Array_\FizzBuzz\FizzBuzz1StandardComplete.cs" />
     <Compile Include="Array_\FizzBuzz\FizzBuzz1STandardCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex1BruteForceComplete.cs" />
@@ -186,6 +190,9 @@
     <None Include="..\README.md">
       <Link>README.md</Link>
     </None>
+    <None Include="Array_\FindMatchingPairs\FindMatchingPairs.md" />
+    <None Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMaps.md" />
+    <None Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParse.md" />
     <None Include="Array_\FizzBuzz\FizzBuzz.md" />
     <None Include="Array_\FizzBuzz\FizzBuzz1Standard.md" />
     <None Include="Array_\MagicIndex\MagicIndex.md" />
