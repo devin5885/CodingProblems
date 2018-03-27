@@ -51,6 +51,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array_\CompressSimple\CompressSimple1StandardComplete.cs" />
+    <Compile Include="Array_\CompressSimple\CompressSimple1StandardCompleteTests.cs" />
     <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMapsComplete.cs" />
     <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMapsCompleteTests.cs" />
     <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParseComplete.cs" />
@@ -190,6 +192,8 @@
     <None Include="..\README.md">
       <Link>README.md</Link>
     </None>
+    <None Include="Array_\CompressSimple\CompressSimple.md" />
+    <None Include="Array_\CompressSimple\CompressSimple1Standard.md" />
     <None Include="Array_\FindMatchingPairs\FindMatchingPairs.md" />
     <None Include="Array_\FindMatchingPairs\FindMatchingPairs1CharCountMaps.md" />
     <None Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParse.md" />
