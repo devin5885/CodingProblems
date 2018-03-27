@@ -7,7 +7,7 @@
 [Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
 [Compress Simple](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/CompressSimple)  
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
-[CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Palindrome/IsPalindromePermutation)  
+[CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/IsPalindromePermutation)  
 [CtCI 1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
 
 ## Linked List (Single)
