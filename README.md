@@ -2,13 +2,14 @@
 
 ## Arrays and Strings
 
-[Fizz Buzz](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FizzBuzz)  
-[Find First Non-Repeated Character Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/FindFirstNonRepeatedCharIndex)  
-[Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
-[Compress Simple](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/CompressSimple)  
+[(Array) Fizz Buzz](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FizzBuzz)  
+[(String) Find First Non-Repeated Character Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/FindFirstNonRepeatedCharIndex)  
+[(Array) Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
+[(Array) Compress Simple](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/CompressSimple)  
+[(String) Find Longest Palindrome](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/FindLongestPalindrome)  
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/IsPalindromePermutation)  
-[CtCI 1.7 - Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
+[CtCI 1.7 - (Array) Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
 
 ## Linked List (Single)
 
