@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
 
 namespace CodingProblems.String_.Palindrome.IsPalindrome
 {
@@ -14,6 +14,10 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// <returns>True if the input string is a palindrome.</returns>
         public static bool IsPalindrome(string input)
         {
+            // Error handling.
+            if (input == null)
+                throw new ArgumentException();
+
             // Initialize references.
             var left = 0;
             var right = input.Length - 1;

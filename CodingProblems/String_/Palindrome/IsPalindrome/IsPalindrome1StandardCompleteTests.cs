@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodingProblems.String_.Palindrome.IsPalindrome
 {
@@ -12,7 +13,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// Tests a one character string.
         /// </summary>
         [TestMethod]
-        public void IsPalindromeTest1OneChar()
+        public void IsPalindrome1StandardCompleteTest1OneChar()
         {
             var actual = IsPalindrome1StandardComplete.IsPalindrome("1");
             Assert.AreEqual(true, actual);
@@ -22,7 +23,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// Tests a simple string that is not a palindrome.
         /// </summary>
         [TestMethod]
-        public void IsPalindromeTest2IsNotAPalindrome()
+        public void IsPalindrome1StandardCompleteTest2IsNotAPalindrome()
         {
             var actual = IsPalindrome1StandardComplete.IsPalindrome("test");
             Assert.AreEqual(false, actual);
@@ -32,7 +33,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// Tests a string with two characters that is a palindrome.
         /// </summary>
         [TestMethod]
-        public void IsPalindromeTest3IsAPalindromeTwoChars()
+        public void IsPalindrome1StandardCompleteTest3IsAPalindromeTwoChars()
         {
             var actual = IsPalindrome1StandardComplete.IsPalindrome("55");
             Assert.AreEqual(true, actual);
@@ -42,7 +43,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// Tests a string with an odd number of characters that is a palindrome.
         /// </summary>
         [TestMethod]
-        public void IsPalindromeTest4IsAPalindromeOddChars()
+        public void IsPalindrome1StandardCompleteTest4IsAPalindromeOddChars()
         {
             var actual = IsPalindrome1StandardComplete.IsPalindrome("aba");
             Assert.AreEqual(true, actual);
@@ -52,10 +53,28 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         /// Tests a string with an even number of characters that is a palindrome.
         /// </summary>
         [TestMethod]
-        public void IsPalindromeTest5IsAPalindromeEvenChars()
+        public void IsPalindrome1StandardCompleteTest5IsAPalindromeEvenChars()
         {
             var actual = IsPalindrome1StandardComplete.IsPalindrome("abba");
             Assert.AreEqual(true, actual);
+        }
+
+        /// <summary>
+        /// Tests null string.
+        /// </summary>
+        [TestMethod]
+        public void IsPalindrome1StandardCompleteTest6IsAPalindromeNullList()
+        {
+            try
+            {
+                IsPalindrome1StandardComplete.IsPalindrome(null);
+            }
+            catch (ArgumentException)
+            {
+                Assert.IsTrue(true);
+                return;
+            }
+            Assert.Fail();
         }
     }
 }
