@@ -181,6 +181,8 @@
     <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForceComplete.cs" />
     <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForceCompleteTests.cs" />
     <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSetCompleteTests.cs" />
+    <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardComplete.cs" />
+    <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardCompleteTests.cs" />
     <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeComplete.cs" />
     <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeComplete.cs" />
@@ -288,6 +290,8 @@
     <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex.md" />
     <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex1BruteForce.md" />
     <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSet.md" />
+    <None Include="String_\Palindrome\IsPalindrome\IsPalindrome.md" />
+    <None Include="String_\Palindrome\IsPalindrome\IsPalindrome1Standard.md" />
     <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates.md" />
     <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterative.md" />
     <None Include="TripleStep\TripleStep.md" />

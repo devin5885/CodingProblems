@@ -1,4 +1,5 @@
 ﻿using System;
+using CodingProblems.String_.Palindrome.IsPalindrome;
 
 namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
 {
@@ -24,39 +25,12 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
                 {
                     // Get the string & see if it is a palindrome.
                     var toCheck = input.Substring(startindex, len - startindex);
-                    if (IsPalindrome(toCheck))
+                    if (IsPalindrome1StandardComplete.IsPalindrome(toCheck))
                         return toCheck;
                 }
 
             // No palindrome found.
             return string.Empty;
-        }
-
-        /// <summary>
-        /// Helper function that checks whether the input item is a palindrome.
-        /// </summary>
-        /// <param name="input">The input string.</param>
-        /// <returns>True if the specified string is a Palindrome.</returns>
-        private static bool IsPalindrome(string input)
-        {
-            // Error handling.
-            if (input == null)
-                throw new ArgumentException();
-
-            // Initialize refs.
-            var left = 0;
-            var right = input.Length - 1;
-
-            // See if strings match.
-            while (left <= right)
-            {
-                // Strings don't match.
-                if (input[left++] != input[right--])
-                    return false;
-            }
-
-            // Match.
-            return true;
         }
     }
 }
