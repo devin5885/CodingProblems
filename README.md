@@ -6,6 +6,7 @@
 [(String) Find First Non-Repeated Character Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/FindFirstNonRepeatedCharIndex)  
 [(Array) Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
 [(Array) Compress Simple](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/CompressSimple)  
+[(String) Is Palindrome](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/IsPalindrome)  
 [(String) Find Longest Palindrome](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/FindLongestPalindrome)  
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/IsPalindromePermutation)  
