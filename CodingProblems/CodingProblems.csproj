@@ -154,6 +154,10 @@
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveComplete.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveCompleteTests.cs" />
+    <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForceComplete.cs" />
+    <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForceCompleteTests.cs" />
+    <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchorsComplete.cs" />
+    <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchorsCompleteTests.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
@@ -266,6 +270,9 @@
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Matrix\PaintFill\PaintFill.md" />
     <None Include="Matrix\PaintFill\PaintFill1Recursive.md" />
+    <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForce.md" />
+    <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome.md" />
+    <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchors.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
