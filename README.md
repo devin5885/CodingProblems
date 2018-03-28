@@ -20,6 +20,7 @@
 
 ## Stacks and Queues
 
+[(String) Is Palindrome Using Stacks](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/IsPalindrome)  
 [Fixed Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/FixedSize)  
 [Unlimited Size Stack Using Array](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Stack/UsingArray/UnlimitedSize)  
 [CtCI 3.1 - (Stacks) Three In One](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/MultipleStacksUsingSingleArray)  
