@@ -21,6 +21,7 @@ namespace CodingProblems.Stack.IsPalindrome
 
             // Build the forward stack.
             var stackForward = new Stack<char>();
+            // ReSharper disable once ForCanBeConvertedToForeach
             for (var i = 0; i < input.Length; i++)
             {
                 stackForward.Push(input[i]);
