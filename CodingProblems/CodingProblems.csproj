@@ -185,8 +185,10 @@
     <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSetCompleteTests.cs" />
     <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardCompleteTests.cs" />
-    <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeComplete.cs" />
-    <Compile Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterativeCompleteTests.cs" />
+    <Compile Include="String_\Permutations\GetPermutations1NoDuplicatesByCharComplete.cs" />
+    <Compile Include="String_\Permutations\GetPermutations1NoDuplicatesByCharCompleteTests.cs" />
+    <Compile Include="String_\Permutations\GetPermutations2UseDictionaryComplete.cs" />
+    <Compile Include="String_\Permutations\GetPermutations2UseDictionaryCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeComplete.cs" />
     <Compile Include="TripleStep\TripleStep2ComputeAndCountIterativeCompleteTests.cs" />
     <Compile Include="TripleStep\TripleStep1ComputeAndCountRecursiveComplete.cs" />
@@ -296,8 +298,9 @@
     <None Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSet.md" />
     <None Include="String_\Palindrome\IsPalindrome\IsPalindrome.md" />
     <None Include="String_\Palindrome\IsPalindrome\IsPalindrome1Standard.md" />
-    <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates.md" />
-    <None Include="String_\Permutations\NoDuplicates\PermutationsStringNoDuplicates1ByCharIterative.md" />
+    <None Include="String_\Permutations\GetPermutations.md" />
+    <None Include="String_\Permutations\GetPermutations1NoDuplicatesByChar.md" />
+    <None Include="String_\Permutations\GetPermutations2UseDictionary.md" />
     <None Include="TripleStep\TripleStep.md" />
     <None Include="TripleStep\TripleStep2ComputeAndCountIterative.md" />
     <None Include="TripleStep\TripleStep1ComputeAndCountRecursive.md" />

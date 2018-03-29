@@ -1,12 +1,9 @@
-# Permutations without Duplicates
-
-- From Cracking the Coding Interview, Interview Questions 8.7
+# Get Permutations
 
 ---
 
 ## Problem
-Write a method to compute all permutations of a string of unique
-characters.
+Write a method to compute all permutations of a string.
 
 ---
 
@@ -24,7 +21,5 @@ characters.
 ---
 
 ## Solutions
-1. By Char Iterative - Generate permutations by processing the array character
-by character and building & storing the resulting permutations.
-
-2. By Substring - Generate permutations by processing sets of characters. (TODO-Future)
+1. No Duplicates By Char Iterative - Generate permutations by processing the
+array character by character and building & storing the resulting permutations.

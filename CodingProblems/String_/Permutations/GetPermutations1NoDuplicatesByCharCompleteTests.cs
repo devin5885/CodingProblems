@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodingProblems.String_.Permutations.NoDuplicates
+namespace CodingProblems.String_.Permutations
 {
     /// <summary>
-    /// Tests PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations
+    /// Tests GetPermutations
     /// </summary>
     [TestClass]
-    public class PermutationsStringNoDuplicates1ByCharIterativeCompleteTests
+    public class GetPermutations1NoDuplicatesByCharCompleteTests
     {
         /// <summary>
         /// Test null string.
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTestNullString()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTestNullString()
         {
             var expected = new List<string>();
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(null);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(null);
             CollectionAssert.AreEqual(expected, actual);
         }
 
@@ -25,11 +25,11 @@ namespace CodingProblems.String_.Permutations.NoDuplicates
         /// Test empty string.
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTestEmptyString()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTestEmptyString()
         {
             var expected = new List<string>();
             var str = string.Empty;
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(str);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
             CollectionAssert.AreEqual(expected, actual);
         }
 
@@ -37,11 +37,11 @@ namespace CodingProblems.String_.Permutations.NoDuplicates
         /// Test single char string.
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTest1Char()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTest1Char()
         {
             var expected = new List<string>() { "a" };
             var str = "a";
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(str);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
             CollectionAssert.AreEqual(expected, actual);
         }
 
@@ -49,11 +49,11 @@ namespace CodingProblems.String_.Permutations.NoDuplicates
         /// Test 2 char string.
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTest2Char()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTest2Char()
         {
             var expected = new List<string>() { "ab", "ba" };
             var str = "ab";
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(str);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.
             // The algorithm itself doesn't guarantee any particular order.
@@ -66,11 +66,11 @@ namespace CodingProblems.String_.Permutations.NoDuplicates
         /// Result 6 perms 3!
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTest3Char()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTest3Char()
         {
             var expected = new List<string>() { "abc", "acb", "bac", "bca", "cab", "cba" };
             var str = "abc";
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(str);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.
             // The algorithm itself doesn't guarantee any particular order.
@@ -83,11 +83,11 @@ namespace CodingProblems.String_.Permutations.NoDuplicates
         /// Result 24 perms 4!
         /// </summary>
         [TestMethod]
-        public void PermutationsStringNoDuplicates1ByCharRecursiveCompleteTest4Char()
+        public void GetPermutations1NoDuplicatesByCharCompleteTestsTest4Char()
         {
             var expected = new List<string>() { "abcd", "abdc", "acbd", "acdb", "adbc", "adcb", "bacd", "badc", "bcad", "bcda", "bdac", "bdca", "cabd", "cadb", "cbad", "cbda", "cdab", "cdba", "dabc", "dacb", "dbac", "dbca", "dcab", "dcba" };
             var str = "abcd";
-            var actual = PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations(str);
+            var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.
             // The algorithm itself doesn't guarantee any particular order.

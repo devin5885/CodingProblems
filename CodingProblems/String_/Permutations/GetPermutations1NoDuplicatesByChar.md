@@ -1,6 +1,9 @@
-# Permutations without Duplicates - Solution 1 - By Char Iterative
+# Get Permutations Solution 1 - No Duplictes By Char Iterative
+
+- From Cracking the Coding Interview, Interview Questions 8.7
 
 ## Additional Requirements
+- No duplicate characters allowed in the string.
 
 ---
 
@@ -37,9 +40,11 @@ Space: O(n!) where n is the length of the string.
 ---
 
 ## Notes
-- This is not very efficient, however since we must generate all possibilities we
-cannot improve this.
-
 - This is similar to the first CtCI solution, but is implemented iteratively &
 implements the string building in-line.
+
+- This solution would create duplicate permutations if the string contains
+duplicate characters, this could be resolved by removing duplicate values
+from the resulting array, however this would be inefficient, so this solution
+is not used for the duplicate character case.
 

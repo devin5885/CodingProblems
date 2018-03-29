@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodingProblems.String_.Permutations.NoDuplicates
+namespace CodingProblems.String_.Permutations
 {
     /// <summary>
-    /// Implements PermutationsStringNoDuplicates1ByCharIterativeComplete.GetPermutations
+    /// Implements GetPermutations
     /// </summary>
-    public static class PermutationsStringNoDuplicates1ByCharIterativeComplete
+    public static class GetPermutations1NoDuplicatesByCharComplete
     {
         /// <summary>
-        /// Generates and returns the list of permutations.
+        /// Generates and returns a list of permutations.
         /// </summary>
         /// <param name="str">The string to parse.</param>
         /// <returns>The list of permutations.</returns>
