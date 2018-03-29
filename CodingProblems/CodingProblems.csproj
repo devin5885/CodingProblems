@@ -160,6 +160,8 @@
     <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForceCompleteTests.cs" />
     <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchorsComplete.cs" />
     <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchorsCompleteTests.cs" />
+    <Compile Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations1StandardComplete.cs" />
+    <Compile Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations1StandardCompleteTests.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1SimpleTestsComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCountComplete.cs" />
@@ -281,6 +283,8 @@
     <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForce.md" />
     <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome.md" />
     <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchors.md" />
+    <None Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations.md" />
+    <None Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations1Standard.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
