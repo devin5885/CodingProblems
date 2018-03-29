@@ -187,6 +187,8 @@
     <Compile Include="String_\FindFirstNonRepeatedCharIndex\FindFirstNonRepeatedCharIndex2UseHashSetCompleteTests.cs" />
     <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardComplete.cs" />
     <Compile Include="String_\Palindrome\IsPalindrome\IsPalindrome1StandardCompleteTests.cs" />
+    <Compile Include="String_\Palindrome\GetMakePalindromeStepCount\GetMakePalindromeStepCount1StandardComplete.cs" />
+    <Compile Include="String_\Palindrome\GetMakePalindromeStepCount\GetMakePalindromeStepCount1StandardCompleteTests.cs" />
     <Compile Include="String_\Permutations\GetPermutations1NoDuplicatesByCharComplete.cs" />
     <Compile Include="String_\Permutations\GetPermutations1NoDuplicatesByCharCompleteTests.cs" />
     <Compile Include="String_\Permutations\GetPermutations2UseDictionaryComplete.cs" />
@@ -285,6 +287,8 @@
     <None Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome2UseAnchors.md" />
     <None Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations.md" />
     <None Include="String_\Palindrome\FindPalindromePermutations\FindPalindromePermutations1Standard.md" />
+    <None Include="String_\Palindrome\GetMakePalindromeStepCount\GetMakePalindromeStepCount.md" />
+    <None Include="String_\Palindrome\GetMakePalindromeStepCount\GetMakePalindromeStepCount1Standard.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation1Simple.md" />
     <None Include="String_\Palindrome\IsPalindromePermutation\PalindromeIsPalindromePermutation2RunningCount.md" />
