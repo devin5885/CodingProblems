@@ -69,6 +69,12 @@
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsCompleteTests.cs" />
+    <Compile Include="Array_\Sort\ArraySort1BubbleSortComplete.cs" />
+    <Compile Include="Array_\Sort\ArraySort1BubbleSortCompleteTests.cs" />
+    <Compile Include="Array_\Sort\ArraySort2SelectionSortComplete.cs" />
+    <Compile Include="Array_\Sort\ArraySort2SelectionSortCompleteTests.cs" />
+    <Compile Include="Array_\Sort\ArraySort3InsertionSortComplete.cs" />
+    <Compile Include="Array_\Sort\ArraySort3InsertionSortCompleteTests.cs" />
     <Compile Include="Array_\StackOfBoxes\Box.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
@@ -220,6 +226,10 @@
     <None Include="Array_\PowerSet\PowerSet.md" />
     <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
     <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
+    <None Include="Array_\Sort\ArraySort.md" />
+    <None Include="Array_\Sort\ArraySort1BubbleSort.md" />
+    <None Include="Array_\Sort\ArraySort2SelectionSort.md" />
+    <None Include="Array_\Sort\ArraySort3InsertionSort.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCount.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
