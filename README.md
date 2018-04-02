@@ -2,6 +2,7 @@
 
 ## Arrays and Strings
 
+[(Array) Sort](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/Sort)  
 [(Array) Fizz Buzz](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FizzBuzz)  
 [(String) Find First Non-Repeated Character Index](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/FindFirstNonRepeatedCharIndex)  
 [(Array) Find Matching Pairs](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/FindMatchingPairs)  
