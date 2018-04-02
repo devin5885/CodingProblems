@@ -65,6 +65,10 @@
     <Compile Include="Array_\MagicIndex\MagicIndex2BinarySearchCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicatesComplete.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicatesCompleteTests.cs" />
+    <Compile Include="Array_\MergeSorted\ArrayMergeSorted1SimpleComplete.cs" />
+    <Compile Include="Array_\MergeSorted\ArrayMergeSorted1SimpleCompleteTests.cs" />
+    <Compile Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoopComplete.cs" />
+    <Compile Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoopCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveComplete.cs" />
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
@@ -223,6 +227,9 @@
     <None Include="Array_\MagicIndex\MagicIndex1BruteForce.md" />
     <None Include="Array_\MagicIndex\MagicIndex2BinarySearch.md" />
     <None Include="Array_\MagicIndex\MagicIndex3BinarySearchAllowDuplicates.md" />
+    <None Include="Array_\MergeSorted\ArrayMergeSorted.md" />
+    <None Include="Array_\MergeSorted\ArrayMergeSorted1Simple.md" />
+    <None Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoop.md" />
     <None Include="Array_\PowerSet\PowerSet.md" />
     <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
     <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
