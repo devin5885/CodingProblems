@@ -79,6 +79,8 @@
     <Compile Include="Array_\Sort\ArraySort2SelectionSortCompleteTests.cs" />
     <Compile Include="Array_\Sort\ArraySort3InsertionSortComplete.cs" />
     <Compile Include="Array_\Sort\ArraySort3InsertionSortCompleteTests.cs" />
+    <Compile Include="Array_\Sort\ArraySort4MergeSortSimpleComplete.cs" />
+    <Compile Include="Array_\Sort\ArraySort4MergeSortSimpleCompleteTests.cs" />
     <Compile Include="Array_\StackOfBoxes\Box.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
@@ -237,6 +239,7 @@
     <None Include="Array_\Sort\ArraySort1BubbleSort.md" />
     <None Include="Array_\Sort\ArraySort2SelectionSort.md" />
     <None Include="Array_\Sort\ArraySort3InsertionSort.md" />
+    <None Include="Array_\Sort\ArraySort4MergeSortSimple.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCount.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />

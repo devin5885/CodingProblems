@@ -31,7 +31,7 @@ to true. This loop will sort lowest elements to the left end of the array.
 6. Continue the outer loop until all elements are processed or no
 swaps have occurred on the inner loop.
 
-7. Return the resulting array.
+7. The array is now sorted, return.
 
 #### Complexity
 Time: O(n^2) where n is the length of the array.  

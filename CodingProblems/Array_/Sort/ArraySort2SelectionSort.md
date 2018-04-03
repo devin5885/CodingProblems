@@ -27,7 +27,7 @@ now sorted.
 
 4. Continue until all elements are sorted.
 
-5. Return the resulting array.
+5. The array is now sorted, return.
 
 #### Complexity
 Time: O(n^2) where n is the length of the array.  

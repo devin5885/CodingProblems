@@ -89,6 +89,19 @@ namespace CodingProblems.Array_.Sort
         }
 
         /// <summary>
+        /// Tests an array with two elements.
+        /// </summary>
+        [TestMethod]
+        public void ArraySort2SelectionSortCompleteTestTwoElements()
+        {
+            var nums = new List<int> { 5, 3 };
+            ArraySort2SelectionSortComplete.Sort(nums);
+
+            var numsResult = new List<int> { 3, 5 };
+            CollectionAssert.AreEqual(nums, numsResult);
+        }
+
+        /// <summary>
         /// Tests a null array.
         /// </summary>
         [TestMethod]

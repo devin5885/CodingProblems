@@ -35,7 +35,7 @@ the temp location.
 
 6. Continue with outer loop until all elements are sorted.
 
-7. Return the resulting array.
+7. The array is now sorted, return.
 
 #### Complexity
 Time: O(n^2) where n is the length of the array.  
