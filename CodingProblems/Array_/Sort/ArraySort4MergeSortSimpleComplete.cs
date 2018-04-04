@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CodingProblems.Array_.Merge;
+using CodingProblems.Array_.MergeSorted;
 
 namespace CodingProblems.Array_.Sort
 {
