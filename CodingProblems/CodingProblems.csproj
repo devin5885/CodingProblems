@@ -157,6 +157,10 @@
     <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates1HashSetCompleteTests.cs" />
     <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.cs" />
     <Compile Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit1BruteForceComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit1BruteForceCompleteTests.cs" />
+    <Compile Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit2FastSlowComplete.cs" />
+    <Compile Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit2FastSlowCompleteTests.cs" />
     <Compile Include="Matrix\Helpers\MatrixHelpers.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1Complete.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1CompleteTests.cs" />
@@ -291,6 +295,9 @@
     <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates.md" />
     <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates1HashSet.md" />
     <None Include="LinkedList\SingleLink\RemoveDuplicates\LinkedListSingleRemoveDuplicates2NoAdditionalDS.md" />
+    <None Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit.md" />
+    <None Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit1BruteForce.md" />
+    <None Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit2FastSlow.md" />
     <None Include="Matrix\Rotate\MatrixRotate.md" />
     <None Include="Matrix\Rotate\MatrixRotate1.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
