@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodingProblems.Array_.Merge
+namespace CodingProblems.Array_.MergeSorted
 {
     /// <summary>
     /// Implements Merge
@@ -31,6 +31,7 @@ namespace CodingProblems.Array_.Merge
             while (element1Curr < input1.Count && element2Curr < input2.Count)
             {
                 // Take input1.
+                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
                 if (input1[element1Curr] < input2[element2Curr])
                 {
                     result.Add(input1[element1Curr++]);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodingProblems.Array_.Merge
+namespace CodingProblems.Array_.MergeSorted
 {
     /// <summary>
     /// This class tests Merge.

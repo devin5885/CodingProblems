@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodingProblems.Array_.Merge
+namespace CodingProblems.Array_.MergeSorted
 {
     /// <summary>
     /// Implements Merge
@@ -20,10 +20,10 @@ namespace CodingProblems.Array_.Merge
             if (input1 == null || input2 == null)
                 throw new ArgumentException();
 
-            // Init result.
+            // Initialize result.
             var result = new List<int>();
 
-            // init refs.
+            // initialize refs.
             var list1Curr = 0;
             var list2Curr = 0;
 
