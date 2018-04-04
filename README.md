@@ -18,6 +18,7 @@
 
 ## Linked List (Single)
 
+[Reverse](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Reverse)  
 [Split](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Split)  
 [CtCI 2.1 - Remove Duplicates](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/RemoveDuplicates)  
 [CtCI 2.4 - Partition](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/LinkedList/SingleLink/Partition)  
