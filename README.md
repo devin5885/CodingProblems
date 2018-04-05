@@ -34,6 +34,9 @@
 
 ## Trees and Graphs
 
+[(Binary Tree) In-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/InOrder)   
+[(Binary Tree) Pre-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/PreOrder)  
+[(Binary Tree) Post-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/PostOrder)  
 [(Binary Tree) Get Height](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/GetHeight)  
 [CtCI 4.1 - (Graph) Route Between Nodes](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Graph/RouteBetweenNodes)  
 [CtCI 4.4 - (Binary Tree) Check Balanced](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/CheckBalanced)  
