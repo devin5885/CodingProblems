@@ -94,6 +94,10 @@
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeComplete.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
+    <Compile Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder1RecursiveComplete.cs" />
+    <Compile Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder1RecursiveCompleteTests.cs" />
+    <Compile Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder2IterativeComplete.cs" />
+    <Compile Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder2IterativeCompleteTests.cs" />
     <Compile Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1Complete.cs" />
     <Compile Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1CompleteTests.cs" />
     <Compile Include="BitManipulation\GetBitCount\BitManipulationGetBitCount1ConvertToStringComplete.cs" />
@@ -254,6 +258,9 @@
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight1Recursive.md" />
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight2Iterative.md" />
+    <None Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder.md" />
+    <None Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder1Iterative.md" />
+    <None Include="BinaryTree\Traverse\PreOrder\BinaryTreeTraversePreOrder1Recursive.md" />
     <None Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask.md" />
     <None Include="BitManipulation\CreatePatternMask\BitManipulationCreatePatternMask1.md" />
     <None Include="BitManipulation\GetBitCount\BitManipulationGetBitCount.md" />

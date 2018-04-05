@@ -357,7 +357,7 @@
             // Tree13 (Non-balanced root)
             //     1
             //   2 |
-            // 4 |
+            // 3 |
             // Height = 3
             // IsBST = False
             // Balanced = False
