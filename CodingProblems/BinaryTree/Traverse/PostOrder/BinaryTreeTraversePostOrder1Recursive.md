@@ -35,7 +35,7 @@ could be null).
 3. Call the method recursively passing the left child of the node (which
 could be null).
 
-5. Visit the node.
+4. Add the node to the result list.
 
 #### Complexity
 Time: O(n) where n is the number of nodes in the tree.  

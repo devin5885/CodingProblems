@@ -23,9 +23,9 @@ return the empty list.
 
 5. Pop the top node from the stack & add to list.
 
-6. Push the right node onto the stack.
+6. If non-null push the left node onto the first stack.
 
-7. Push the left node onto the stack.
+7. If non-null push the left node onto the first stack.
 
 8. Go to Step 4.
 

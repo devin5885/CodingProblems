@@ -1,4 +1,4 @@
-# Traverse Pre-Order - Solution 1 - Recursive
+# Traverse In-Order - Solution 1 - Recursive
 
 ## Additional Requirements
 
@@ -9,12 +9,12 @@
 
 ---
 
-### TraversePreOrder
+### TraverseInOrder
 
 #### Steps
 1. Create an initialize the return list.
 
-2. Call TraversePreOrderHelper to generate the list.
+2. Call TraverseInOrderHelper to generate the list.
 
 3. Return the list.
 
@@ -24,15 +24,15 @@ Space: O(n) where n is the number of nodes in the tree.
 
 ---
 
-### TraversePreOrderHelper
+### TraverseInOrderHelper
 
 #### Steps
 1. Check whether the passed in node is null, if so return.
 
-2. Add the node to the result list.
-
-3. Call the method recursively passing the right child of the node (which
+2. Call the method recursively passing the right child of the node (which
 could be null).
+
+3. Add the node to the result list.
 
 4. Call the method recursively passing the left child of the node (which
 could be null).

@@ -374,9 +374,9 @@
 
             // Tree14 (4 level)
             //          1
-            //        2 | 3
-            //      4 |   | 5
-            //    6 |       | 7
+            //        2 |  3
+            //      4 |  5 |
+            //    6 |   7 |
             // Height = 4
             // IsBST = No
             // Balanced = False - Sub-trees not balanced.

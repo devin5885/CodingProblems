@@ -26,7 +26,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         /// </summary>
         /// <param name="binaryTree">The binary tree.</param>
         /// <param name="postOrder">The resulting post-order list.</param>
-        public static void TraversePostOrderHelper(BinaryTreeNode<int> binaryTree, List<int> postOrder)
+        private static void TraversePostOrderHelper(BinaryTreeNode<int> binaryTree, List<int> postOrder)
         {
             if (binaryTree != null)
             {

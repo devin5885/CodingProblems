@@ -26,7 +26,7 @@ namespace CodingProblems.BinaryTree.Traverse.PreOrder
         /// </summary>
         /// <param name="binaryTree">The binary tree.</param>
         /// <param name="preOrder">The resulting pre-order list.</param>
-        public static void TraversePreOrderHelper(BinaryTreeNode<int> binaryTree, List<int> preOrder)
+        private static void TraversePreOrderHelper(BinaryTreeNode<int> binaryTree, List<int> preOrder)
         {
             if (binaryTree != null)
             {
