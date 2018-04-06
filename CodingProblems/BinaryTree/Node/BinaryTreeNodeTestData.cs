@@ -416,11 +416,11 @@
             //        2    |   3
             //        | 4     5 | 6
             // Height = 3
-            // IsBST =
-            // Balanced =
+            // IsBST = No
+            // Balanced = True
             // Complete = False
             // Full = False
-            // Perfect =
+            // Perfect = False
             Tree15 = new BinaryTreeNode<int>(1)
             {
                 Left = new BinaryTreeNode<int>(2)
@@ -440,11 +440,11 @@
             //         4   |   5         6    |
             //       7 | 8   9 | 10   11 | 12
             // Height = 4
-            // IsBST =
-            // Balanced =
+            // IsBST = No
+            // Balanced = False
             // Complete = False
             // Full = False
-            // Perfect =
+            // Perfect = False
             Tree16 = new BinaryTreeNode<int>(1)
             {
                 Left = new BinaryTreeNode<int>(2)

@@ -15,12 +15,9 @@ namespace CodingProblems.BinaryTree.CheckBalanced
         [TestMethod]
         public void BinaryTreeCheckBalanced1RecursiveCompleteTest1()
         {
-            // Primary test cases.
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree5));
             Assert.IsFalse(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree13));
             Assert.IsFalse(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree14));
-
-            // Additional test cases (All balanced).
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree1));
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree2));
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree3));
@@ -32,6 +29,8 @@ namespace CodingProblems.BinaryTree.CheckBalanced
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree10));
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree11));
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree12));
+            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree15));
+            Assert.IsFalse(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree16));
 
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree41));
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree51));

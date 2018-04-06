@@ -15,16 +15,11 @@ namespace CodingProblems.BinaryTree.CheckBalanced
         [TestMethod]
         public void BinaryTreeCheckBalanced2OptimizedCompleteTest1()
         {
-            // Primary test cases.
-            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree5));
-            Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree13));
-            Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree14));
-
-            // Additional test cases (All balanced).
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree1));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree2));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree3));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree4));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree5));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree6));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree7));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree8));
@@ -32,6 +27,10 @@ namespace CodingProblems.BinaryTree.CheckBalanced
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree10));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree11));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree12));
+            Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree13));
+            Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree14));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree15));
+            Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree16));
 
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree41));
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree51));

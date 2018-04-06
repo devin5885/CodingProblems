@@ -8,11 +8,7 @@
 Use a DFS like strategy to walk the tree nodes level by level
 checking for incomplete sub-trees.
 
----
-
-### IsFull
-To determine this we will traverse the tree using a BFS like strategy, we will
-use a list instead of a queue to store nodes so that we can determine what le
+### IsPerfect
 
 #### Steps
 1. Check whether the binary tree is null, if so return true.
