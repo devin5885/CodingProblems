@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CodingProblems.BinaryTree.IsComplete
 {
     /// <summary>
-    /// Tests IsBinaryTreeComplete.
+    /// Tests IsComplete.
     /// </summary>
     [TestClass]
     public class BinaryTreeIsComplete1CompleteTests
@@ -16,23 +16,23 @@ namespace CodingProblems.BinaryTree.IsComplete
         [TestMethod]
         public void TestIsBinaryTreeComplete1CompleteAllTests()
         {
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(null));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree1));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree2));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree3));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree4));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree5));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree6));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree7));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree8));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree9));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree10));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree11));
-            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree12));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree13));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree14));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree15));
-            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsBinaryTreeComplete(BinaryTreeNodeTestData.Tree16));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(null));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree1));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree2));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree3));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree4));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree5));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree6));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree7));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree8));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree9));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree10));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree11));
+            Assert.IsTrue(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree12));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree13));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree14));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree15));
+            Assert.IsFalse(BinaryTreeIsComplete1Complete.IsComplete(BinaryTreeNodeTestData.Tree16));
         }
     }
 }

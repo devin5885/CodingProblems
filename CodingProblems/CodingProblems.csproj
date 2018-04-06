@@ -94,6 +94,8 @@
     <Compile Include="BinaryTree\GetHeight\BinaryTreeGetHeight2IterativeComplete.cs" />
     <Compile Include="BinaryTree\IsComplete\BinaryTreeIsComplete1Complete.cs" />
     <Compile Include="BinaryTree\IsComplete\BinaryTreeIsComplete1CompleteTests.cs" />
+    <Compile Include="BinaryTree\IsFull\BinaryTreeIsFull1Complete.cs" />
+    <Compile Include="BinaryTree\IsFull\BinaryTreeIsFull1CompleteTests.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
     <Compile Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder1RecursiveComplete.cs" />
@@ -270,6 +272,8 @@
     <None Include="BinaryTree\GetHeight\BinaryTreeGetHeight2Iterative.md" />
     <None Include="BinaryTree\IsComplete\BinaryTreeIsComplete.md" />
     <None Include="BinaryTree\IsComplete\BinaryTreeIsComplete1.md" />
+    <None Include="BinaryTree\IsFull\BinaryTreeIsFull.md" />
+    <None Include="BinaryTree\IsFull\BinaryTreeIsFull1.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder1Recursive.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder2Iterative.md" />

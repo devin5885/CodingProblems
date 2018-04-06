@@ -419,7 +419,7 @@
             // IsBST =
             // Balanced =
             // Complete = False
-            // Full =
+            // Full = False
             // Perfect =
             Tree15 = new BinaryTreeNode<int>(1)
             {
@@ -443,7 +443,7 @@
             // IsBST =
             // Balanced =
             // Complete = False
-            // Full =
+            // Full = False
             // Perfect =
             Tree16 = new BinaryTreeNode<int>(1)
             {

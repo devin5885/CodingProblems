@@ -5,7 +5,7 @@ using CodingProblems.BinaryTree.Node;
 namespace CodingProblems.BinaryTree.IsComplete
 {
     /// <summary>
-    /// Implements IsBinaryTreeComplete
+    /// Implements IsComplete
     /// </summary>
     public static class BinaryTreeIsComplete1Complete
     {
@@ -14,7 +14,7 @@ namespace CodingProblems.BinaryTree.IsComplete
         /// </summary>
         /// <param name="binaryTree">The tree</param>
         /// <returns>True if the tree is complete, false otherwise.</returns>
-        public static bool IsBinaryTreeComplete(BinaryTreeNode<int> binaryTree)
+        public static bool IsComplete(BinaryTreeNode<int> binaryTree)
         {
             // Check for null.
             if (binaryTree == null)
