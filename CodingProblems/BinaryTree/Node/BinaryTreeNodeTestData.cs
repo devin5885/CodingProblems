@@ -76,6 +76,16 @@
         public static readonly BinaryTreeNode<int> Tree14;
 
         /// <summary>
+        /// Tree15
+        /// </summary>
+        public static readonly BinaryTreeNode<int> Tree15;
+
+        /// <summary>
+        /// Tree16
+        /// </summary>
+        public static readonly BinaryTreeNode<int> Tree16;
+
+        /// <summary>
         /// SubTree41
         /// </summary>
         public static readonly BinaryTreeNode<int> SubTree41;
@@ -398,6 +408,65 @@
                     {
                         Left = new BinaryTreeNode<int>(7)
                     }
+                }
+            };
+
+            // Tree15 (3 level) with missing left on last level.
+            //             1
+            //        2    |   3
+            //        | 4     5 | 6
+            // Height = 3
+            // IsBST =
+            // Balanced =
+            // Complete = False
+            // Full =
+            // Perfect =
+            Tree15 = new BinaryTreeNode<int>(1)
+            {
+                Left = new BinaryTreeNode<int>(2)
+                {
+                    Right = new BinaryTreeNode<int>(4)
+                },
+                Right = new BinaryTreeNode<int>(3)
+                {
+                    Left = new BinaryTreeNode<int>(5),
+                    Right = new BinaryTreeNode<int>(6)
+                }
+            };
+
+            // Tree16 (4 level) Missing right on non-last level.
+            //                     1
+            //             2       |          3
+            //         4   |   5         6    |
+            //       7 | 8   9 | 10   11 | 12
+            // Height = 4
+            // IsBST =
+            // Balanced =
+            // Complete = False
+            // Full =
+            // Perfect =
+            Tree16 = new BinaryTreeNode<int>(1)
+            {
+                Left = new BinaryTreeNode<int>(2)
+                {
+                    Left = new BinaryTreeNode<int>(4)
+                    {
+                        Left = new BinaryTreeNode<int>(7),
+                        Right = new BinaryTreeNode<int>(8)
+                    },
+                    Right = new BinaryTreeNode<int>(5)
+                    {
+                        Left = new BinaryTreeNode<int>(9),
+                        Right = new BinaryTreeNode<int>(10)
+                    },
+                },
+                Right = new BinaryTreeNode<int>(3)
+                {
+                    Left = new BinaryTreeNode<int>(6)
+                    {
+                        Left = new BinaryTreeNode<int>(11),
+                        Right = new BinaryTreeNode<int>(12)
+                    },
                 }
             };
         }
