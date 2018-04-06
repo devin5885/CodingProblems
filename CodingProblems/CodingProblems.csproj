@@ -96,6 +96,8 @@
     <Compile Include="BinaryTree\IsComplete\BinaryTreeIsComplete1CompleteTests.cs" />
     <Compile Include="BinaryTree\IsFull\BinaryTreeIsFull1Complete.cs" />
     <Compile Include="BinaryTree\IsFull\BinaryTreeIsFull1CompleteTests.cs" />
+    <Compile Include="BinaryTree\IsPerfect\BinaryTreeIsPerfect1Complete.cs" />
+    <Compile Include="BinaryTree\IsPerfect\BinaryTreeIsPerfect1CompleteTests.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNode.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestData.cs" />
     <Compile Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder1RecursiveComplete.cs" />
@@ -274,6 +276,8 @@
     <None Include="BinaryTree\IsComplete\BinaryTreeIsComplete1.md" />
     <None Include="BinaryTree\IsFull\BinaryTreeIsFull.md" />
     <None Include="BinaryTree\IsFull\BinaryTreeIsFull1.md" />
+    <None Include="BinaryTree\IsPerfect\BinaryTreeIsPerfect.md" />
+    <None Include="BinaryTree\IsPerfect\BinaryTreeIsPerfect1.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder1Recursive.md" />
     <None Include="BinaryTree\Traverse\InOrder\BinaryTreeTraverseInOrder2Iterative.md" />
