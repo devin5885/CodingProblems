@@ -34,6 +34,10 @@
 
 ## Trees and Graphs
 
+[(Binary Tree) Is Binary Search Tree](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/IsBinarySearchTree)   
+[(Binary Tree) Is Complete](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/IsComplete)   
+[(Binary Tree) Is Full](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/IsFull)   
+[(Binary Tree) Is Perfect](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/IsPerfect)   
 [(Binary Tree) In-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/InOrder)   
 [(Binary Tree) Pre-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/PreOrder)  
 [(Binary Tree) Post-Order Traversal](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/BinaryTree/Traverse/PostOrder)  
