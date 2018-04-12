@@ -75,6 +75,11 @@
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsCompleteTests.cs" />
+    <Compile Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize1BruteForceComplete.cs" />
+    <Compile Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize1BruteForceCompleteTests.cs" />
+    <Compile Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize2BinarySearchComplete.cs" />
+    <Compile Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize2BinarySearchCompleteTests.cs" />
+    <Compile Include="Array_\SearchSortedNoSize\Listy.cs" />
     <Compile Include="Array_\Sort\ArraySort1BubbleSortComplete.cs" />
     <Compile Include="Array_\Sort\ArraySort1BubbleSortCompleteTests.cs" />
     <Compile Include="Array_\Sort\ArraySort2SelectionSortComplete.cs" />
@@ -265,6 +270,9 @@
     <None Include="Array_\PowerSet\PowerSet.md" />
     <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
     <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
+    <None Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize.md" />
+    <None Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize1BruteForce.md" />
+    <None Include="Array_\SearchSortedNoSize\ArraySearchSortedNoSize2BinarySearch.md" />
     <None Include="Array_\Sort\ArraySort.md" />
     <None Include="Array_\Sort\ArraySort1BubbleSort.md" />
     <None Include="Array_\Sort\ArraySort2SelectionSort.md" />
