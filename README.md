@@ -15,7 +15,8 @@
 [CtCI 1.1 - (String) IsUnique](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/IsUnique/String)  
 [CtCI 1.4 - (String) IsPalindromePermutation](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/String_/Palindrome/IsPalindromePermutation)  
 [CtCI 1.7 - (Array) Matrix Rotate](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Matrix/Rotate)  
-[CtCI 10.1 (Array) MergeSortedInline](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/MergeSortedInline)  
+[CtCI 10.1 (Array) Merge Sorted Inline](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/MergeSortedInline)  
+[CtCI 10.4 (Array) Search Sorted No Size](https://github.com/devin5885/CodingProblems/tree/master/CodingProblems/Array_/SearchSortedNoSize)  
 
 ## Linked List (Single)
 
