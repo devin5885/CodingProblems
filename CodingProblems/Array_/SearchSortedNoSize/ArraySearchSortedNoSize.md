@@ -33,5 +33,7 @@ indexes.
 ## Solutions
 1. Brute Force - Iterate through the array.
 
-2. Binary Search - Use a binary search to find the item after determining the
+2. Spit Binary Search - Use a binary search to find the item after determining the
 starting point of the binary search.
+
+3. Pure Binary Search No Size - Use repeated unknown size binary search to find the item.
