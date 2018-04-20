@@ -171,10 +171,10 @@ namespace CodingProblems.Helpers.File_
                 using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
                 {
                     // Initialize expected value.
-                    var valueExpected = 0;
+                    var valueExpected = minValue;
 
                     // Check values in file.
-                    for (var i = minValue; i < fileSizeInts; i++)
+                    for (var i = 0; i < fileSizeInts; i++)
                     {
                         // Skip exclusion value.
                         if (exclusionValue == null || exclusionValue != valueExpected)

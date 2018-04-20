@@ -20,12 +20,11 @@ namespace CodingProblems.Helpers.File_
             if (string.IsNullOrEmpty(fileName))
                 fileName = Path.GetTempFileName();
 
+            // Delete the file.
+            File.Delete(fileName);
+
             // Write buffer.
-            using (var binWriter = new BinaryWriter(File.Open(fileName, FileMode.Create)))
-            {
-                foreach (var value in buffer)
-                    binWriter.Write(value);
-            }
+            AppendBufferToFile(buffer, fileName);
 
             // Return result.
             return fileName;
@@ -43,6 +42,51 @@ namespace CodingProblems.Helpers.File_
         /// <returns>The resulting file name.</returns>
         public static string WriteFileOfInts(int fileSizeInts, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true, string fileName = null)
         {
+            // Use temp name if not specified.
+            if (string.IsNullOrEmpty(fileName))
+                fileName = Path.GetTempFileName();
+
+            // Delete the file.
+            File.Delete(fileName);
+
+            // Determine increment information.
+            var incrementSizeMax = 1024 * 1024 * 16; // Write in 16 MB increments.
+            var incrementsTotal = (fileSizeInts / incrementSizeMax) + 1;
+            var lastIncrementSize = fileSizeInts % incrementSizeMax;
+
+            // Write all increments.
+            for (var incrementIndex = 1; incrementIndex <= incrementsTotal; incrementIndex++)
+            {
+                // Initialize the buffer.
+                var buffer = InitBuffer(incrementIndex == incrementsTotal ? lastIncrementSize : incrementSizeMax, out int endValue, minValue, maxValue, exclusionValue, randomize);
+
+                // Update start value.
+                minValue = endValue + 1;
+
+                // Make sure we didn't cross.
+                if (minValue > maxValue)
+                    minValue = 0;
+
+                // Write entire buffer.
+                AppendBufferToFile(buffer, fileName);
+            }
+
+            // Return filename.
+            return fileName;
+        }
+
+        /// <summary>
+        /// Helper that creates and initializes a buffer.
+        /// </summary>
+        /// <param name="bufferSizeInts">The size of the file (in 32-bit integers).</param>
+        /// <param name="endValue">The end value is returned via this parameter.</param>
+        /// <param name="minValue">The minimum value to put in the file.</param>
+        /// <param name="maxValue">The maximum value to put in the file.</param>
+        /// <param name="exclusionValue">The value to be excluded from the file.</param>
+        /// <param name="randomize">Whether the randomize the buffer.</param>
+        /// <returns>The buffer.</returns>
+        private static int[] InitBuffer(int bufferSizeInts, out int endValue, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true)
+        {
             // Initialize randomizer.
             var rnd = new Random();
 
@@ -50,8 +94,8 @@ namespace CodingProblems.Helpers.File_
             int value = minValue;
 
             // Create buffer.
-            var buffer = new int[fileSizeInts];
-            for (int i = minValue; i < fileSizeInts;)
+            var buffer = new int[bufferSizeInts];
+            for (int i = 0; i < bufferSizeInts;)
             {
                 // Write to buffer.
                 if (exclusionValue == null || exclusionValue != value)
@@ -67,10 +111,10 @@ namespace CodingProblems.Helpers.File_
 
             // Randomize the buffer.
             if (randomize)
-                for (int i = 0; i < fileSizeInts - 1; i++)
+                for (int i = 0; i < bufferSizeInts - 1; i++)
                 {
                     // Find the index to swap.
-                    var rndIndex = rnd.Next(i + 1, fileSizeInts - 1);
+                    var rndIndex = rnd.Next(i + 1, bufferSizeInts - 1);
 
                     // Swap the values.
                     var temp = buffer[i];
@@ -78,8 +122,22 @@ namespace CodingProblems.Helpers.File_
                     buffer[rndIndex] = temp;
                 }
 
-            // Write entire buffer.
-            return WriteFileFromBuffer(buffer, fileName);
+            endValue = value - 1;
+            return buffer;
+        }
+
+        /// <summary>
+        /// Helper that appends a buffer to an existing file.
+        /// </summary>
+        /// <param name="buffer">The buffer.</param>
+        /// <param name="fileName">The file name.</param>
+        private static void AppendBufferToFile(int[] buffer, string fileName)
+        {
+            using (var binWriter = new BinaryWriter(File.Open(fileName, FileMode.Append)))
+            {
+                foreach (var value in buffer)
+                    binWriter.Write(value);
+            }
         }
     }
 }
