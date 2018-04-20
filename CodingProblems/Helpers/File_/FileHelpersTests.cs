@@ -77,62 +77,38 @@ namespace CodingProblems.Helpers.File_
         /// Test FileHelpers.WriteFileOfInts with a randomly generated file name.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsDefaultFileName()
+        public void TestWriteFileOfIntsSmallDefaultFileName()
         {
-            // Write test data to file.
-            var size = 10;
-            var fileName = FileHelpers.WriteFileOfInts(size, 0, 9);
-
-            // Read the file and check contents.
-            using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
-            {
-                for (var i = 0; i < size; i++)
-                {
-                    int value = br.ReadInt32();
-                    Assert.AreEqual(i, value);
-                }
-            }
-
-            // Delete test file.
-            File.Delete(fileName);
-            Assert.IsFalse(File.Exists(fileName));
+            TestWriteFileOfIntsHelper(10, 0, 9, null, null);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a manually specified file name.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsSpecifyFileName()
+        public void TestWriteFileOfIntsSmallSpecifyFileName()
         {
             // Build file name.
             var fileName = Path.GetTempFileName();
-
-            // Write test data to file.
-            var size = 10;
-            FileHelpers.WriteFileOfInts(size, 0, 9, fileName);
-
-            // Read the file and check contents.
-            using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
-            {
-                for (var i = 0; i < size; i++)
-                {
-                    int value = br.ReadInt32();
-                    Assert.AreEqual(i, value);
-                }
-            }
-
-            // Delete test file.
-            File.Delete(fileName);
-            Assert.IsFalse(File.Exists(fileName));
+            TestWriteFileOfIntsHelper(10, 0, 9, null, fileName);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a custom minValue and maxValue and a file size larger than the maxValue.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsDoubleSize()
+        public void TestWriteFileOfIntsSmallDoubleSize()
         {
-            TestWriteFileOfIntsHelper(25, 1, 9);
+            TestWriteFileOfIntsHelper(25, 1, 9, null, null);
+        }
+
+        /// <summary>
+        /// Test FileHelpers.WriteFileOfInts with an exclusion value.
+        /// </summary>
+        [TestMethod]
+        public void TestWriteFileOfIntsSmallWithExclusionValue()
+        {
+            TestWriteFileOfIntsHelper(25, 1, 9, 5, null);
         }
 
         /// <summary>
@@ -141,7 +117,16 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsLargeSize()
         {
-            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue);
+            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, null);
+        }
+
+        /// <summary>
+        /// Test FileHelpers.WriteFileOfInts with a file size of ~ 1GB and an exclusion value.
+        /// </summary>
+        [TestMethod]
+        public void TestWriteFileOfIntsLargeSizeWithExclusionValue()
+        {
+            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, null);
         }
 
         /// <summary>
@@ -150,10 +135,12 @@ namespace CodingProblems.Helpers.File_
         /// <param name="fileSizeInts">fileSize</param>
         /// <param name="minValue">Minimum value</param>
         /// <param name="maxValue">Maximum value</param>
-        public void TestWriteFileOfIntsHelper(int fileSizeInts, int minValue, int maxValue)
+        /// <param name="exclusionValue">The exclusion value</param>
+        /// <param name="fileName">The file name</param>
+        public void TestWriteFileOfIntsHelper(int fileSizeInts, int minValue, int maxValue, int? exclusionValue, string fileName)
         {
             // Write test data to file.
-            var fileName = FileHelpers.WriteFileOfInts(fileSizeInts, minValue, maxValue);
+            fileName = FileHelpers.WriteFileOfInts(fileSizeInts, minValue, maxValue, exclusionValue, fileName);
 
             // Read the file and check contents.
             using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
@@ -164,15 +151,22 @@ namespace CodingProblems.Helpers.File_
                 // Check values in file.
                 for (var i = minValue; i < fileSizeInts; i++)
                 {
-                    // Read.
-                    int value = br.ReadInt32();
+                    // Skip exclusion value.
+                    if (exclusionValue == null || exclusionValue != valueExpected)
+                    {
+                        // Read.
+                        int value = br.ReadInt32();
 
-                    // Do test.
-                    Assert.AreEqual(valueExpected, value);
+                        // Do test.
+                        Assert.AreEqual(valueExpected, value);
 
-                    // Reset to min value.
-                    if (valueExpected == maxValue)
-                        valueExpected = minValue;
+                        // Reset to min value.
+                        if (valueExpected == maxValue)
+                            valueExpected = minValue;
+                        else
+                            // Update expected value.
+                            valueExpected++;
+                    }
                     else
                         // Update expected value.
                         valueExpected++;
