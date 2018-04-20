@@ -46,10 +46,6 @@ namespace CodingProblems.Helpers.File_
             // Initialize randomizer.
             var rnd = new Random();
 
-            // Use temp name if not specified.
-            if (string.IsNullOrEmpty(fileName))
-                fileName = Path.GetTempFileName();
-
             // Start at minimum value.
             int value = minValue;
 
@@ -83,14 +79,7 @@ namespace CodingProblems.Helpers.File_
                 }
 
             // Write entire buffer.
-            using (BinaryWriter binWriter = new BinaryWriter(File.Open(fileName, FileMode.Create)))
-            {
-                for (int i = 0; i < buffer.Length; i++)
-                    binWriter.Write(buffer[i]);
-            }
-
-            // Return file name.
-            return fileName;
+            return WriteFileFromBuffer(buffer, fileName);
         }
     }
 }
