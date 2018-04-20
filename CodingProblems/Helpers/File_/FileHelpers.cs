@@ -38,10 +38,14 @@ namespace CodingProblems.Helpers.File_
         /// <param name="minValue">The minimum value to put in the file.</param>
         /// <param name="maxValue">The maximum value to put in the file.</param>
         /// <param name="exclusionValue">The value to be excluded from the file.</param>
+        /// <param name="randomize">Whether the randomize the buffer.</param>
         /// <param name="fileName">The file name.</param>
         /// <returns>The resulting file name.</returns>
-        public static string WriteFileOfInts(int fileSizeInts, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, string fileName = null)
+        public static string WriteFileOfInts(int fileSizeInts, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true, string fileName = null)
         {
+            // Initialize randomizer.
+            var rnd = new Random();
+
             // Use temp name if not specified.
             if (string.IsNullOrEmpty(fileName))
                 fileName = Path.GetTempFileName();
@@ -64,6 +68,19 @@ namespace CodingProblems.Helpers.File_
                 else
                     value++;
             }
+
+            // Randomize the buffer.
+            if (randomize)
+                for (int i = 0; i < fileSizeInts - 1; i++)
+                {
+                    // Find the index to swap.
+                    var rndIndex = rnd.Next(i + 1, fileSizeInts - 1);
+
+                    // Swap the values.
+                    var temp = buffer[i];
+                    buffer[i] = buffer[rndIndex];
+                    buffer[rndIndex] = temp;
+                }
 
             // Write entire buffer.
             using (BinaryWriter binWriter = new BinaryWriter(File.Open(fileName, FileMode.Create)))
