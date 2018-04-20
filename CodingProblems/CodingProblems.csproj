@@ -159,6 +159,8 @@
     <Compile Include="Graph\Node\GraphNode.cs" />
     <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSComplete.cs" />
     <Compile Include="Graph\RouteBetweenNodes\GraphIsRouteBetweenNodes1DFSCompleteTests.cs" />
+    <Compile Include="Helpers\File_\FileHelpers.cs" />
+    <Compile Include="Helpers\File_\FileHelpersTests.cs" />
     <Compile Include="IsUnique\String\IsUniqueString1HashSetComplete.cs" />
     <Compile Include="IsUnique\String\IsUniqueString1HashSetCompleteTests.cs" />
     <Compile Include="IsUnique\String\IsUniqueString2NoAdditionalDSComplete.cs" />
