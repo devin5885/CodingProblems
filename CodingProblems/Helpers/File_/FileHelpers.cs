@@ -34,13 +34,14 @@ namespace CodingProblems.Helpers.File_
         /// Writes a file of integers with a maximum size of int.Max - 1.
         /// </summary>
         /// <param name="fileSizeInts">The size of the file (in 32-bit integers).</param>
+        /// <param name="bufferSizeMaxInts">The maximum buffer size in integers. (16 MB default)</param>
         /// <param name="minValue">The minimum value to put in the file.</param>
         /// <param name="maxValue">The maximum value to put in the file.</param>
         /// <param name="exclusionValue">The value to be excluded from the file.</param>
         /// <param name="randomize">Whether the randomize the buffer.</param>
         /// <param name="fileName">The file name.</param>
         /// <returns>The resulting file name.</returns>
-        public static string WriteFileOfInts(int fileSizeInts, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true, string fileName = null)
+        public static string WriteFileOfInts(long fileSizeInts, int bufferSizeMaxInts = 1024 * 1024 * 16 / 4, int minValue = 0, int maxValue = int.MaxValue, int? exclusionValue = null, bool randomize = true, string fileName = null)
         {
             // Use temp name if not specified.
             if (string.IsNullOrEmpty(fileName))
@@ -50,25 +51,31 @@ namespace CodingProblems.Helpers.File_
             File.Delete(fileName);
 
             // Determine increment information.
-            var incrementSizeMax = 1024 * 1024 * 16; // Write in 16 MB increments.
-            var incrementsTotal = (fileSizeInts / incrementSizeMax) + 1;
-            var lastIncrementSize = fileSizeInts % incrementSizeMax;
+            var buffersTotal = (fileSizeInts / bufferSizeMaxInts) + 1;
+            int lastBufferSizeInts = (int)(fileSizeInts % bufferSizeMaxInts);
+
+            // Initialize start value.
+            var startValue = minValue;
 
             // Write all increments.
-            for (var incrementIndex = 1; incrementIndex <= incrementsTotal; incrementIndex++)
+            for (var bufferIndex = 1; bufferIndex <= buffersTotal; bufferIndex++)
             {
+                // Get buffer size.
+                var bufferSizeInts = bufferIndex == buffersTotal ? lastBufferSizeInts : bufferSizeMaxInts;
+
+                // Skip empty buffer.
+                if (bufferSizeInts == 0)
+                    continue;
+
                 // Initialize the buffer.
-                var buffer = InitBuffer(incrementIndex == incrementsTotal ? lastIncrementSize : incrementSizeMax, out int endValue, minValue, maxValue, exclusionValue, randomize);
-
-                // Update start value.
-                minValue = endValue + 1;
-
-                // Make sure we didn't cross.
-                if (minValue > maxValue)
-                    minValue = 0;
+                var buffer = InitBuffer(bufferSizeInts, out int endValue, startValue, minValue, maxValue, exclusionValue, randomize);
 
                 // Write entire buffer.
                 AppendBufferToFile(buffer, fileName);
+
+                // Update start value.
+                // Note: InitBuffer will handle startValue == maxValue.
+                startValue = endValue + 1;
             }
 
             // Return filename.
@@ -76,22 +83,60 @@ namespace CodingProblems.Helpers.File_
         }
 
         /// <summary>
+        /// Helper that reads an existing file into a buffer.
+        /// </summary>
+        /// <param name="fileName">The file name.</param>
+        /// <param name="offsetInts">The offset in integers.</param>
+        /// <param name="bufferSizeMaxInts">The maximum buffer size in integers. (16 MB default)</param>
+        /// <returns>The buffer.</returns>
+        public static int[] ReadIntBufferFromFile(string fileName, long offsetInts = 0, int bufferSizeMaxInts = 1024 * 1024 * 16 / 4)
+        {
+            // Get the file size.
+            long fileSizeInts = new FileInfo(fileName).Length / 4;
+
+            // Determine buffer size.
+            var bufferSizeInts = Math.Min(fileSizeInts - offsetInts, bufferSizeMaxInts);
+
+            // Initialize buffer.
+            var buffer = new int[bufferSizeInts];
+
+            // Read the file and check contents.
+            using (var binReader = new BinaryReader(File.Open(fileName, FileMode.Open)))
+            {
+                // Seek if appropriate.
+                if (offsetInts > 0)
+                    binReader.BaseStream.Seek(offsetInts * 4, SeekOrigin.Begin);
+
+                // Read values in file.
+                for (long i = 0; i < bufferSizeInts; i++)
+                {
+                    // Read.
+                    buffer[i] = binReader.ReadInt32();
+                }
+            }
+
+            // Return buffer.
+            return buffer;
+        }
+
+        /// <summary>
         /// Helper that creates and initializes a buffer.
         /// </summary>
         /// <param name="bufferSizeInts">The size of the file (in 32-bit integers).</param>
         /// <param name="endValue">The end value is returned via this parameter.</param>
+        /// <param name="startValue">The start value.</param>
         /// <param name="minValue">The minimum value to put in the file.</param>
         /// <param name="maxValue">The maximum value to put in the file.</param>
         /// <param name="exclusionValue">The value to be excluded from the file.</param>
         /// <param name="randomize">Whether the randomize the buffer.</param>
         /// <returns>The buffer.</returns>
-        private static int[] InitBuffer(int bufferSizeInts, out int endValue, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true)
+        private static int[] InitBuffer(int bufferSizeInts, out int endValue, int startValue, int minValue = 0, int maxValue = int.MaxValue - 1, int? exclusionValue = null, bool randomize = true)
         {
             // Initialize randomizer.
             var rnd = new Random();
 
-            // Start at minimum value.
-            int value = minValue;
+            // Start at start value.
+            int value = startValue;
 
             // Create buffer.
             var buffer = new int[bufferSizeInts];

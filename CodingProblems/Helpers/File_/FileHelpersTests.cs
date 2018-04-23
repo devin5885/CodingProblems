@@ -14,7 +14,7 @@ namespace CodingProblems.Helpers.File_
         /// Test FileHelpers.WriteFileFromBuffer with a randomly generated file name.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileFromBufferSimpleDefaultFileName()
+        public void TestWriteFileFromBufferDefaultFileName()
         {
             // Initialize test data.
             var size = 11;
@@ -44,7 +44,7 @@ namespace CodingProblems.Helpers.File_
         /// Test FileHelpers.WriteFileFromBuffer with a file name specified.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileFromBufferSimpleSpecifyFileName()
+        public void TestWriteFileFromBufferSpecifyFileName()
         {
             // Initialize test data.
             var size = 11;
@@ -77,38 +77,38 @@ namespace CodingProblems.Helpers.File_
         /// Test FileHelpers.WriteFileOfInts with a randomly generated file name.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsSmallDefaultFileName()
+        public void TestWriteFileOfIntsVerySmallDefaultFileName()
         {
-            TestWriteFileOfIntsHelper(10, 0, 9, null, false, null);
+            TestWriteFileOfIntsHelper(10, 0, 9, null, false, null, 4);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a manually specified file name.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsSmallSpecifyFileName()
+        public void TestWriteFileOfIntsVerySmallSpecifyFileName()
         {
             // Build file name.
             var fileName = Path.GetTempFileName();
-            TestWriteFileOfIntsHelper(10, 0, 9, null, false, fileName);
+            TestWriteFileOfIntsHelper(10, 0, 9, null, false, fileName, 4);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a custom minValue and maxValue and a file size larger than the maxValue.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsSmallDoubleSize()
+        public void TestWriteFileOfIntsSmall()
         {
-            TestWriteFileOfIntsHelper(25, 1, 9, null, false, null);
+            TestWriteFileOfIntsHelper(50, 0, 8, null, false, null, 4);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a custom minValue and maxValue and randomization.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsRandomize()
+        public void TestWriteFileOfIntsSmallRandomize()
         {
-            TestWriteFileOfIntsHelper(25, 1, 9, null, true, null);
+            TestWriteFileOfIntsHelper(50, 1, 9, null, true, null, 4);
         }
 
         /// <summary>
@@ -117,34 +117,60 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsSmallWithExclusionValue()
         {
-            TestWriteFileOfIntsHelper(25, 1, 9, 5, false, null);
+            for (int exclusionValue = 0;  exclusionValue < 10; exclusionValue++)
+                TestWriteFileOfIntsHelper(50, 1, 9, exclusionValue, false, null, 4);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a file size of ~ 1GB.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsLargeSize()
+        public void TestWriteFileOfIntsLarge()
         {
-            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, false, null);
+            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a file size of ~ 1GB and randomization.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsLargeSizeRandomize()
+        public void TestWriteFileOfIntsLargeRandomize()
         {
-            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, true, null);
+            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, true, null, bufferSizeMaxInts);
         }
 
         /// <summary>
         /// Test FileHelpers.WriteFileOfInts with a file size of ~ 1GB and an exclusion value.
         /// </summary>
         [TestMethod]
-        public void TestWriteFileOfIntsLargeSizeWithExclusionValue()
+        public void TestWriteFileOfIntsLargeWithExclusionValue()
         {
-            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, false, null);
+            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, false, null, bufferSizeMaxInts);
+        }
+
+        /// <summary>
+        /// Test FileHelpers.WriteFileOfInts with a file size of ~ 4 GB.
+        /// </summary>
+        [TestMethod]
+        public void TestWriteFileOfIntsVeryLarge()
+        {
+            var fileSizeInts = 1024 * 1024 * 1024; // 4 GB (~ 1 billion integers).
+            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
+        }
+
+        /// <summary>
+        /// Test FileHelpers.WriteFileOfInts with a file size of ~ 16 GB.
+        /// </summary>
+        [TestMethod]
+        public void TestWriteFileOfIntsVeryVeryLarge()
+        {
+            long fileSizeInts = 1024L * 1024 * 1024 * 4; // 16 GB (~ 4 billion integers).
+            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
 
         /// <summary>
@@ -156,46 +182,53 @@ namespace CodingProblems.Helpers.File_
         /// <param name="exclusionValue">The exclusion value</param>
         /// <param name="randomize">Whether to randomize.</param>
         /// <param name="fileName">The file name</param>
-        public void TestWriteFileOfIntsHelper(int fileSizeInts, int minValue, int maxValue, int? exclusionValue, bool randomize, string fileName)
+        /// <param name="bufferSizeMaxInts">The maximum buffer size in integers</param>
+        public void TestWriteFileOfIntsHelper(long fileSizeInts, int minValue, int maxValue, int? exclusionValue, bool randomize, string fileName, int bufferSizeMaxInts)
         {
             // Write test data to file.
-            fileName = FileHelpers.WriteFileOfInts(fileSizeInts, minValue, maxValue, exclusionValue, randomize, fileName);
+            fileName = FileHelpers.WriteFileOfInts(fileSizeInts, bufferSizeMaxInts, minValue, maxValue, exclusionValue, randomize, fileName);
 
             // Check the file size.
             Assert.AreEqual(fileSizeInts * 4, new FileInfo(fileName).Length);
 
+            // Store start value.
+            var startValue = minValue;
+
             // For randomized file we can't check this.
             if (!randomize)
             {
-                // Read the file and check contents.
-                using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
-                {
-                    // Initialize expected value.
-                    var valueExpected = minValue;
+                // Initialize expected value.
+                var valueExpected = startValue;
+                long offset = 0;
 
-                    // Check values in file.
-                    for (var i = 0; i < fileSizeInts; i++)
+                for (var fileSizeLeftInts = fileSizeInts; fileSizeLeftInts > 0;)
+                {
+                    // Read the file.
+                    var buffer = FileHelpers.ReadIntBufferFromFile(fileName, offset, bufferSizeMaxInts);
+
+                    // Subtract this part.
+                    fileSizeLeftInts -= buffer.Length;
+
+                    // Check values in buffer.
+                    for (long i = 0; i < buffer.Length;)
                     {
                         // Skip exclusion value.
                         if (exclusionValue == null || exclusionValue != valueExpected)
                         {
-                            // Read.
-                            int value = br.ReadInt32();
-
                             // Do test.
-                            Assert.AreEqual(valueExpected, value);
-
-                            // Reset to min value.
-                            if (valueExpected == maxValue)
-                                valueExpected = minValue;
-                            else
-                                // Update expected value.
-                                valueExpected++;
+                            Assert.AreEqual(valueExpected, buffer[i++]);
                         }
+
+                        // Reset to min value.
+                        if (valueExpected == maxValue)
+                            valueExpected = startValue;
                         else
                             // Update expected value.
                             valueExpected++;
                     }
+
+                    // Update the offset.
+                    offset += buffer.Length;
                 }
             }
 
