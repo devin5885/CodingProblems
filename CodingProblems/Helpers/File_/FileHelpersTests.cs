@@ -157,6 +157,10 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsVeryLarge()
         {
+            // Warning: Running this test will create a 4 GB file on your system during the test.
+            // Disable the next line to enable the test.
+            Assert.Inconclusive();
+
             var fileSizeInts = 1024 * 1024 * 1024; // 4 GB (~ 1 billion integers).
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
@@ -168,6 +172,10 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsVeryVeryLarge()
         {
+            // Warning: Running this test will create a 16 GB file on your system during the test.
+            // Disable the next line to enable the test.
+            Assert.Inconclusive();
+
             long fileSizeInts = 1024L * 1024 * 1024 * 4; // 16 GB (~ 4 billion integers).
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
