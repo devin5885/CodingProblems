@@ -71,6 +71,8 @@
     <Compile Include="Array_\MergeSorted\ArrayMergeSorted1SimpleCompleteTests.cs" />
     <Compile Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoopComplete.cs" />
     <Compile Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoopCompleteTests.cs" />
+    <Compile Include="Array_\MissingInt\ArrayFindMissingInt1Complete.cs" />
+    <Compile Include="Array_\MissingInt\ArrayFindMissingInt1CompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveComplete.cs" />
     <Compile Include="Array_\PowerSet\PowerSet1RecursiveCompleteTests.cs" />
     <Compile Include="Array_\PowerSet\PowerSet2CombinatoricsComplete.cs" />
@@ -271,6 +273,8 @@
     <None Include="Array_\MergeSorted\ArrayMergeSorted.md" />
     <None Include="Array_\MergeSorted\ArrayMergeSorted1Simple.md" />
     <None Include="Array_\MergeSorted\ArrayMergeSorted2SingleLoop.md" />
+    <None Include="Array_\MissingInt\ArrayFindMissingInt.md" />
+    <None Include="Array_\MissingInt\ArrayFindMissingInt1.md" />
     <None Include="Array_\PowerSet\PowerSet.md" />
     <None Include="Array_\PowerSet\PowerSet1Recursive.md" />
     <None Include="Array_\PowerSet\PowerSet2Combinatorics.md" />
