@@ -199,6 +199,8 @@
     <Compile Include="Matrix\Helpers\MatrixHelpers.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1Complete.cs" />
     <Compile Include="Matrix\Rotate\MatrixRotate1CompleteTests.cs" />
+    <Compile Include="Matrix\TicTacWin\TicTacWin1BruteForceComplete.cs" />
+    <Compile Include="Matrix\TicTacWin\TicTacWin1BruteForceCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeComplete.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSizeCompleteTests.cs" />
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeComplete.cs" />
@@ -362,6 +364,8 @@
     <None Include="LinkedList\SingleLink\Split\LinkedListSingleLinkSplit2FastSlow.md" />
     <None Include="Matrix\Rotate\MatrixRotate.md" />
     <None Include="Matrix\Rotate\MatrixRotate1.md" />
+    <None Include="Matrix\TicTacWin\TicTacWin.md" />
+    <None Include="Matrix\TicTacWin\TicTacWin1.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSize.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
