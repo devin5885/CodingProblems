@@ -95,6 +95,8 @@
     <Compile Include="Array_\StackOfBoxes\Box.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
+    <Compile Include="NumberSwapper\NumberSwapper1UseTempVarComplete.cs" />
+    <Compile Include="NumberSwapper\NumberSwapper1UseTempVarCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.cs" />
@@ -207,6 +209,8 @@
     <Compile Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSizeCompleteTests.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveComplete.cs" />
     <Compile Include="Matrix\PaintFill\PaintFill1RecursiveCompleteTests.cs" />
+    <Compile Include="NumberSwapper\NumberSwapper2InlineComplete.cs" />
+    <Compile Include="NumberSwapper\NumberSwapper2InlineCompleteTests.cs" />
     <Compile Include="Stack\IsPalindrome\IsPalindromeUsingStacks1StandardComplete.cs" />
     <Compile Include="Stack\IsPalindrome\IsPalindromeUsingStacks1StandardCompleteTests.cs" />
     <Compile Include="String_\Palindrome\FindLongestPalindrome\FindLongestPalindrome1BruteForceComplete.cs" />
@@ -291,6 +295,8 @@
     <None Include="Array_\Sort\ArraySort4MergeSortSimple.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes.md" />
     <None Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCount.md" />
+    <None Include="NumberSwapper\NumberSwapper.md" />
+    <None Include="NumberSwapper\NumberSwapper1UseTempVar.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced2RecursiveOptimizedComplete.md" />
@@ -369,6 +375,7 @@
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray1FixedSize.md" />
     <None Include="MultipleStacksUsingSingleArray\MultipleStacksUsingSingleArray2VariableSize.md" />
+    <None Include="NumberSwapper\NumberSwapper2Inline.md" />
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
     <None Include="Matrix\PaintFill\PaintFill.md" />
