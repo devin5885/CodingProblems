@@ -127,6 +127,10 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsLarge()
         {
+            // Disabled due to long running time.
+            // Disable the next line to enable the test.
+            Assert.Inconclusive();
+
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
@@ -137,6 +141,10 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsLargeRandomize()
         {
+            // Disabled due to long running time.
+            // Disable the next line to enable the test.
+            Assert.Inconclusive();
+
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, true, null, bufferSizeMaxInts);
         }
@@ -147,6 +155,10 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsLargeWithExclusionValue()
         {
+            // Disabled due to long running time.
+            // Disable the next line to enable the test.
+            Assert.Inconclusive();
+
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, false, null, bufferSizeMaxInts);
         }
