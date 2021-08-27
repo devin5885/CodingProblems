@@ -434,6 +434,5 @@ namespace CodingProblems.Matrix.TicTacWin
             }
             Assert.Fail();
         }
-
     }
 }
