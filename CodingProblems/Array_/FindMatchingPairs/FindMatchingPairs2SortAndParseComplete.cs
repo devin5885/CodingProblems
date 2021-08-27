@@ -29,8 +29,8 @@ namespace CodingProblems.Array_.FindMatchingPairs
             list2.Sort();
 
             // Initialize refs.
-            int list1IndexCurr = 0;
-            int list2IndexCurr = 0;
+            var list1IndexCurr = 0;
+            var list2IndexCurr = 0;
 
             // Continue while there are elements to process.
             while (list1IndexCurr < list1.Count && list2IndexCurr < list2.Count)

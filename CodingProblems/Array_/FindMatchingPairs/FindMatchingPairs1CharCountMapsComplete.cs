@@ -32,7 +32,7 @@ namespace CodingProblems.Array_.FindMatchingPairs
             foreach (var kvp in dictionary1)
             {
                 // Check for element in second dictionary.
-                if (dictionary2.TryGetValue(kvp.Key, out int count))
+                if (dictionary2.TryGetValue(kvp.Key, out var count))
                 {
                     // Determine count to add to add.
                     var toAdd = Math.Min(kvp.Value, count);
@@ -65,7 +65,7 @@ namespace CodingProblems.Array_.FindMatchingPairs
             foreach (var element in list)
             {
                 // Check if already in list, if so increment count.
-                if (result.TryGetValue(element, out int count))
+                if (result.TryGetValue(element, out var count))
                 {
                     result[element] = ++count;
                 }

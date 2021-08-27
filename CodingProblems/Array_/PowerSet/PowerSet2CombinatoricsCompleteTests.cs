@@ -36,7 +36,7 @@ namespace CodingProblems.Array_.PowerSet
             var expected = new List<List<int>>
             {
                 new List<int>(),
-                new List<int>() { 1 }
+                new List<int> { 1 }
             };
             var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1 });
 
@@ -54,9 +54,9 @@ namespace CodingProblems.Array_.PowerSet
             var expected = new List<List<int>>
             {
                 new List<int>(),
-                new List<int>() { 1 },
-                new List<int>() { 2 },
-                new List<int>() { 1, 2 }
+                new List<int> { 1 },
+                new List<int> { 2 },
+                new List<int> { 1, 2 }
             };
             var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1, 2 });
 
@@ -74,13 +74,13 @@ namespace CodingProblems.Array_.PowerSet
             var expected = new List<List<int>>
             {
                 new List<int>(),
-                new List<int>() { 1 },
-                new List<int>() { 2 },
-                new List<int>() { 1, 2 },
-                new List<int>() { 3 },
-                new List<int>() { 1, 3 },
-                new List<int>() { 2, 3 },
-                new List<int>() { 1, 2, 3 }
+                new List<int> { 1 },
+                new List<int> { 2 },
+                new List<int> { 1, 2 },
+                new List<int> { 3 },
+                new List<int> { 1, 3 },
+                new List<int> { 2, 3 },
+                new List<int> { 1, 2, 3 }
             };
             var actual = PowerSet2CombinatoricsComplete.GetPowerSet(new[] { 1, 2, 3 });
 

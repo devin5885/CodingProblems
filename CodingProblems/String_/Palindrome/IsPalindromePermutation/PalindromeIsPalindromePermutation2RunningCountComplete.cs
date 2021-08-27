@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
 {
     /// <summary>
-    /// Class that implements IsPalidromePermutation
+    /// Class that implements IsPalindromePermutation
     /// </summary>
     public static class PalindromeIsPalindromePermutation2RunningCountComplete
     {
@@ -20,7 +20,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
                 throw new ArgumentException("Null string");
 
             // Start with valid.
-            int countOdd = 0;
+            var countOdd = 0;
 
             // Strategy: Use a dictionary to store chars and a boolean indicator:
             // true - Even # of instances.
@@ -29,7 +29,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
             foreach (var c in input)
             {
                 // Toggle if found.
-                if (dict.TryGetValue(c, out bool result))
+                if (dict.TryGetValue(c, out var result))
                 {
                     // Changing back to odd.
                     if (result)

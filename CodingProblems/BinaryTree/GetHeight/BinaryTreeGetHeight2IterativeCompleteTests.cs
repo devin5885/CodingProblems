@@ -28,10 +28,10 @@ namespace CodingProblems.BinaryTree.GetHeight
             Assert.AreEqual(4, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.Tree11));
             Assert.AreEqual(4, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.Tree12));
 
-            Assert.AreEqual(1, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.SubTree41));
-            Assert.AreEqual(2, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.SubTree51));
-            Assert.AreEqual(2, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.SubTree111));
-            Assert.AreEqual(3, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.SubTree121));
+            Assert.AreEqual(1, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.TreeSubTree41));
+            Assert.AreEqual(2, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.TreeSubTree51));
+            Assert.AreEqual(2, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.TreeSubTree111));
+            Assert.AreEqual(3, BinaryTreeGetHeight2IterativeComplete.GetHeight2IterativeComplete(BinaryTreeNodeTestData.TreeSubTree121));
         }
     }
 }

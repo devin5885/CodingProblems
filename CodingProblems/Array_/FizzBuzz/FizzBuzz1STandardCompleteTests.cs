@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CodingProblems.Array_.FizzBuzz
 {
     /// <summary>
-    /// Tests FizzBuzzz.
+    /// Tests FizzBuzz.
     /// </summary>
     [TestClass]
     public class FizzBuzz1StandardCompleteTests

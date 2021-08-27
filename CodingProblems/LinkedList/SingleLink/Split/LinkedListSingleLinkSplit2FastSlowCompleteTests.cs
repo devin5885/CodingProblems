@@ -26,12 +26,12 @@ namespace CodingProblems.LinkedList.SingleLink.Split
             var expectedB = LinkedListSingleLinkNode<int>.CreateFromData(3, 4);
 
             // Split the list.
-            LinkedListSingleLinkSplit2FastSlowComplete.Split(a, out LinkedListSingleLinkNode<int> ResultA, out LinkedListSingleLinkNode<int> ResultB, out LinkedListSingleLinkNode<int> ResultDropped);
+            LinkedListSingleLinkSplit2FastSlowComplete.Split(a, out var resultA, out var resultB, out var resultDropped);
 
             // Do the compare.
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultA, expectedA));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultB, expectedB));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultDropped, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultA, expectedA));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultB, expectedB));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultDropped, null));
         }
 
         /// <summary>
@@ -53,12 +53,12 @@ namespace CodingProblems.LinkedList.SingleLink.Split
             var expectedDropped = LinkedListSingleLinkNode<int>.CreateFromData(2);
 
             // Split the list.
-            LinkedListSingleLinkSplit2FastSlowComplete.Split(a, out LinkedListSingleLinkNode<int> ResultA, out LinkedListSingleLinkNode<int> ResultB, out LinkedListSingleLinkNode<int> ResultDropped);
+            LinkedListSingleLinkSplit2FastSlowComplete.Split(a, out var resultA, out var resultB, out var resultDropped);
 
             // Do the compare.
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultA, expectedA));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultB, expectedB));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultDropped, expectedDropped));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultA, expectedA));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultB, expectedB));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultDropped, expectedDropped));
         }
 
         /// <summary>
@@ -74,12 +74,12 @@ namespace CodingProblems.LinkedList.SingleLink.Split
             var expectedDropped = LinkedListSingleLinkNode<int>.CreateFromData(3);
 
             // Split the list.
-            LinkedListSingleLinkSplit2FastSlowComplete.Split(toSplit, out LinkedListSingleLinkNode<int> ResultA, out LinkedListSingleLinkNode<int> ResultB, out LinkedListSingleLinkNode<int> ResultDropped);
+            LinkedListSingleLinkSplit2FastSlowComplete.Split(toSplit, out var resultA, out var resultB, out var resultDropped);
 
             // Do the compare.
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultA, null));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultB, null));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultDropped, expectedDropped));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultA, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultB, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultDropped, expectedDropped));
         }
 
         /// <summary>
@@ -89,12 +89,12 @@ namespace CodingProblems.LinkedList.SingleLink.Split
         public void LinkedListSingleLinkSplit2FastSlowCompleteTestEmptyList()
         {
             // Split the list.
-            LinkedListSingleLinkSplit2FastSlowComplete.Split(null, out LinkedListSingleLinkNode<int> ResultA, out LinkedListSingleLinkNode<int> ResultB, out LinkedListSingleLinkNode<int> ResultDropped);
+            LinkedListSingleLinkSplit2FastSlowComplete.Split(null, out var resultA, out var resultB, out var resultDropped);
 
             // Do the compare.
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultA, null));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultB, null));
-            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(ResultDropped, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultA, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultB, null));
+            Assert.IsTrue(LinkedListSingleLinkNode<int>.Compare(resultDropped, null));
         }
     }
 }

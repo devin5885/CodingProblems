@@ -32,10 +32,10 @@ namespace CodingProblems.BinaryTree.CheckBalanced
             Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree15));
             Assert.IsFalse(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.Tree16));
 
-            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree41));
-            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree51));
-            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree111));
-            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.SubTree121));
+            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.TreeSubTree41));
+            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.TreeSubTree51));
+            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.TreeSubTree111));
+            Assert.IsTrue(BinaryTreeCheckBalanced1RecursiveComplete.CheckBalanced1RecursiveComplete(BinaryTreeNodeTestData.TreeSubTree121));
         }
     }
 }

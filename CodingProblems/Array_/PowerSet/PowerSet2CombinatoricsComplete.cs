@@ -19,7 +19,7 @@ namespace CodingProblems.Array_.PowerSet
             var result = new List<List<int>>();
 
             // Determine the maximum value.
-            double dvaluemax = Math.Pow(2, array.Length);
+            var dvaluemax = Math.Pow(2, array.Length);
 
             // Check for overflow.
             if (dvaluemax > int.MaxValue)

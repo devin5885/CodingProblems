@@ -29,7 +29,7 @@ namespace CodingProblems.BitManipulation.NextNumber
 
             // Find the next number that matches.
             // Note that if an overflow occurs next will be equal to 0.
-            for (int next = num + 1; next > 0; next++)
+            for (var next = num + 1; next > 0; next++)
             {
                 // Once a match is found, return it.
                 if (BitManipulationGetBitCount3BitShiftComplete.GetBitCount(next) == count)
@@ -60,7 +60,7 @@ namespace CodingProblems.BitManipulation.NextNumber
                 return -1;
 
             // Find the next number that matches.
-            for (int next = num - 1; next > 0; next--)
+            for (var next = num - 1; next > 0; next--)
             {
                 // Once a match is found, return it.
                 if (BitManipulationGetBitCount3BitShiftComplete.GetBitCount(next) == count)

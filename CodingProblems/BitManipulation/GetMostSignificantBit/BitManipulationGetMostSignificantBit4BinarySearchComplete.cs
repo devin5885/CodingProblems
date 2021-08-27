@@ -32,7 +32,7 @@ namespace CodingProblems.BitManipulation.GetMostSignificantBit
             var right = 0;
 
             // Get initial mask.
-            int mask = GetMask(left, middle);
+            var mask = GetMask(left, middle);
 
             while (true)
             {
@@ -75,8 +75,8 @@ namespace CodingProblems.BitManipulation.GetMostSignificantBit
         private static int GetMask(int left, int middle)
         {
             // Build new mask.
-            int mask = 0;
-            for (int set = left - 1; set >= middle; set--)
+            var mask = 0;
+            for (var set = left - 1; set >= middle; set--)
                 mask = BitManipulationGetSetClearBit1Complete.SetClearBit(mask, set);
             return mask;
         }

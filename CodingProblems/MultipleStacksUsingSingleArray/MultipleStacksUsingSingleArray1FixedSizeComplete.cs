@@ -20,12 +20,12 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
 
             // Initialize StackPointer array.
             StackPointer = new int[stackCount];
-            for (int i = 0; i < StackPointer.Length; i++)
+            for (var i = 0; i < StackPointer.Length; i++)
                 StackPointer[i] = -1;
 
             // Initialize StackPointerOffset array.
             StackPointerOffset = new int[stackCount];
-            for (int i = 0; i < StackPointerOffset.Length; i++)
+            for (var i = 0; i < StackPointerOffset.Length; i++)
                 StackPointerOffset[i] = capacityPerStack * i;
 
             // Initialize stack.

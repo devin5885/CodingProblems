@@ -32,17 +32,17 @@ namespace CodingProblems.BinaryTree.CheckBalanced
                 return 0;
 
             // Get height of left sub-tree & return failure if not balanced.
-            int leftHeight = CheckHeight(node.Left);
+            var leftHeight = CheckHeight(node.Left);
             if (leftHeight == -1)
                return -1;
 
             // Get height of right sub-tree & return failure if not balanced.
-            int rightHeight = CheckHeight(node.Right);
+            var rightHeight = CheckHeight(node.Right);
             if (rightHeight == -1)
                 return -1;
 
             // Check if current node is balanced.
-            int heightDiff = leftHeight - rightHeight;
+            var heightDiff = leftHeight - rightHeight;
 
             // Failure, return -1.
             if (Math.Abs(heightDiff) > 1)

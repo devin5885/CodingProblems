@@ -19,12 +19,13 @@ namespace CodingProblems.Array_.MissingInt
         public static int FindMissingInt(string fileName, int bufferSizeAvailableBytes, int minValue = 0, int maxValue = int.MaxValue)
         {
             // Get count of values (This must be a long to avoid overflow).
-            long valueCount = (long)maxValue - minValue + 1;
+            var valueCount = (long)maxValue - minValue + 1;
 
             // Determine if we need to check only partial bits on the last byte.
-            int checkPartialBits = (int)(valueCount % 8);
+            var checkPartialBits = (int)(valueCount % 8);
 
             // Determine the size of the byte array needed to represent these values.
+            // ReSharper disable once ArrangeRedundantParentheses
             var bufferSizeBytes = (valueCount / 8) + (checkPartialBits != 0 ? 1 : 0);
 
             // For this case, we must have enough buffer space for all possible values.
@@ -37,7 +38,7 @@ namespace CodingProblems.Array_.MissingInt
             var values = new byte[bufferSizeBytes];
 
             // Get the file size.
-            long fileSizeInts = new FileInfo(fileName).Length / 4;
+            var fileSizeInts = new FileInfo(fileName).Length / 4;
 
             // Read the file and update the byte array.
             using (var br = new BinaryReader(File.Open(fileName, FileMode.Open)))
@@ -45,7 +46,7 @@ namespace CodingProblems.Array_.MissingInt
                 for (long i = 0; i < fileSizeInts; i++)
                 {
                     // Read the value.
-                    int value = br.ReadInt32();
+                    var value = br.ReadInt32();
 
                     // Set the appropriate bit to 1.
                     values[value / 8] |= (byte)(1 << (value % 8));
@@ -53,7 +54,7 @@ namespace CodingProblems.Array_.MissingInt
             }
 
             // Find first missing & return.
-            for (int i = 0; i < values.Length; i++)
+            for (var i = 0; i < values.Length; i++)
             {
                 // Determine the bits to check for this value.
                 var bitMax = 8;
@@ -64,11 +65,12 @@ namespace CodingProblems.Array_.MissingInt
                 }
 
                 // Check them.
-                for (int j = 0; j < bitMax; j++)
+                for (var j = 0; j < bitMax; j++)
                 {
                     // Check if the appropriate bit is set, if not return the
                     // corresponding value.
                     if ((values[i] & (1 << j)) == 0)
+                        // ReSharper disable once ArrangeRedundantParentheses
                         return (i * 8) + j;
                 }
             }

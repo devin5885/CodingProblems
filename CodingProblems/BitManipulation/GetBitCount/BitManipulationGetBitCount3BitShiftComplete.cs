@@ -16,12 +16,12 @@
             var total = 0;
             while (n != 0)
             {
-                var mask = 1;
+                const int mask = 1;
                 if ((n & mask) != 0)
                     total++;
 
                 // C# doesn't have a  >>> operator, so we need to use unsigned int.
-                n = (int)(((uint)n) >> 1);
+                n = (int)((uint)n >> 1);
             }
             return total;
         }

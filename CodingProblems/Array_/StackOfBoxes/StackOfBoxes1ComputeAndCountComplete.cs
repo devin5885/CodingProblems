@@ -25,7 +25,7 @@ namespace CodingProblems.Array_.StackOfBoxes
             // Start each stack with a single box.
             var resultStacks = new List<List<Box>>();
             foreach (var box in boxes)
-                resultStacks.Add(new List<Box>() { box });
+                resultStacks.Add(new List<Box> { box });
 
             // Consume boxes.
             foreach (var box in boxes)

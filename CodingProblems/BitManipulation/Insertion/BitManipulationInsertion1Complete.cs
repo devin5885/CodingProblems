@@ -19,7 +19,7 @@ namespace CodingProblems.BitManipulation.Insertion
         public static int UpdateBits(int n, int m, int i, int j)
         {
             // Determine the max index.
-            var indexmax = (sizeof(int) * 8) - 1;
+            const int indexmax = (sizeof(int) * 8) - 1;
 
             // Error checking.
             if (i < 0 || i > indexmax)
@@ -32,7 +32,7 @@ namespace CodingProblems.BitManipulation.Insertion
                 throw new ArgumentException($"i cannot be greater than j. i: {i}, j: {j}");
 
             // Build a mask to clear the appropriate bits in n.
-            int mask = ~BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(j, i);
+            var mask = ~BitManipulationCreateSimpleMask1Complete.CreateSimpleMask(j, i);
 
             // Clear the appropriate bits in n.
             var cleared = n & mask;

@@ -31,7 +31,7 @@ namespace CodingProblems.LinkedList.SingleLink.Split
             LinkedListSingleLinkNode<int> prev2 = null;
 
             // First get the count.
-            int count = 0;
+            var count = 0;
             var currCount = toSplit;
             while (currCount != null)
             {
@@ -43,7 +43,7 @@ namespace CodingProblems.LinkedList.SingleLink.Split
             var half = (count / 2) + (count % 2);
 
             // Advance to the appropriate location.
-            for (int i = 0; i < half; i++)
+            for (var i = 0; i < half; i++)
             {
                 prev2 = prev;
                 prev = resultB;

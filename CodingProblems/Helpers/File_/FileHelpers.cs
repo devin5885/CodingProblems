@@ -52,7 +52,7 @@ namespace CodingProblems.Helpers.File_
 
             // Determine increment information.
             var buffersTotal = (fileSizeInts / bufferSizeMaxInts) + 1;
-            int lastBufferSizeInts = (int)(fileSizeInts % bufferSizeMaxInts);
+            var lastBufferSizeInts = (int)(fileSizeInts % bufferSizeMaxInts);
 
             // Initialize start value.
             var startValue = minValue;
@@ -68,7 +68,7 @@ namespace CodingProblems.Helpers.File_
                     continue;
 
                 // Initialize the buffer.
-                var buffer = InitBuffer(bufferSizeInts, out int endValue, startValue, minValue, maxValue, exclusionValue, randomize);
+                var buffer = InitBuffer(bufferSizeInts, out var endValue, startValue, minValue, maxValue, exclusionValue, randomize);
 
                 // Write entire buffer.
                 AppendBufferToFile(buffer, fileName);
@@ -92,7 +92,7 @@ namespace CodingProblems.Helpers.File_
         public static int[] ReadIntBufferFromFile(string fileName, long offsetInts = 0, int bufferSizeMaxInts = 1024 * 1024 * 16 / 4)
         {
             // Get the file size.
-            long fileSizeInts = new FileInfo(fileName).Length / 4;
+            var fileSizeInts = new FileInfo(fileName).Length / 4;
 
             // Determine buffer size.
             var bufferSizeInts = Math.Min(fileSizeInts - offsetInts, bufferSizeMaxInts);
@@ -136,11 +136,11 @@ namespace CodingProblems.Helpers.File_
             var rnd = new Random();
 
             // Start at start value.
-            int value = startValue;
+            var value = startValue;
 
             // Create buffer.
             var buffer = new int[bufferSizeInts];
-            for (int i = 0; i < bufferSizeInts;)
+            for (var i = 0; i < bufferSizeInts;)
             {
                 // Write to buffer.
                 if (exclusionValue == null || exclusionValue != value)
@@ -156,7 +156,7 @@ namespace CodingProblems.Helpers.File_
 
             // Randomize the buffer.
             if (randomize)
-                for (int i = 0; i < bufferSizeInts - 1; i++)
+                for (var i = 0; i < bufferSizeInts - 1; i++)
                 {
                     // Find the index to swap.
                     var rndIndex = rnd.Next(i + 1, bufferSizeInts - 1);

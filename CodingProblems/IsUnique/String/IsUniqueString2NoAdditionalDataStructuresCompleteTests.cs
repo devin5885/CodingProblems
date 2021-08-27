@@ -6,7 +6,7 @@ namespace CodingProblems.IsUnique.String
     /// Test class for IsUnique.
     /// </summary>
     [TestClass]
-    public class IsUniqueString2NoAdditionalDSCompleteTests
+    public class IsUniqueString2NoAdditionalDataStructuresCompleteTests
     {
         /// <summary>
         /// Tests IsUnique with a null string.
@@ -14,7 +14,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalCompleteNull()
         {
-            Assert.IsTrue(IsUniqueString2NoAdditionalDSComplete.IsUnique(null));
+            Assert.IsTrue(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique(null));
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalCompleteEmpty()
         {
-            Assert.IsTrue(IsUniqueString2NoAdditionalDSComplete.IsUnique(string.Empty));
+            Assert.IsTrue(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique(string.Empty));
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalCompleteSingleChar()
         {
-            Assert.IsTrue(IsUniqueString2NoAdditionalDSComplete.IsUnique("a"));
+            Assert.IsTrue(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique("a"));
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalComplete2CharsUnique()
         {
-            Assert.IsTrue(IsUniqueString2NoAdditionalDSComplete.IsUnique("ab"));
+            Assert.IsTrue(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique("ab"));
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalComplete3CharsUnique()
         {
-            Assert.IsTrue(IsUniqueString2NoAdditionalDSComplete.IsUnique("abc"));
+            Assert.IsTrue(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique("abc"));
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace CodingProblems.IsUnique.String
         [TestMethod]
         public void IsUniqueString2NoAdditionalComplete3CharsNonUnique()
         {
-            Assert.IsFalse(IsUniqueString2NoAdditionalDSComplete.IsUnique("aba"));
+            Assert.IsFalse(IsUniqueString2NoAdditionalDataStructuresComplete.IsUnique("aba"));
         }
     }
 }

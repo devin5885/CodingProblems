@@ -7,18 +7,18 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
     /// Tests LinkedListSingleRemoveDuplicates1HashSetComplete.RemoveDuplicates
     /// </summary>
     [TestClass]
-    public class LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTests
+    public class LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTests
     {
         /// <summary>
         /// Test removing a single duplicate.
         /// </summary>
         [TestMethod]
-        public void LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTest1SingleDup()
+        public void LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTest1SingleDup()
         {
             // Create with helper.
             var actual = LinkedListSingleLinkNode<int>.CreateFromData(1, 2, 2, 3);
             var expected = LinkedListSingleLinkNode<int>.CreateFromData(1, 2, 3);
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(actual);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(actual);
             LinkedListSingleLinkNode<int>.Compare(expected, actual);
         }
 
@@ -26,12 +26,12 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
         /// Test removing no duplicates.
         /// </summary>
         [TestMethod]
-        public void LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTest2NoDups()
+        public void LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTest2NoDups()
         {
             // Create with helper.
             var actual = LinkedListSingleLinkNode<int>.CreateFromData(1, 2, 3);
             var expected = LinkedListSingleLinkNode<int>.CreateFromData(1, 2, 3);
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(actual);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(actual);
             LinkedListSingleLinkNode<int>.Compare(expected, actual);
         }
 
@@ -39,12 +39,12 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
         /// Test removing a duplicate at the end of the list.
         /// </summary>
         [TestMethod]
-        public void LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTest3LastDup()
+        public void LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTest3LastDup()
         {
             // Create with helper.
             var actual = LinkedListSingleLinkNode<int>.CreateFromData(1, 2, 2);
             var expected = LinkedListSingleLinkNode<int>.CreateFromData(1, 2);
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(actual);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(actual);
             LinkedListSingleLinkNode<int>.Compare(expected, actual);
         }
 
@@ -52,12 +52,12 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
         /// Test removing a duplicate when the list only contains duplicates.
         /// </summary>
         [TestMethod]
-        public void LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTest4SingleDup()
+        public void LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTest4SingleDup()
         {
             // Create with helper.
             var actual = LinkedListSingleLinkNode<int>.CreateFromData(1, 1, 1);
             var expected = LinkedListSingleLinkNode<int>.CreateFromData(1);
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(actual);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(actual);
             LinkedListSingleLinkNode<int>.Compare(expected, actual);
         }
 
@@ -67,19 +67,19 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
         [TestMethod]
         public void LinkedListSingleRemoveDuplicates1HashSetCompleteTest5NullList()
         {
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(null);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(null);
         }
 
         /// <summary>
         /// Test removing a duplicate when the list only contains a single node.
         /// </summary>
         [TestMethod]
-        public void LinkedListSingleRemoveDuplicates2NoAdditionalDSCompleteTest6SingleNode()
+        public void LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresCompleteTest6SingleNode()
         {
             // Create with helper.
             var actual = LinkedListSingleLinkNode<int>.CreateFromData(1);
             var expected = LinkedListSingleLinkNode<int>.CreateFromData(1);
-            LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete.RemoveDuplicates(actual);
+            LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete.RemoveDuplicates(actual);
             LinkedListSingleLinkNode<int>.Compare(expected, actual);
         }
     }

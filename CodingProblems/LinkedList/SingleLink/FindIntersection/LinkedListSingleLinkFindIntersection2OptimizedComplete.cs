@@ -58,9 +58,13 @@ namespace CodingProblems.LinkedList.SingleLink.FindIntersection
 
                 // Increment.
                 if (count1 > count2)
-                    for (var i = 0; i < countToMove; i++, start1 = start1.Next);
+                    for (var i = 0; i < countToMove; i++, start1 = start1.Next)
+                    {
+                    }
                 else
-                    for (var i = 0; i < countToMove; i++, start2 = start2.Next);
+                    for (var i = 0; i < countToMove; i++, start2 = start2.Next)
+                    {
+                    }
             }
 
             // Find intersection.

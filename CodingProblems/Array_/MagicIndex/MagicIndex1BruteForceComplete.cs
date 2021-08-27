@@ -19,7 +19,7 @@ namespace CodingProblems.Array_.MagicIndex
             if (array == null)
                 throw new ArgumentException("Invalid array.");
 
-            for (int i = 0; i < array.Length; i++)
+            for (var i = 0; i < array.Length; i++)
             {
                 if (array[i] == i)
                     return i;

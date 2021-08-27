@@ -31,7 +31,7 @@ namespace CodingProblems.BitManipulation.GetSetClearBit
             // 5340 (Random #) (0000_0000_0000_0000_‭0001_0100_1101_1100‬)
             for (var index = 0; index < sizeof(int) * 8; index++)
             {
-                bool expected = index == 2 || index == 3 || index == 4 || index == 6 || index == 7 || index == 10 || index == 12;
+                var expected = index == 2 || index == 3 || index == 4 || index == 6 || index == 7 || index == 10 || index == 12;
                 Assert.AreEqual(expected, BitManipulationGetSetClearBit1Complete.GetBit(5340, index));
             }
 
@@ -64,7 +64,7 @@ namespace CodingProblems.BitManipulation.GetSetClearBit
             // -2147360217 (Random #) (1000_0000_0000_0001_1110_0010_0010_0111)
             for (var index = 0; index < sizeof(int) * 8; index++)
             {
-                bool expected = index == 0 || index == 1 || index == 2 || index == 5 || index == 9 || index == 13 || index == 14 || index == 15 || index == 16 || index == 31;
+                var expected = index == 0 || index == 1 || index == 2 || index == 5 || index == 9 || index == 13 || index == 14 || index == 15 || index == 16 || index == 31;
                 Assert.AreEqual(expected, BitManipulationGetSetClearBit1Complete.GetBit(-2147360217, index));
             }
         }
@@ -93,7 +93,7 @@ namespace CodingProblems.BitManipulation.GetSetClearBit
             // 5340 (Random #) (0000_0000_0000_0000_‭0001_0100_1101_1100‬)
             for (var index = 0; index < sizeof(int) * 8; index++)
             {
-                bool expected = index == 2 || index == 3 || index == 4 || index == 6 || index == 7 || index == 10 || index == 12;
+                var expected = index == 2 || index == 3 || index == 4 || index == 6 || index == 7 || index == 10 || index == 12;
                 Assert.AreEqual(expected, BitManipulationGetSetClearBit1Complete.GetBit(value, index));
             }
 
@@ -117,7 +117,7 @@ namespace CodingProblems.BitManipulation.GetSetClearBit
         public void BitManipulationSetClearBit1CompleteTest2()
         {
             // Start with -1 (1111_1111_1111_1111_1111_1111_1111_1111)
-            int value = -1;
+            var value = -1;
 
             // Clear some bits.
             value = BitManipulationGetSetClearBit1Complete.SetClearBit(value, 3, false);
@@ -136,7 +136,7 @@ namespace CodingProblems.BitManipulation.GetSetClearBit
             // -805701977 (Random #) (1100_1111_1111_1001_1111_0110_1010_0111)
             for (var index = 0; index < sizeof(int) * 8; index++)
             {
-                bool expected = index != 3 && index != 4 && index != 6 && index != 8 && index != 11 && index != 17 && index != 18 && index != 28 && index != 29;
+                var expected = index != 3 && index != 4 && index != 6 && index != 8 && index != 11 && index != 17 && index != 18 && index != 28 && index != 29;
                 Assert.AreEqual(expected, BitManipulationGetSetClearBit1Complete.GetBit(value, index));
             }
 

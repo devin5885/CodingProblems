@@ -5,10 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CodingProblems.Graph.RouteBetweenNodes
 {
     /// <summary>
-    /// Tests for GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete
+    /// Tests for GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete
     /// </summary>
     [TestClass]
-    public class GraphIsRouteBetweenNodes1DFSCompleteTests
+    public class GraphIsRouteBetweenNodes1DfsCompleteTests
     {
         /// <summary>
         /// Tests the case in which there is a path between nodes.
@@ -25,7 +25,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
             var node1 = new GraphNode<int>(1);
             node1.Children.Add(node2);
 
-            Assert.IsTrue(GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete(node1, node3));
+            Assert.IsTrue(GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete(node1, node3));
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
             var graph = new GraphGraph<int>();
             graph.Nodes.Add(node1);
 
-            Assert.IsTrue(GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete(node1, node1));
+            Assert.IsTrue(GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete(node1, node1));
         }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
             var node1 = new GraphNode<int>(1);
             node1.Children.Add(node2);
 
-            Assert.IsFalse(GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete(node1, node3));
+            Assert.IsFalse(GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete(node1, node3));
         }
 
         /// <summary>
@@ -82,7 +82,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
 
             node3.Children.Add(node1);
 
-            Assert.IsTrue(GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete(node1, node4));
+            Assert.IsTrue(GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete(node1, node4));
         }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
 
             node3.Children.Add(node1);
 
-            Assert.IsFalse(GraphIsRouteBetweenNodes1DFSComplete.IsRouteBetweenNodes1DFSComplete(node1, node4));
+            Assert.IsFalse(GraphIsRouteBetweenNodes1DfsComplete.IsRouteBetweenNodes1DfsComplete(node1, node4));
         }
     }
 }

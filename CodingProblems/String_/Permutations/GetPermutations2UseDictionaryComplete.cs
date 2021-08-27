@@ -90,7 +90,7 @@ namespace CodingProblems.String_.Permutations
             foreach (var ch in input)
             {
                 // Get the count, if found, increment.
-                if (result.TryGetValue(ch, out int count))
+                if (result.TryGetValue(ch, out var count))
                 {
                     result[ch] = ++count;
                 }

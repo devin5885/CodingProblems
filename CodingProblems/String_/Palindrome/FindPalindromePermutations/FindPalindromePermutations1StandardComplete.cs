@@ -7,7 +7,7 @@ using CodingProblems.String_.Permutations;
 namespace CodingProblems.String_.Palindrome.FindPalindromePermutations
 {
     /// <summary>
-    /// Implements FindPalidromePermutations
+    /// Implements FindPalindromePermutations
     /// </summary>
     public static class FindPalindromePermutations1StandardComplete
     {

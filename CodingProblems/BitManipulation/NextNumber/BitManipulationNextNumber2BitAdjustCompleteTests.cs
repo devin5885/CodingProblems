@@ -15,7 +15,7 @@ namespace CodingProblems.BitManipulation.NextNumber
         [TestMethod]
         public void BitManipulationNextNumber2BitAdjustCompleteTestGetNext1Simple1()
         {
-            var original = 1;
+            const int original = 1;
             var expected = Convert.ToInt32("10", 2);
             var actual = BitManipulationNextNumber2BitAdjustComplete.GetNext(original);
             Assert.AreEqual(expected, actual);
@@ -142,7 +142,7 @@ namespace CodingProblems.BitManipulation.NextNumber
         [TestMethod]
         public void BitManipulationNextNumber2BitAdjustCompleteTestGetPrev5AllClear()
         {
-            var original = 0;
+            const int original = 0;
             var actual = BitManipulationNextNumber2BitAdjustComplete.GetPrev(original);
             Assert.AreEqual(-1, actual);
         }

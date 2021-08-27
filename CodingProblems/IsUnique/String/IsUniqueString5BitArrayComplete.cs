@@ -21,7 +21,7 @@ namespace CodingProblems.IsUnique.String
 
             // Determine max # of chars.
             // (64K)
-            int maxChars = (int)Math.Pow(2, sizeof(char) * 8);
+            var maxChars = (int)Math.Pow(2, sizeof(char) * 8);
 
             // If too many chars, fail.
             if (input.Length > maxChars)

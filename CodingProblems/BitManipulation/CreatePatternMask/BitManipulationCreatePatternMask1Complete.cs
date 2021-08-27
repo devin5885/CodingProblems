@@ -16,7 +16,7 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         public static int CreatePatternMask(int pattern, int patternbitcount)
         {
             // Determine the max index.
-            var indexmax = sizeof(int) * 8;
+            const int indexmax = sizeof(int) * 8;
 
             // Error checking.
             if (patternbitcount <= 0 || patternbitcount > indexmax)

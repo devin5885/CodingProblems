@@ -19,7 +19,7 @@ namespace CodingProblems.BitManipulation.CreateSimpleMask
         public static int CreateSimpleMask(int msbindex, int lsbindex)
         {
             // Determine the max index.
-            var indexmax = (sizeof(int) * 8) - 1;
+            const int indexmax = (sizeof(int) * 8) - 1;
 
             // Error checking.
             if (msbindex < 0 || msbindex > indexmax)
@@ -33,7 +33,7 @@ namespace CodingProblems.BitManipulation.CreateSimpleMask
 
             // Create initial mask of all 1's.
             // Note: Must be unsigned int so that 0's will be shifted in.
-            uint mask = 0xFFFF_FFFF;
+            var mask = 0xFFFF_FFFF;
 
             // Do the shifts.
             mask >>= indexmax - msbindex + lsbindex;

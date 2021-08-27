@@ -92,7 +92,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(0, st.Count(2));
 
             // Push an item onto the 0 stack.
-            st.Push(stackNumber: 0, item: 1);
+            st.Push(0, 1);
 
             // Check the count of each stack.
             Assert.AreEqual(1, st.Count(0));
@@ -100,7 +100,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(0, st.Count(2));
 
             // Push an item onto the 1 stack.
-            st.Push(stackNumber: 1, item: 1);
+            st.Push(1, 1);
 
             // Check the count of each stack.
             Assert.AreEqual(1, st.Count(0));
@@ -108,7 +108,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(0, st.Count(2));
 
             // Push a second item onto the 1 stack.
-            st.Push(stackNumber: 1, item: 2);
+            st.Push(1, 2);
 
             // Check the count of each stack.
             Assert.AreEqual(1, st.Count(0));
@@ -116,7 +116,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(0, st.Count(2));
 
             // Push an item onto the 2 stack.
-            st.Push(stackNumber: 2, item: 1);
+            st.Push(2, 1);
 
             // Check the count of each stack.
             Assert.AreEqual(1, st.Count(0));
@@ -124,7 +124,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(1, st.Count(2));
 
             // Push a second item onto the 2 stack.
-            st.Push(stackNumber: 2, item: 2);
+            st.Push(2, 2);
 
             // Check the count of each stack.
             Assert.AreEqual(1, st.Count(0));
@@ -132,7 +132,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             Assert.AreEqual(2, st.Count(2));
 
             // Push an second item onto the 0 stack.
-            st.Push(stackNumber: 0, item: 2);
+            st.Push(0, 2);
 
             // Peek at the items.
             Assert.AreEqual(2, st.Peek(0));
@@ -171,11 +171,11 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
         public void MultipleStacksUsingSingleArray1FixedSizeCompleteTestInvalidStackNumber()
         {
             // Create three stack with 2 items each.
-            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(capacityPerStack: 3, stackCount: 2);
+            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(3, 2);
 
             try
             {
-                st.Push(stackNumber: 2, item: 1);
+                st.Push(2, 1);
             }
             catch (ArgumentException)
             {
@@ -198,12 +198,12 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(2);
 
             // Push 3 items to first stack.
-            st.Push(stackNumber: 0, item: 1);
-            st.Push(stackNumber: 0, item: 2);
+            st.Push(0, 1);
+            st.Push(0, 2);
 
             try
             {
-                st.Push(stackNumber: 0, item: 3);
+                st.Push(0, 3);
             }
             catch (InvalidOperationException)
             {
@@ -223,14 +223,14 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
         public void MultipleStacksUsingSingleArray1FixedSizeCompleteTestPopInvalidStackNumber()
         {
             // Create three stack with 2 items each.
-            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(capacityPerStack: 3, stackCount: 2);
+            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(3, 2);
 
             // Push an item.
-            st.Push(stackNumber: 0, item: 1);
+            st.Push(0, 1);
 
             try
             {
-                st.Pop(stackNumber: 2);
+                st.Pop(2);
             }
             catch (ArgumentException)
             {
@@ -254,7 +254,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
 
             try
             {
-                st.Pop(stackNumber: 0);
+                st.Pop(0);
             }
             catch (InvalidOperationException)
             {
@@ -274,14 +274,14 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
         public void MultipleStacksUsingSingleArray1FixedSizeCompleteTestPeekInvalidStackNumber()
         {
             // Create three stack with 2 items each.
-            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(capacityPerStack: 3, stackCount: 2);
+            var st = new MultipleStacksUsingSingleArray1FixedSizeComplete<int>(3, 2);
 
             // Push an item.
-            st.Push(stackNumber: 0, item: 1);
+            st.Push(0, 1);
 
             try
             {
-                st.Peek(stackNumber: 2);
+                st.Peek(2);
             }
             catch (ArgumentException)
             {
@@ -305,7 +305,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
 
             try
             {
-                st.Peek(stackNumber: 0);
+                st.Peek(0);
             }
             catch (InvalidOperationException)
             {

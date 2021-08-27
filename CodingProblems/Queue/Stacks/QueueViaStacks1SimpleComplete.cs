@@ -53,7 +53,7 @@ namespace CodingProblems.Queue.Stacks
             MoveStack(StackQueue, stTemp);
 
             // Pop for temp stack.
-            T temp = stTemp.Pop();
+            var temp = stTemp.Pop();
 
             // Copy back to main stack.
             MoveStack(stTemp, StackQueue);
@@ -77,7 +77,7 @@ namespace CodingProblems.Queue.Stacks
             MoveStack(StackQueue, stTemp);
 
             // Pop for temp stack.
-            T temp = stTemp.Peek();
+            var temp = stTemp.Peek();
 
             // Copy back to main stack.
             MoveStack(stTemp, StackQueue);
@@ -93,6 +93,7 @@ namespace CodingProblems.Queue.Stacks
         /// </summary>
         /// <param name="stSource">The source stack.</param>
         /// <param name="stTarget">The target stack.</param>
+        // ReSharper disable once MemberCanBeMadeStatic.Local
         private void MoveStack(Stack<T> stSource, Stack<T> stTarget)
         {
             while (stSource.Count != 0)

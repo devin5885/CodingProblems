@@ -22,7 +22,7 @@ namespace CodingProblems.BitManipulation.GetMostSignificantBit
             for (var i = (sizeof(int) * 8) - 1; i >= 0; i--)
             {
                 // Build the mask.
-                uint mask = (uint)1 << i;
+                var mask = (uint)1 << i;
 
                 // If bit is set return index + 1.
                 if ((n & mask) != 0)

@@ -4,7 +4,7 @@ using CodingProblems.String_.Palindrome.IsPalindrome;
 namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
 {
     /// <summary>
-    /// Implements FindLongestPalidrome.
+    /// Implements FindLongestPalindrome.
     /// </summary>
     public static class FindLongestPalindrome1BruteForceComplete
     {

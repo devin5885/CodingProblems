@@ -15,8 +15,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestValueFound1()
         {
-            var listy = new Listy(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
-            Assert.AreEqual(4, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 8));
+            var listNoSize = new ListNoSize(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
+            Assert.AreEqual(4, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 8));
         }
 
         /// <summary>
@@ -25,8 +25,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestValueFound2()
         {
-            var listy = new Listy(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
-            Assert.AreEqual(5, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 23));
+            var listNoSize = new ListNoSize(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
+            Assert.AreEqual(5, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 23));
         }
 
         /// <summary>
@@ -35,8 +35,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestValueNotFound()
         {
-            var listy = new Listy(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
-            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 100));
+            var listNoSize = new ListNoSize(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
+            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 100));
         }
 
         /// <summary>
@@ -45,8 +45,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestOneElementFound()
         {
-            var listy = new Listy(new[] { 3 });
-            Assert.AreEqual(0, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 3));
+            var listNoSize = new ListNoSize(new[] { 3 });
+            Assert.AreEqual(0, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 3));
         }
 
         /// <summary>
@@ -55,8 +55,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestOneElementNotFound()
         {
-            var listy = new Listy(new[] { 3 });
-            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 23));
+            var listNoSize = new ListNoSize(new[] { 3 });
+            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 23));
         }
 
         /// <summary>
@@ -65,8 +65,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize3BinarySearchNoSizeCompleteTestEmptyLists()
         {
-            var listy = new Listy(Array.Empty<int>());
-            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, 23));
+            var listNoSize = new ListNoSize(Array.Empty<int>());
+            Assert.AreEqual(-1, ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, 23));
         }
 
         /// <summary>
@@ -95,8 +95,8 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         {
             try
             {
-                var listy = new Listy(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
-                ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listy, -2);
+                var listNoSize = new ListNoSize(new[] { 3, 5, 7, 7, 8, 23, 38, 56 });
+                ArraySearchSortedNoSize3BinarySearchNoSizeComplete.Search(listNoSize, -2);
             }
             catch (ArgumentException)
             {

@@ -8,15 +8,15 @@ namespace CodingProblems.Array_.SearchSortedNoSize
     public static class ArraySearchSortedNoSize3BinarySearchNoSizeComplete
     {
         /// <summary>
-        /// Search for value in listy.
+        /// Search for value in listNoSize.
         /// </summary>
-        /// <param name="listy">The list.</param>
+        /// <param name="listNoSize">The list.</param>
         /// <param name="value">The value to find.</param>
         /// <returns>The index of the value or -1 if not found.</returns>
-        public static int Search(Listy listy, int value)
+        public static int Search(ListNoSize listNoSize, int value)
         {
             // Error checking.
-            if (listy == null)
+            if (listNoSize == null)
                 throw new ArgumentException("Both arrays must be non-null");
 
             // Error checking.
@@ -39,7 +39,7 @@ namespace CodingProblems.Array_.SearchSortedNoSize
                 var indexIncrement = 1;
 
                 // Get current element.
-                var element = listy.ElementAt(index);
+                var element = listNoSize.ElementAt(index);
 
                 // Inner loop find element or outside of array bounds.
                 while (element != -1 && element < value)
@@ -49,7 +49,7 @@ namespace CodingProblems.Array_.SearchSortedNoSize
 
                     // Update the index and element.
                     index += indexIncrement;
-                    element = listy.ElementAt(index);
+                    element = listNoSize.ElementAt(index);
 
                     // Update the increment.
                     indexIncrement *= 2;

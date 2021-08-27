@@ -38,27 +38,28 @@ namespace CodingProblems.Array_.MergeSorted
                 if (list2Curr < input2.Count)
                     element2 = input2[list2Curr];
 
-                // Ran out of input2.
+                // Ran out of list2.
                 if (element1 != null && element2 == null)
                 {
                     result.Add((int)element1);
                     list1Curr++;
                 }
-                // Ran out of nums 1.
+                // Ran out of list1.
                 else if (element2 != null && element1 == null)
                 {
                     result.Add((int)element2);
                     list2Curr++;
                 }
-                // Compare & take input1.
+                // Compare & take from list1.
                 else if (element1 < element2)
                 {
                     result.Add((int)element1);
                     list1Curr++;
                 }
-                // Compare & take input2.
+                // Compare & take from list2.
                 else
                 {
+                    // ReSharper disable once PossibleInvalidOperationException
                     result.Add((int)element2);
                     list2Curr++;
                 }

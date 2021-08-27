@@ -25,7 +25,7 @@ namespace CodingProblems.String_.FindFirstNonRepeatedCharIndex
         [TestMethod]
         public void FindFirstNonRepeatedCharIndex2UseHashSetCompleteTest2()
         {
-            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex("teste");
+            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex(@"teste");
             Assert.AreEqual(2, index);
         }
 
@@ -35,7 +35,7 @@ namespace CodingProblems.String_.FindFirstNonRepeatedCharIndex
         [TestMethod]
         public void FindFirstNonRepeatedCharIndex2UseHashSetCompleteTest3()
         {
-            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex("teter");
+            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex(@"teter");
             Assert.AreEqual(4, index);
         }
 
@@ -45,7 +45,7 @@ namespace CodingProblems.String_.FindFirstNonRepeatedCharIndex
         [TestMethod]
         public void FindFirstNonRepeatedCharIndex2UseHashSetCompleteTest4NoNonRepeating()
         {
-            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex("testtest");
+            var index = FindFirstNonRepeatedCharIndex1BruteForceComplete.FindFirstNonRepeatedCharIndex(@"testtest");
             Assert.AreEqual(-1, index);
         }
 

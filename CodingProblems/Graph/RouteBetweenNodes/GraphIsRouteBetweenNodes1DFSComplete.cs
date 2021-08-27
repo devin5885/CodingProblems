@@ -7,7 +7,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
     /// <summary>
     /// Functionality for checking whether there is a route between nodes.
     /// </summary>
-    public static class GraphIsRouteBetweenNodes1DFSComplete
+    public static class GraphIsRouteBetweenNodes1DfsComplete
     {
         /// <summary>
         /// Determines if there is a route between start and end.
@@ -16,7 +16,7 @@ namespace CodingProblems.Graph.RouteBetweenNodes
         /// <param name="start">The start node.</param>
         /// <param name="end">The end node.</param>
         /// <returns>True if there is a route between nodes, false otherwise </returns>
-        public static bool IsRouteBetweenNodes1DFSComplete<T>(GraphNode<T> start, GraphNode<T> end)
+        public static bool IsRouteBetweenNodes1DfsComplete<T>(GraphNode<T> start, GraphNode<T> end)
         {
             // Error checking.
             if (start == null || end == null)

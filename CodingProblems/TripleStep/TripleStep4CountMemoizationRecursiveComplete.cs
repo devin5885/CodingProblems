@@ -20,7 +20,7 @@ namespace CodingProblems.TripleStep
                 throw new ArgumentException("steps must be greater than 0.");
 
             // Initialize array.
-            int[] memo = new int[steps + 1];
+            var memo = new int[steps + 1];
             memo[0] = 1;
 
             // Call helper.

@@ -53,6 +53,7 @@ namespace CodingProblems.Array_.MagicIndex
             if (midValue > midIndex)
                 return FindMagicIndexHelper(array, startIndex, midIndex - 1);
             // Go right.
+            // ReSharper disable once RedundantIfElseBlock
             else
                 return FindMagicIndexHelper(array, midIndex + 1, endIndex);
         }

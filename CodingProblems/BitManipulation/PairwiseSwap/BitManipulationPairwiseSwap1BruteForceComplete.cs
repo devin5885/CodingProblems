@@ -15,10 +15,10 @@ namespace CodingProblems.BitManipulation.PairwiseSwap
         public static int SwapOddEvenBits(int num)
         {
             // Determine the max index.
-            var indexmax = (sizeof(int) * 8) - 1;
+            const int indexmax = (sizeof(int) * 8) - 1;
 
             // Swap all bits.
-            for (int i = 0; i <= indexmax - 1; i += 2)
+            for (var i = 0; i <= indexmax - 1; i += 2)
             {
                 // Get current values.
                 var setEven = BitManipulationGetSetClearBit1Complete.GetBit(num, i);

@@ -71,7 +71,7 @@ namespace CodingProblems.IsUnique.String
         {
             // Determine max # of chars.
             // (64K)
-            int maxChars = (int)Math.Pow(2, sizeof(char) * 8);
+            var maxChars = (int)Math.Pow(2, sizeof(char) * 8);
 
             // Build a string bigger than it.
             Assert.IsFalse(IsUniqueString5BitArrayComplete.IsUnique(new string('a', maxChars + 1)));

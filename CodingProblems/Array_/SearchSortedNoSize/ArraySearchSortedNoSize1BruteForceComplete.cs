@@ -8,15 +8,15 @@ namespace CodingProblems.Array_.SearchSortedNoSize
     public static class ArraySearchSortedNoSize1BruteForceComplete
     {
         /// <summary>
-        /// Search for value in listy.
+        /// Search for value in listNoSize.
         /// </summary>
-        /// <param name="listy">The list.</param>
+        /// <param name="listNoSize">The list.</param>
         /// <param name="value">The value to find.</param>
         /// <returns>The index of the value or -1 if not found.</returns>
-        public static int Search(Listy listy, int value)
+        public static int Search(ListNoSize listNoSize, int value)
         {
             // Error checking.
-            if (listy == null)
+            if (listNoSize == null)
                 throw new ArgumentException("Both arrays must be non-null");
 
             // Error checking.
@@ -24,12 +24,12 @@ namespace CodingProblems.Array_.SearchSortedNoSize
                 throw new ArgumentException("Value must be positive.");
 
             var index = 0;
-            var element = listy.ElementAt(index);
+            var element = listNoSize.ElementAt(index);
 
             while (element < value && element != -1)
             {
                 index++;
-                element = listy.ElementAt(index);
+                element = listNoSize.ElementAt(index);
             }
 
             if (element == -1)

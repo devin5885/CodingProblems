@@ -39,8 +39,8 @@ namespace CodingProblems.String_.Permutations
         [TestMethod]
         public void GetPermutations1NoDuplicatesByCharCompleteTestsTest1Char()
         {
-            var expected = new List<string>() { "a" };
-            var str = "a";
+            var expected = new List<string> { "a" };
+            const string str = "a";
             var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -51,8 +51,8 @@ namespace CodingProblems.String_.Permutations
         [TestMethod]
         public void GetPermutations1NoDuplicatesByCharCompleteTestsTest2Char()
         {
-            var expected = new List<string>() { "ab", "ba" };
-            var str = "ab";
+            var expected = new List<string> { "ab", "ba" };
+            const string str = "ab";
             var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.
@@ -68,8 +68,8 @@ namespace CodingProblems.String_.Permutations
         [TestMethod]
         public void GetPermutations1NoDuplicatesByCharCompleteTestsTest3Char()
         {
-            var expected = new List<string>() { "abc", "acb", "bac", "bca", "cab", "cba" };
-            var str = "abc";
+            var expected = new List<string> { "abc", "acb", "bac", "bca", "cab", "cba" };
+            const string str = "abc";
             var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.
@@ -85,8 +85,8 @@ namespace CodingProblems.String_.Permutations
         [TestMethod]
         public void GetPermutations1NoDuplicatesByCharCompleteTestsTest4Char()
         {
-            var expected = new List<string>() { "abcd", "abdc", "acbd", "acdb", "adbc", "adcb", "bacd", "badc", "bcad", "bcda", "bdac", "bdca", "cabd", "cadb", "cbad", "cbda", "cdab", "cdba", "dabc", "dacb", "dbac", "dbca", "dcab", "dcba" };
-            var str = "abcd";
+            var expected = new List<string> { @"abcd", @"abdc", @"acbd", @"acdb", @"adbc", @"adcb", @"bacd", @"badc", @"bcad", @"bcda", @"bdac", @"bdca", @"cabd", @"cadb", @"cbad", @"cbda", @"cdab", @"cdba", @"dabc", @"dacb", @"dbac", @"dbca", @"dcab", @"dcba" };
+            const string str = @"abcd";
             var actual = GetPermutations1NoDuplicatesByCharComplete.GetPermutations(str);
 
             // Sort the list so it will always match expected.

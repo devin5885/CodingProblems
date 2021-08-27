@@ -35,7 +35,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest3RemoveLastChar()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("abac");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"abac");
             Assert.AreEqual("aba", actual);
         }
 
@@ -45,7 +45,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest4RemoveFirstChar()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("caba");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"caba");
             Assert.AreEqual("aba", actual);
         }
 
@@ -55,7 +55,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest5RemoveLastTwoChars()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("abacc");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"abacc");
             Assert.AreEqual("aba", actual);
         }
 
@@ -65,7 +65,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest6RemoveFirstTwoChars()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("ccaba");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"ccaba");
             Assert.AreEqual("aba", actual);
         }
 
@@ -75,7 +75,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest7NoPalidrome()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("abcde");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"abcde");
             Assert.AreEqual("a", actual);
         }
 
@@ -85,7 +85,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
         [TestMethod]
         public void FindLongestPalindrome1BruteForceTest8MultiplePalindromes()
         {
-            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome("abbfcceg");
+            var actual = FindLongestPalindrome1BruteForceComplete.FindLongestPalindrome(@"abbfcceg");
             Assert.AreEqual("bb", actual);
         }
 

@@ -20,8 +20,8 @@
                 return false;
 
             // Check matrix.
-            for (int i = 0; i < length; i++)
-                for (int j = 0; j < length; j++)
+            for (var i = 0; i < length; i++)
+                for (var j = 0; j < length; j++)
                 {
                     if (matrix1[i, j] != matrix2[i, j])
                         return false;

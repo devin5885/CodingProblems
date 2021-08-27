@@ -43,22 +43,22 @@ namespace CodingProblems.String_.Palindrome.GetMakePalindromeStepCount
             var matrix = new int[start.Length + 1, end.Length + 1];
 
             // Populate first row.
-            for (int i = 0; i < end.Length + 1; i++)
+            for (var i = 0; i < end.Length + 1; i++)
                 matrix[0, i] = i;
 
             // Populate first col.
-            for (int i = 0; i < start.Length + 1; i++)
+            for (var i = 0; i < start.Length + 1; i++)
                 matrix[i, 0] = i;
 
             // Populate additional columns.
-            for (int row = 1; row < end.Length + 1; row++)
-                for (int col = 1; col < start.Length + 1; col++)
+            for (var row = 1; row < end.Length + 1; row++)
+                for (var col = 1; col < start.Length + 1; col++)
                 {
                     // Determine whether we need to add 1.
-                    int matchAdd = end[row - 1] == start[col - 1] ? 0 : 1;
+                    var matchAdd = end[row - 1] == start[col - 1] ? 0 : 1;
 
                     // Find lowest.
-                    int lowest = Math.Min(matrix[row, col - 1], matrix[row - 1, col - 1]);
+                    var lowest = Math.Min(matrix[row, col - 1], matrix[row - 1, col - 1]);
                     lowest = Math.Min(lowest, matrix[row - 1, col]);
 
                     // Update matrix.

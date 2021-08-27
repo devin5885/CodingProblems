@@ -3,7 +3,7 @@
 namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
 {
     /// <summary>
-    /// Implements FindLongestPalidrome.
+    /// Implements FindLongestPalindrome.
     /// </summary>
     public static class FindLongestPalindrome2UseAnchorsComplete
     {
@@ -29,7 +29,7 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
                 // of string (Strings with odd number of characters).
                 // i is 1, Check all strings with anchor character between the two
                 // center characters (Strings with even number of characters).
-                for (int i = 0; i <= 1; i++)
+                for (var i = 0; i <= 1; i++)
                 {
                     // Compute initial indexes.
                     var indexLeft = anchorIndex;

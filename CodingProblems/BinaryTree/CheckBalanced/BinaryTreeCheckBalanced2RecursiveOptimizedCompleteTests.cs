@@ -32,10 +32,10 @@ namespace CodingProblems.BinaryTree.CheckBalanced
             Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree15));
             Assert.IsFalse(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.Tree16));
 
-            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree41));
-            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree51));
-            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree111));
-            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.SubTree121));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.TreeSubTree41));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.TreeSubTree51));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.TreeSubTree111));
+            Assert.IsTrue(BinaryTreeCheckBalanced2RecursiveOptimizedComplete.CheckBalanced2OptimizedComplete(BinaryTreeNodeTestData.TreeSubTree121));
         }
     }
 }

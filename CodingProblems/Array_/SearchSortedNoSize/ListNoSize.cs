@@ -5,13 +5,13 @@ namespace CodingProblems.Array_.SearchSortedNoSize
     /// <summary>
     /// Custom list class that does not have a Size operator.
     /// </summary>
-    public class Listy
+    public class ListNoSize
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Listy"/> class.
+        /// Initializes a new instance of the <see cref="ListNoSize"/> class.
         /// </summary>
         /// <param name="arraySource">The source Array.</param>
-        public Listy(int[] arraySource)
+        public ListNoSize(int[] arraySource)
         {
             Array = new int[arraySource.Length];
             arraySource.CopyTo(Array, 0);

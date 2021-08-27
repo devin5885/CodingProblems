@@ -5,7 +5,7 @@ namespace CodingProblems.LinkedList.SingleLink.RemoveDuplicates
     /// <summary>
     /// Implements RemoveDuplicates.
     /// </summary>
-    public static class LinkedListSingleRemoveDuplicates2NoAdditionalDSComplete
+    public static class LinkedListSingleRemoveDuplicates2NoAdditionalDataStructuresComplete
     {
         /// <summary>
         /// Removes duplicate nodes from the list.

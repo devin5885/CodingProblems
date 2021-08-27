@@ -86,24 +86,24 @@
         public static readonly BinaryTreeNode<int> Tree16;
 
         /// <summary>
-        /// SubTree41
+        /// TreeSubTree41
         /// </summary>
-        public static readonly BinaryTreeNode<int> SubTree41;
+        public static readonly BinaryTreeNode<int> TreeSubTree41;
 
         /// <summary>
-        /// SubTree51
+        /// TreeSubTree51
         /// </summary>
-        public static readonly BinaryTreeNode<int> SubTree51;
+        public static readonly BinaryTreeNode<int> TreeSubTree51;
 
         /// <summary>
-        /// SubTree111
+        /// TreeSubTree111
         /// </summary>
-        public static readonly BinaryTreeNode<int> SubTree111;
+        public static readonly BinaryTreeNode<int> TreeSubTree111;
 
         /// <summary>
-        /// SubTree121
+        /// TreeSubTree121
         /// </summary>
-        public static readonly BinaryTreeNode<int> SubTree121;
+        public static readonly BinaryTreeNode<int> TreeSubTree121;
 
         static BinaryTreeNodeTestData()
         {
@@ -159,7 +159,7 @@
                 Left = new BinaryTreeNode<int>(1),
                 Right = new BinaryTreeNode<int>(3)
             };
-            SubTree41 = Tree4.Right;
+            TreeSubTree41 = Tree4.Right;
 
             // tree5 (Simple 3 level, perfect, BST).
             //           10
@@ -184,7 +184,7 @@
                     Right = new BinaryTreeNode<int>(18)
                 }
             };
-            SubTree51 = Tree5.Right;
+            TreeSubTree51 = Tree5.Right;
 
             // tree6 (Simple 3 level, perfect, non-BST)
             //           10
@@ -326,7 +326,7 @@
                     Right = new BinaryTreeNode<int>(18)
                 }
             };
-            SubTree111 = Tree11.Right.Left;
+            TreeSubTree111 = Tree11.Right.Left;
 
             // tree12 (4 level, perfect)
             //                   15
@@ -364,7 +364,7 @@
             Tree12.Right.Left.Right = new BinaryTreeNode<int>(18);
             Tree12.Right.Right.Left = new BinaryTreeNode<int>(24);
             Tree12.Right.Right.Right = new BinaryTreeNode<int>(26);
-            SubTree121 = Tree12.Right;
+            TreeSubTree121 = Tree12.Right;
 
             // Tree13 (Non-balanced root)
             //     1
@@ -460,7 +460,7 @@
                     {
                         Left = new BinaryTreeNode<int>(9),
                         Right = new BinaryTreeNode<int>(10)
-                    },
+                    }
                 },
                 Right = new BinaryTreeNode<int>(3)
                 {
@@ -468,7 +468,7 @@
                     {
                         Left = new BinaryTreeNode<int>(11),
                         Right = new BinaryTreeNode<int>(12)
-                    },
+                    }
                 }
             };
         }

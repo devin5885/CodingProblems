@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
 {
     /// <summary>
-    /// Class that implements IsPalidromePermutation
+    /// Class that implements IsPalindromePermutation
     /// </summary>
     public static class PalindromeIsPalindromePermutation1SimpleComplete
     {
@@ -25,7 +25,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
             foreach (var c in input)
             {
                 // Toggle if found.
-                if (dict.TryGetValue(c, out bool result))
+                if (dict.TryGetValue(c, out var result))
                     dict[c] = !result;
                 // Add as odd # of instances.
                 else

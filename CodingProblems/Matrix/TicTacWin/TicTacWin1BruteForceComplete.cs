@@ -29,7 +29,7 @@ namespace CodingProblems.Matrix.TicTacWin
                 throw new ArgumentException("Board must have a least 2 rows and 2 columns.");
 
             // Check rows.
-            for (int row = 0; row < board.GetLength(0); row++)
+            for (var row = 0; row < board.GetLength(0); row++)
             {
                 var res = CheckSum(board, GetRowSum(board, row));
                 if (res != 0)
@@ -37,7 +37,7 @@ namespace CodingProblems.Matrix.TicTacWin
             }
 
             // Check cols.
-            for (int col = 0; col < board.GetLength(1); col++)
+            for (var col = 0; col < board.GetLength(1); col++)
             {
                 var res = CheckSum(board, GetColSum(board, col));
                 if (res != 0)
@@ -71,7 +71,7 @@ namespace CodingProblems.Matrix.TicTacWin
         public static int GetRowSum(int[,] board, int rowIndex)
         {
             var sum = 0;
-            for (int colIndex = 0; colIndex < board.GetLength(1); colIndex++)
+            for (var colIndex = 0; colIndex < board.GetLength(1); colIndex++)
                 sum += board[rowIndex, colIndex];
             return sum;
         }
@@ -85,7 +85,7 @@ namespace CodingProblems.Matrix.TicTacWin
         public static int GetColSum(int[,] board, int colIndex)
         {
             var sum = 0;
-            for (int rowIndex = 0; rowIndex < board.GetLength(0); rowIndex++)
+            for (var rowIndex = 0; rowIndex < board.GetLength(0); rowIndex++)
                 sum += board[rowIndex, colIndex];
             return sum;
         }
@@ -99,7 +99,7 @@ namespace CodingProblems.Matrix.TicTacWin
         public static int GetDiagonalSum(int[,] board, bool down)
         {
             var sum = 0;
-            for (int rowcol = 0; rowcol < board.GetLength(0); rowcol++)
+            for (var rowcol = 0; rowcol < board.GetLength(0); rowcol++)
             {
                 if (down)
                     sum += board[rowcol, rowcol];

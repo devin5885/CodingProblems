@@ -3,7 +3,7 @@
     /// <summary>
     /// Class that implements IsUnique.
     /// </summary>
-    public static class IsUniqueString2NoAdditionalDSComplete
+    public static class IsUniqueString2NoAdditionalDataStructuresComplete
     {
         /// <summary>
         /// Determines whether the input string contains duplicate characters.

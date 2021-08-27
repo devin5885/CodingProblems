@@ -54,7 +54,7 @@ namespace CodingProblems.Stack.IsPalindrome
         [TestMethod]
         public void IsPalindromeUsingStacks1StandardTest5IsAPalindromeEvenChars()
         {
-            var actual = IsPalindromeUsingStacks1StandardComplete.IsPalindromeUsingStacks("abba");
+            var actual = IsPalindromeUsingStacks1StandardComplete.IsPalindromeUsingStacks(@"abba");
             Assert.AreEqual(true, actual);
         }
     }

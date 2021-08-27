@@ -55,7 +55,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindrome
         [TestMethod]
         public void IsPalindrome1StandardCompleteTest5IsAPalindromeEvenChars()
         {
-            var actual = IsPalindrome1StandardComplete.IsPalindrome("abba");
+            var actual = IsPalindrome1StandardComplete.IsPalindrome(@"abba");
             Assert.AreEqual(true, actual);
         }
 

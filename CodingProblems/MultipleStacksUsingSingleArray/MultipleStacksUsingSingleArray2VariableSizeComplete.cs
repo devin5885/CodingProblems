@@ -19,7 +19,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
 
             // Initialize StackPointer array.
             StackPointer = new int[stackCount];
-            for (int i = 0; i < StackPointer.Length; i++)
+            for (var i = 0; i < StackPointer.Length; i++)
                 StackPointer[i] = -1;
 
             // Initialize StackPointerOffset array.
@@ -98,14 +98,14 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
 
                 // Copy existing items.
                 if (oldCount != 0)
-                    for (int i = 0; i < StackCount; i++)
+                    for (var i = 0; i < StackCount; i++)
                         Array.Copy(Items, StackPointerOffset[i], itemsTemp, newCapacityPerStack * i, StackPointer[i] + 1);
 
                 // Update the ref.
                 Items = itemsTemp;
 
                 // Update StackPointerOffset array (After copy).
-                for (int i = 0; i < StackPointerOffset.Length; i++)
+                for (var i = 0; i < StackPointerOffset.Length; i++)
                     StackPointerOffset[i] = newCapacityPerStack * i;
             }
 

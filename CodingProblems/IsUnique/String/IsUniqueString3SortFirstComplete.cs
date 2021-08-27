@@ -22,7 +22,7 @@ namespace CodingProblems.IsUnique.String
             var sorted = string.Concat(input.OrderBy(c => c));
 
             // Check & add.
-            for (int i = 0; i < sorted.Length - 2; i++)
+            for (var i = 0; i < sorted.Length - 2; i++)
             {
                 // If a duplicate is found, we are done.
                 if (sorted[i] == sorted[i + 1])

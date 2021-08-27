@@ -27,7 +27,7 @@ namespace CodingProblems.String_.Permutations
                 result.Add(new string(str[0], 1));
 
             // Process each character.
-            for (int i = 1; i < str.Length; i++)
+            for (var i = 1; i < str.Length; i++)
             {
                 // Generate strings.
                 var resultCurr = new List<string>();

@@ -17,7 +17,7 @@ namespace CodingProblems.Helpers.File_
         public void TestWriteFileFromBufferDefaultFileName()
         {
             // Initialize test data.
-            var size = 11;
+            const int size = 11;
             var buffer = new int[size];
             for (var i = 0; i < size; i++)
                 buffer[i] = i;
@@ -30,7 +30,7 @@ namespace CodingProblems.Helpers.File_
             {
                 for (var i = 0; i < size; i++)
                 {
-                    int value = br.ReadInt32();
+                    var value = br.ReadInt32();
                     Assert.AreEqual(i, value);
                 }
             }
@@ -47,7 +47,7 @@ namespace CodingProblems.Helpers.File_
         public void TestWriteFileFromBufferSpecifyFileName()
         {
             // Initialize test data.
-            var size = 11;
+            const int size = 11;
             var buffer = new int[size];
             for (var i = 0; i < size; i++)
                 buffer[i] = i;
@@ -63,7 +63,7 @@ namespace CodingProblems.Helpers.File_
             {
                 for (var i = 0; i < size; i++)
                 {
-                    int value = br.ReadInt32();
+                    var value = br.ReadInt32();
                     Assert.AreEqual(i, value);
                 }
             }
@@ -117,7 +117,7 @@ namespace CodingProblems.Helpers.File_
         [TestMethod]
         public void TestWriteFileOfIntsSmallWithExclusionValue()
         {
-            for (int exclusionValue = 0;  exclusionValue < 10; exclusionValue++)
+            for (var exclusionValue = 0;  exclusionValue < 10; exclusionValue++)
                 TestWriteFileOfIntsHelper(50, 1, 9, exclusionValue, false, null, 4);
         }
 
@@ -132,7 +132,7 @@ namespace CodingProblems.Helpers.File_
             Assert.Inconclusive();
 
             // ReSharper disable once HeuristicUnreachableCode
-            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            const int bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
 
@@ -147,7 +147,7 @@ namespace CodingProblems.Helpers.File_
             Assert.Inconclusive();
 
             // ReSharper disable once HeuristicUnreachableCode
-            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            const int bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, true, null, bufferSizeMaxInts);
         }
 
@@ -162,7 +162,7 @@ namespace CodingProblems.Helpers.File_
             Assert.Inconclusive();
 
             // ReSharper disable once HeuristicUnreachableCode
-            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            const int bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, false, null, bufferSizeMaxInts);
         }
 
@@ -177,8 +177,8 @@ namespace CodingProblems.Helpers.File_
             Assert.Inconclusive();
 
             // ReSharper disable once HeuristicUnreachableCode
-            var fileSizeInts = 1024 * 1024 * 1024; // 4 GB (~ 1 billion integers).
-            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            const int fileSizeInts = 1024 * 1024 * 1024; // 4 GB (~ 1 billion integers).
+            const int bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
 
@@ -193,8 +193,8 @@ namespace CodingProblems.Helpers.File_
             Assert.Inconclusive();
 
             // ReSharper disable once HeuristicUnreachableCode
-            long fileSizeInts = 1024L * 1024 * 1024 * 4; // 16 GB (~ 4 billion integers).
-            var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
+            const long fileSizeInts = 1024L * 1024 * 1024 * 4; // 16 GB (~ 4 billion integers).
+            const int bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
 
@@ -216,14 +216,11 @@ namespace CodingProblems.Helpers.File_
             // Check the file size.
             Assert.AreEqual(fileSizeInts * 4, new FileInfo(fileName).Length);
 
-            // Store start value.
-            var startValue = minValue;
-
             // For randomized file we can't check this.
             if (!randomize)
             {
                 // Initialize expected value.
-                var valueExpected = startValue;
+                var valueExpected = minValue;
                 long offset = 0;
 
                 for (var fileSizeLeftInts = fileSizeInts; fileSizeLeftInts > 0;)
@@ -246,7 +243,7 @@ namespace CodingProblems.Helpers.File_
 
                         // Reset to min value.
                         if (valueExpected == maxValue)
-                            valueExpected = startValue;
+                            valueExpected = minValue;
                         else
                             // Update expected value.
                             valueExpected++;

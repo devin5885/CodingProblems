@@ -15,8 +15,8 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         [TestMethod]
         public void BitManipulationCreatePatternMask1CompleteTest1Simple()
         {
-            var pattern = 1;
-            var patternbitcount = 2;
+            const int pattern = 1;
+            const int patternbitcount = 2;
             Assert.AreEqual(Convert.ToInt32("01010101010101010101010101010101", 2), BitManipulationCreatePatternMask1Complete.CreatePatternMask(pattern, patternbitcount));
         }
 
@@ -27,7 +27,7 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         public void BitManipulationCreatePatternMask1CompleteTest2Simple()
         {
             var pattern = Convert.ToInt32("10", 2);
-            var patternbitcount = 2;
+            const int patternbitcount = 2;
             Assert.AreEqual(Convert.ToInt32("10101010101010101010101010101010", 2), BitManipulationCreatePatternMask1Complete.CreatePatternMask(pattern, patternbitcount));
         }
 
@@ -38,7 +38,7 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         public void BitManipulationCreatePatternMask1CompleteTest3UnevenBitCount()
         {
             var pattern = Convert.ToInt32("01110", 2);
-            var patternbitcount = 5;
+            const int patternbitcount = 5;
             var expected = Convert.ToInt32("10011100111001110011100111001110", 2);
             Assert.AreEqual(expected, BitManipulationCreatePatternMask1Complete.CreatePatternMask(pattern, patternbitcount));
         }
@@ -50,7 +50,7 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         public void BitManipulationCreatePatternMask1CompleteTest332Bit()
         {
             var pattern = Convert.ToInt32("11111111111111111111111111111111", 2);
-            var patternbitcount = 32;
+            const int patternbitcount = 32;
             var expected = Convert.ToInt32("11111111111111111111111111111111", 2);
             Assert.AreEqual(expected, BitManipulationCreatePatternMask1Complete.CreatePatternMask(pattern, patternbitcount));
         }

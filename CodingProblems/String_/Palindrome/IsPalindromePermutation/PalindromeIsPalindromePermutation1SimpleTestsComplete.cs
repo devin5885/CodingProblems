@@ -68,7 +68,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
         [TestMethod]
         public void PalindromeStringIsPalindromePermuation1Test4Char()
         {
-            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("cbbc"));
+            Assert.IsTrue(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation(@"cbbc"));
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace CodingProblems.String_.Palindrome.IsPalindromePermutation
         [TestMethod]
         public void PalindromeStringIsPalindromePermuation1TestMultipleOdd()
         {
-            Assert.IsFalse(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation("cbdbce"));
+            Assert.IsFalse(PalindromeIsPalindromePermutation1SimpleComplete.IsPalindromePermutation(@"cbdbce"));
         }
 
         /// <summary>
