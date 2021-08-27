@@ -20,7 +20,7 @@ namespace CodingProblems.Array_.PowerSet
             {
                 new List<int>()
             };
-            var actual = PowerSet1RecursiveComplete.GetPowerSet(new int[0]);
+            var actual = PowerSet1RecursiveComplete.GetPowerSet(Array.Empty<int>());
 
             Assert.AreEqual(actual.Count, expected.Count);
             for (var i = 0; i < expected.Count; i++)

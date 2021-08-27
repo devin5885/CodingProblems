@@ -131,6 +131,7 @@ namespace CodingProblems.Helpers.File_
             // Disable the next line to enable the test.
             Assert.Inconclusive();
 
+            // ReSharper disable once HeuristicUnreachableCode
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
         }
@@ -145,6 +146,7 @@ namespace CodingProblems.Helpers.File_
             // Disable the next line to enable the test.
             Assert.Inconclusive();
 
+            // ReSharper disable once HeuristicUnreachableCode
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, null, true, null, bufferSizeMaxInts);
         }
@@ -159,6 +161,7 @@ namespace CodingProblems.Helpers.File_
             // Disable the next line to enable the test.
             Assert.Inconclusive();
 
+            // ReSharper disable once HeuristicUnreachableCode
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(int.MaxValue / 8, 0, int.MaxValue, 234567, false, null, bufferSizeMaxInts);
         }
@@ -173,6 +176,7 @@ namespace CodingProblems.Helpers.File_
             // Disable the next line to enable the test.
             Assert.Inconclusive();
 
+            // ReSharper disable once HeuristicUnreachableCode
             var fileSizeInts = 1024 * 1024 * 1024; // 4 GB (~ 1 billion integers).
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);
@@ -188,6 +192,7 @@ namespace CodingProblems.Helpers.File_
             // Disable the next line to enable the test.
             Assert.Inconclusive();
 
+            // ReSharper disable once HeuristicUnreachableCode
             long fileSizeInts = 1024L * 1024 * 1024 * 4; // 16 GB (~ 4 billion integers).
             var bufferSizeMaxInts = 1024 * 1024 * 16 / 4; // 16 GB buffer.
             TestWriteFileOfIntsHelper(fileSizeInts, 0, int.MaxValue, null, false, null, bufferSizeMaxInts);

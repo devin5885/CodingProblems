@@ -62,6 +62,13 @@ namespace CodingProblems.String_.Palindrome.FindLongestPalindrome
                     }
 
                     // Now see if this string is better than the current string.
+                    // ReSharper disable once InvertIf
+                    // ReSharper disable once ConditionIsAlwaysTrueOrFalse
+                    // Note: Technically indexLeftBest and indexRightBest must
+                    // either both be null or neither null, since they are either
+                    // both assigned to a non-null value or not assigned at all and
+                    // thus are both null. Keep both statements since this is not
+                    // obvious.
                     if (indexLeftBest != null && indexRightBest != null)
                     {
                         // Calculate the length of this palindrome.

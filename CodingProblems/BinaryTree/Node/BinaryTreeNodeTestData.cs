@@ -292,10 +292,12 @@
             Tree10 = new BinaryTreeNode<int>(10)
             {
                 Left = new BinaryTreeNode<int>(7)
+                {
+                    Left = new BinaryTreeNode<int>(5),
+                    Right = new BinaryTreeNode<int>(8)
+                },
+                Right = new BinaryTreeNode<int>(15)
             };
-            Tree10.Left.Left = new BinaryTreeNode<int>(5);
-            Tree10.Left.Right = new BinaryTreeNode<int>(8);
-            Tree10.Right = new BinaryTreeNode<int>(15);
 
             // Tree11 (4 level, non-filled node on non-last level)
             //           10
@@ -345,18 +347,18 @@
                     {
                         Left = new BinaryTreeNode<int>(5),
                         Right = new BinaryTreeNode<int>(7)
+                    },
+                    Right = new BinaryTreeNode<int>(11)
+                    {
+                        Left = new BinaryTreeNode<int>(10),
+                        Right = new BinaryTreeNode<int>(12)
                     }
+                },
+                Right = new BinaryTreeNode<int>(23)
+                {
+                    Left = new BinaryTreeNode<int>(17),
+                    Right = new BinaryTreeNode<int>(25)
                 }
-            };
-            Tree12.Left.Right = new BinaryTreeNode<int>(11)
-            {
-                Left = new BinaryTreeNode<int>(10),
-                Right = new BinaryTreeNode<int>(12)
-            };
-            Tree12.Right = new BinaryTreeNode<int>(23)
-            {
-                Left = new BinaryTreeNode<int>(17),
-                Right = new BinaryTreeNode<int>(25)
             };
             Tree12.Right.Left.Left = new BinaryTreeNode<int>(16);
             Tree12.Right.Left.Right = new BinaryTreeNode<int>(18);

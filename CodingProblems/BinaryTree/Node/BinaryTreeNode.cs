@@ -20,6 +20,7 @@
         /// Initializes a new instance of the <see cref="BinaryTreeNode{T}"/> class
         /// with null data.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public BinaryTreeNode()
         {
         }

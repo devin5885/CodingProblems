@@ -13,7 +13,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which there is no winner because the board is empty.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3NoWinnerEmpty()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3NoWinnerEmpty()
         {
             var board = new[,]
             {
@@ -28,7 +28,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which there is no winner.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3NoWinner1()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3NoWinner1()
         {
             var board = new[,]
             {
@@ -43,7 +43,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up row 0.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByRow0()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByRow0()
         {
             var board = new[,]
             {
@@ -58,7 +58,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up row 1.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByRow1()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByRow1()
         {
             var board = new[,]
             {
@@ -73,7 +73,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up row 2.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByRow2()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByRow2()
         {
             var board = new[,]
             {
@@ -88,7 +88,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up column 0.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByCol0()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByCol0()
         {
             var board = new[,]
             {
@@ -103,7 +103,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up column 1.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByCol1()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByCol1()
         {
             var board = new[,]
             {
@@ -118,7 +118,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up column 2.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByCol2()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByCol2()
         {
             var board = new[,]
             {
@@ -133,7 +133,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up the "down" diagonal.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByDownDiag()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByDownDiag()
         {
             var board = new[,]
             {
@@ -148,7 +148,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins via filling up the "up" diagonal.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3XWinsByUpDiag()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3XWinsByUpDiag()
         {
             var board = new[,]
             {
@@ -163,7 +163,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which 0 wins via filling up row 0.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByRow0()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByRow0()
         {
             var board = new[,]
             {
@@ -178,7 +178,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up row 1.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByRow1()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByRow1()
         {
             var board = new[,]
             {
@@ -193,7 +193,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up row 2.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByRow2()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByRow2()
         {
             var board = new[,]
             {
@@ -208,7 +208,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up column 0.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByCol0()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByCol0()
         {
             var board = new[,]
             {
@@ -223,7 +223,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up column 1.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByCol1()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByCol1()
         {
             var board = new[,]
             {
@@ -238,7 +238,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up column 2.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByCol2()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByCol2()
         {
             var board = new[,]
             {
@@ -253,7 +253,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up the "down" diagonal.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByDownDiag()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByDownDiag()
         {
             var board = new[,]
             {
@@ -268,7 +268,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins via filling up the "up" diagonal.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon3by3OWinsByUpDiag()
+        public void TestTicTacWin1BruteForceCompleteHasWon3By3OWinsByUpDiag()
         {
             var board = new[,]
             {
@@ -283,7 +283,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which there is no winner because the board is empty for a 2x2 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon2by2NoWinnerEmpty()
+        public void TestTicTacWin1BruteForceCompleteHasWon2By2NoWinnerEmpty()
         {
             var board = new[,]
             {
@@ -297,7 +297,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which there is no winner because the board is empty for a 4x4 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon4by4NoWinnerEmpty()
+        public void TestTicTacWin1BruteForceCompleteHasWon4By4NoWinnerEmpty()
         {
             var board = new[,]
             {
@@ -313,7 +313,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins for a 2x2 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon2by2XWins()
+        public void TestTicTacWin1BruteForceCompleteHasWon2By2XWins()
         {
             var board = new[,]
             {
@@ -327,7 +327,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which X wins for a 4x4 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon4by4XWins()
+        public void TestTicTacWin1BruteForceCompleteHasWon4By4XWins()
         {
             var board = new[,]
             {
@@ -343,7 +343,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins for a 2x2 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon2by2OWins()
+        public void TestTicTacWin1BruteForceCompleteHasWon2By2OWins()
         {
             var board = new[,]
             {
@@ -357,7 +357,7 @@ namespace CodingProblems.Matrix.TicTacWin
         /// Tests a case in which O wins for a 4x4 board.
         /// </summary>
         [TestMethod]
-        public void TestTicTacWin1BruteForceCompleteHasWon4by4OWins()
+        public void TestTicTacWin1BruteForceCompleteHasWon4By4OWins()
         {
             var board = new[,]
             {

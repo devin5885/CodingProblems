@@ -65,7 +65,7 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize2BinarySearchCompleteTestEmptyLists()
         {
-            var listy = new Listy(new int[0]);
+            var listy = new Listy(Array.Empty<int>());
             Assert.AreEqual(-1, ArraySearchSortedNoSize2BinarySearchComplete.Search(listy, 23));
         }
 

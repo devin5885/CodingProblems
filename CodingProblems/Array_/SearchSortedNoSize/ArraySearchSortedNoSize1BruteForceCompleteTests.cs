@@ -65,7 +65,7 @@ namespace CodingProblems.Array_.SearchSortedNoSize
         [TestMethod]
         public void ArraySearchSortedNoSize1BruteForceCompleteTestEmptyLists()
         {
-            var listy = new Listy(new int[0]);
+            var listy = new Listy(Array.Empty<int>());
             Assert.AreEqual(-1, ArraySearchSortedNoSize1BruteForceComplete.Search(listy, 23));
         }
 

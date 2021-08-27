@@ -33,7 +33,7 @@ namespace CodingProblems.Array_.MagicIndex
         [TestMethod]
         public void MagicIndex1BruteForceCompleteTests3EmptyArray()
         {
-            Assert.AreEqual(-1, MagicIndex1BruteForceComplete.FindMagicIndex(new int[0]));
+            Assert.AreEqual(-1, MagicIndex1BruteForceComplete.FindMagicIndex(Array.Empty<int>()));
         }
 
         /// <summary>

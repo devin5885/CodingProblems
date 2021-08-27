@@ -27,7 +27,7 @@ namespace CodingProblems.MultipleStacksUsingSingleArray
             StackPointerOffset = new int[stackCount];
 
             // Initialize stack.
-            Items = new T[0];
+            Items = Array.Empty<T>();
         }
 
         /// <summary>

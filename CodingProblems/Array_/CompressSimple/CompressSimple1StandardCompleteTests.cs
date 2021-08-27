@@ -38,7 +38,7 @@ namespace CodingProblems.Array_.CompressSimple
         /// Tests list with multiple elements.
         /// </summary>
         [TestMethod]
-        public void CompressSimple1StandardCompleteTest3Mutliple()
+        public void CompressSimple1StandardCompleteTest3Multiple()
         {
             var input = new List<int> { 10, 10, 10, 10, 20, 20, 30, 15, 15, 15 };
             var expected = new List<int> { 4, 10, 2, 20, 1, 30, 3, 15 };

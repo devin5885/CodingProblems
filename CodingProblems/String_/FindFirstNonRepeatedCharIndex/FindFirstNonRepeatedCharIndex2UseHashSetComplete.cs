@@ -6,6 +6,7 @@ namespace CodingProblems.String_.FindFirstNonRepeatedCharIndex
     /// <summary>
     /// Implements FindFirstNonRepeatedCharIndex
     /// </summary>
+    // ReSharper disable once UnusedMember.Global
     public static class FindFirstNonRepeatedCharIndex2UseHashSetComplete
     {
         /// <summary>
@@ -13,6 +14,7 @@ namespace CodingProblems.String_.FindFirstNonRepeatedCharIndex
         /// </summary>
         /// <param name="str">String to search.</param>
         /// <returns>The index of the first non-repeated character.</returns>
+        // ReSharper disable once UnusedMember.Global
         public static int FindFirstNonRepeatedCharIndex(string str)
         {
             // Error checking.

@@ -47,7 +47,7 @@ namespace CodingProblems.BitManipulation.CreatePatternMask
         /// Tests creating a 32 bit mask.
         /// </summary>
         [TestMethod]
-        public void BitManipulationCreatePatternMask1CompleteTest332bit()
+        public void BitManipulationCreatePatternMask1CompleteTest332Bit()
         {
             var pattern = Convert.ToInt32("11111111111111111111111111111111", 2);
             var patternbitcount = 32;

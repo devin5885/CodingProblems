@@ -71,11 +71,11 @@ namespace CodingProblems.Array_.MergeSortedInline
         [TestMethod]
         public void ArrayMergeSortedInline1CompleteTestEmptyLists()
         {
-            var a = new int[0];
-            var b = new int[0];
+            var a = Array.Empty<int>();
+            var b = Array.Empty<int>();
             ArrayMergeSortedInline1Complete.Merge(a, 0, b);
 
-            var aExpected = new int[0];
+            var aExpected = Array.Empty<int>();
             CollectionAssert.AreEqual(aExpected, a);
         }
 
@@ -100,7 +100,7 @@ namespace CodingProblems.Array_.MergeSortedInline
         public void ArrayMergeSortedInline1CompleteTestEmptyListList2()
         {
             var a = new[] { 3 };
-            var b = new int[0];
+            var b = Array.Empty<int>();
             ArrayMergeSortedInline1Complete.Merge(a, 1, b);
 
             var aExpected = new[] { 3 };
@@ -133,7 +133,7 @@ namespace CodingProblems.Array_.MergeSortedInline
         {
             try
             {
-                var b = new int[0];
+                var b = Array.Empty<int>();
                 ArrayMergeSortedInline1Complete.Merge(null, 0, b);
             }
             catch (ArgumentException)
@@ -152,7 +152,7 @@ namespace CodingProblems.Array_.MergeSortedInline
         {
             try
             {
-                var a = new int[0];
+                var a = Array.Empty<int>();
                 ArrayMergeSortedInline1Complete.Merge(a, 0, null);
             }
             catch (ArgumentException)

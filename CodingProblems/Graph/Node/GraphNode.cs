@@ -21,6 +21,7 @@ namespace CodingProblems.Graph.Node
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphNode{T}"/> class.
         /// </summary>
+        // ReSharper disable once UnusedMember.Global
         public GraphNode()
         {
             Children = new List<GraphNode<T>>();

@@ -25,17 +25,17 @@ namespace CodingProblems.Array_.Sort
                 return;
 
             // Figure out lengths.
-            var lengthl = (input.Count / 2) + (input.Count % 2);
-            var lengthr = input.Count / 2;
+            var lengthLeft = (input.Count / 2) + (input.Count % 2);
+            var lengthRight = input.Count / 2;
 
             // Sort left half (Copy to helper array & sort).
             var inputLeft = new List<int>();
-            inputLeft.AddRange(input.Take(lengthl));
+            inputLeft.AddRange(input.Take(lengthLeft));
             Sort(inputLeft);
 
             // Sort right half (Copy to helper array & sort).
             var inputRight = new List<int>();
-            inputRight.AddRange(input.Skip(lengthl).Take(lengthr));
+            inputRight.AddRange(input.Skip(lengthLeft).Take(lengthRight));
             Sort(inputRight);
 
             // Now merge the lists.

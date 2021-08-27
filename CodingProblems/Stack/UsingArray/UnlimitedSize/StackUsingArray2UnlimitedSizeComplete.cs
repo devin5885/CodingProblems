@@ -15,7 +15,7 @@ namespace CodingProblems.Stack.UsingArray.UnlimitedSize
         {
             // Initialize stack.
             StackPointer = -1;
-            Items = new T[0];
+            Items = Array.Empty<T>();
         }
 
         /// <summary>

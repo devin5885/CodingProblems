@@ -5,6 +5,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodingProblems.Array_.MissingInt
 {
+    // ReSharper disable HeuristicUnreachableCode
+
     /// <summary>
     /// This class tests ArrayFindMissingInt1Complete
     /// </summary>

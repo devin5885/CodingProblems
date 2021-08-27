@@ -31,7 +31,7 @@ namespace CodingProblems.BinaryTree.GetHeight
                 // Init nodes list for next call.
                 var nodesNext = new List<BinaryTreeNode<T>>();
 
-                // Processs all ndoes at this level.
+                // Process all nodes at this level.
                 foreach (var nodeCurr in nodes)
                 {
                     // Add child nodes of this node.
