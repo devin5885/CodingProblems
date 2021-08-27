@@ -57,11 +57,7 @@ namespace CodingProblems.TripleStep
         private static void CheckAndAddHelper(int hops, int steps, List<int> hopsCurr, List<List<int>> resultList)
         {
             // Compute new item.
-            // ReSharper disable once UseObjectOrCollectionInitializer
-            var hopsCurrNew = new List<int>(hopsCurr);
-
-            // Add new hops item.
-            hopsCurrNew.Add(hops);
+            var hopsCurrNew = new List<int>(hopsCurr) { hops };
 
             // Get the sum.
             var sum = hopsCurrNew.Sum();

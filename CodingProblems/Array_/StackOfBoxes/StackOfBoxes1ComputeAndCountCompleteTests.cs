@@ -27,8 +27,7 @@ namespace CodingProblems.Array_.StackOfBoxes
         public void StackOfBoxes1CompleteTest2SingleBox()
         {
             // ReSharper disable once UseObjectOrCollectionInitializer
-            var stack = new List<Box>();
-            stack.Add(new Box(2, 2, 2));
+            var stack = new List<Box> { new Box(2, 2, 2) };
             Assert.AreEqual(2, StackOfBoxes1ComputeAndCountComplete.GetMaxHeight(stack));
         }
 
@@ -39,9 +38,11 @@ namespace CodingProblems.Array_.StackOfBoxes
         public void StackOfBoxes1CompleteTest3TwoBoxesCanStack()
         {
             // ReSharper disable once UseObjectOrCollectionInitializer
-            var stack = new List<Box>();
-            stack.Add(new Box(1, 1, 1));
-            stack.Add(new Box(2, 2, 2));
+            var stack = new List<Box>
+            {
+                new Box(1, 1, 1),
+                new Box(2, 2, 2)
+            };
             Assert.AreEqual(3, StackOfBoxes1ComputeAndCountComplete.GetMaxHeight(stack));
         }
 
@@ -52,9 +53,11 @@ namespace CodingProblems.Array_.StackOfBoxes
         public void StackOfBoxes1CompleteTest4TwoBoxesCantStack()
         {
             // ReSharper disable once UseObjectOrCollectionInitializer
-            var stack = new List<Box>();
-            stack.Add(new Box(1, 3, 3));
-            stack.Add(new Box(2, 2, 2));
+            var stack = new List<Box>
+            {
+                new Box(1, 3, 3),
+                new Box(2, 2, 2)
+            };
             Assert.AreEqual(3, StackOfBoxes1ComputeAndCountComplete.GetMaxHeight(stack));
         }
 

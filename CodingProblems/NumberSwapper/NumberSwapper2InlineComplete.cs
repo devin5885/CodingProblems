@@ -16,12 +16,12 @@ namespace CodingProblems.NumberSwapper
         {
             // Method fails if x and y are the same variable, in this case
             // they will have the same value, so just check for this.
-            if (x != y)
-            {
-                x = x ^ y;
-                y = x ^ y;
-                x = x ^ y;
-            }
+            if (x == y)
+                return;
+
+            x ^= y;
+            y = x ^ y;
+            x ^= y;
         }
     }
 }

@@ -67,10 +67,7 @@ namespace CodingProblems.TripleStep
         {
             // Compute new item.
             // ReSharper disable once UseObjectOrCollectionInitializer
-            var hopsCurrNew = new List<int>(hopsCurr);
-
-            // Add new hops item.
-            hopsCurrNew.Add(hops);
+            var hopsCurrNew = new List<int>(hopsCurr) { hops };
 
             // Get the sum.
             var sum = hopsCurrNew.Sum();

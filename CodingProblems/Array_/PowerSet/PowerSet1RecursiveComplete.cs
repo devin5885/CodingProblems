@@ -45,8 +45,7 @@ namespace CodingProblems.Array_.PowerSet
                 foreach (var list in result)
                 {
                     // ReSharper disable once UseObjectOrCollectionInitializer
-                    var listNew = new List<int>(list);
-                    listNew.Add(array[indexCurr]);
+                    var listNew = new List<int>(list) { array[indexCurr] };
 
                     newResult.Add(listNew);
                 }

@@ -14,7 +14,7 @@ namespace CodingProblems.LinkedList.SingleLink.Helpers
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="next">A ref to the next node in the list.</param>
-        public LinkedListSingleLinkNode(T value = default(T), LinkedListSingleLinkNode<T> next = null)
+        public LinkedListSingleLinkNode(T value = default, LinkedListSingleLinkNode<T> next = null)
         {
             Value = value;
             Next = next;
