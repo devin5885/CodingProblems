@@ -97,6 +97,14 @@
     <Compile Include="Array_\StackOfBoxes\Box.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MaxHeap.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MaxHeapUsingArray.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MinHeap.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MinHeapUsingArray.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MinMaxHeapUsingArrayBase.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MinHeapUsingArrayTests.cs" />
+    <Compile Include="Utility\MinMaxHeap\UsingArray\MaxHeapUsingArrayTests.cs" />
     <Compile Include="NumberSwapper\NumberSwapper1UseTempVarComplete.cs" />
     <Compile Include="NumberSwapper\NumberSwapper1UseTempVarCompleteTests.cs" />
     <Compile Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced1RecursiveComplete.cs" />
