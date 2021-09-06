@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+// ReSharper disable once CheckNamespace
 namespace CodingProblems.Array_.Sort
 {
     /// <summary>
     /// Tests Sort.
     /// </summary>
     [TestClass]
-    public class ArraySort3InsertionSortCompleteTests
+    public class ArraySortInsertionSortIterativeCompleteTests
     {
         /// <summary>
         /// Tests an array with an even number of elements.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestSimpleEven()
+        public void ArraySortInsertionSortIterativeCompleteTestSimpleEven()
         {
             var nums = new List<int> { 56, 3, 7, 23, 5, 7, 8, 38 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3, 5, 7, 7, 8, 23, 38, 56 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -27,10 +28,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an array with an odd number of elements.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestSimpleOdd()
+        public void ArraySortInsertionSortIterativeCompleteTestSimpleOdd()
         {
             var nums = new List<int> { 56, 3, 7, 23, 5, 8, 38 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3, 5, 7, 8, 23, 38, 56 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -40,10 +41,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an already sorted array.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestAlreadySorted()
+        public void ArraySortInsertionSortIterativeCompleteTestAlreadySorted()
         {
             var nums = new List<int> { 3, 5, 7, 7, 8, 23, 38, 56 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3, 5, 7, 7, 8, 23, 38, 56 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -53,10 +54,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an almost already sorted array.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestAlmostAlreadySorted()
+        public void ArraySortInsertionSortIterativeCompleteTestAlmostAlreadySorted()
         {
             var nums = new List<int> { 3, 5, 7, 7, 8, 38, 23, 56 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3, 5, 7, 7, 8, 23, 38, 56 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -66,10 +67,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an empty list.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestEmptyList()
+        public void ArraySortInsertionSortIterativeCompleteTestEmptyList()
         {
             var nums = new List<int>();
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int>();
             CollectionAssert.AreEqual(nums, numsResult);
@@ -79,10 +80,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an array with one element.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestSingleElement()
+        public void ArraySortInsertionSortIterativeCompleteTestSingleElement()
         {
             var nums = new List<int> { 3 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -92,10 +93,10 @@ namespace CodingProblems.Array_.Sort
         /// Tests an array with two elements.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestTwoElements()
+        public void ArraySortInsertionSortIterativeCompleteTestTwoElements()
         {
             var nums = new List<int> { 5, 3 };
-            ArraySort3InsertionSortComplete.Sort(nums);
+            ArraySortInsertionSortIterativeComplete.Sort(nums);
 
             var numsResult = new List<int> { 3, 5 };
             CollectionAssert.AreEqual(nums, numsResult);
@@ -105,11 +106,11 @@ namespace CodingProblems.Array_.Sort
         /// Tests a null array.
         /// </summary>
         [TestMethod]
-        public void ArraySort3InsertionSortCompleteTestNullList()
+        public void ArraySortInsertionSortIterativeCompleteTestNullList()
         {
             try
             {
-                ArraySort3InsertionSortComplete.Sort(null);
+                ArraySortInsertionSortIterativeComplete.Sort(null);
             }
             catch
             {

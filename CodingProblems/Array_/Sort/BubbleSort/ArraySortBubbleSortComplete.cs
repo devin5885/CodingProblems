@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// ReSharper disable once CheckNamespace
 namespace CodingProblems.Array_.Sort
 {
     /// <summary>
     /// Implements Sort.
     /// </summary>
-    public static class ArraySort2SelectionSortComplete
+    public static class ArraySortBubbleSortComplete
     {
         /// <summary>
-        /// Sorts the array using Selection Sort.
+        /// Sorts the array using Bubble Sort.
         /// </summary>
         /// <param name="input">The input array.</param>
         public static void Sort(List<int> input)
@@ -18,24 +19,23 @@ namespace CodingProblems.Array_.Sort
             if (input == null)
                 throw new ArgumentException("Input array must not be null.");
 
-            // Outer loop, loop through list n - 1 times upwards. outer
-            // (inclusive) will be the unsorted part of list at start of the
-            // loop.
-            // Note that we can skip the last swap (thus n - 1) since there is
-            // nothing to swap.
-            for (var outerIndex = 0; outerIndex < input.Count - 1; outerIndex++)
+            // Outer loop:
+            // Loop left to right sorting one element per iteration.
+            // Start at beginning of list, end at last element.
+            for (var unsortedIndex = 0; unsortedIndex < input.Count; unsortedIndex++)
             {
-                // Inner loop, find the lowest element.
-                var lowestIndex = outerIndex;
-                for (var innerIndex = input.Count - 1; innerIndex > outerIndex; innerIndex--)
+                // Inner loop
+                // Loop through unsorted part of list right to left, swapping elements as needed.
+                //  Start at last element of array, end at last unsorted element + 1.
+                for (var currentIndex = input.Count - 1; currentIndex >= unsortedIndex + 1; currentIndex--)
                 {
-                    if (input[innerIndex] < input[lowestIndex])
-                        lowestIndex = innerIndex;
+                    // Swap if <.
+                    if (input[currentIndex] < input[currentIndex - 1])
+                    {
+                        // Swap.
+                        Swap(input, currentIndex, currentIndex - 1);
+                    }
                 }
-
-                // Swap
-                if (outerIndex != lowestIndex)
-                    Swap(input, lowestIndex, outerIndex);
             }
         }
 
