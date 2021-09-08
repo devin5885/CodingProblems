@@ -146,13 +146,12 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
 
             if (rightChildIndex < heap.Count)
             {
-                childToCheck = ((isMinHeap && heap[rightChildIndex].CompareTo(heap[leftChildIndex]) > 0) ||
-                               (!isMinHeap && heap[rightChildIndex].CompareTo(heap[leftChildIndex]) < 0))
-                    ? rightChildIndex
-                    : leftChildIndex;
+                childToCheck = ((isMinHeap && heap[rightChildIndex].CompareTo(heap[leftChildIndex]) < 0) ||
+                               (!isMinHeap && heap[rightChildIndex].CompareTo(heap[leftChildIndex]) > 0))
+                    ? rightChildIndex // r > l
+                    : leftChildIndex; // r >= l
             }
-
-            if (leftChildIndex < heap.Count)
+            else if (leftChildIndex < heap.Count)
             {
                 childToCheck = leftChildIndex;
             }

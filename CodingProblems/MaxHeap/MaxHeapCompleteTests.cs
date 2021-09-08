@@ -202,6 +202,48 @@ namespace CodingProblems.MaxHeap
         }
 
         /// <summary>
+        ///  Tests that extract works correctly when a larger left child is found
+        /// during the heapify operation. (Larger child should move up).
+        /// </summary>
+        [TestMethod]
+        public void MaxHeapTestValidAfterExtractLeftChildLarger()
+        {
+            // Create and add elements so that the larger child is on the right.
+            // Note that we need to add enough elements so that there are still
+            // two children after the extract.
+            var maxHeap = new MaxHeapComplete();
+            maxHeap.Insert(5);
+            maxHeap.Insert(4);
+            maxHeap.Insert(3);
+            maxHeap.Insert(2);
+            Assert.IsTrue(maxHeap.CheckValid());
+
+            maxHeap.Extract();
+            Assert.IsTrue(maxHeap.CheckValid());
+        }
+
+        /// <summary>
+        ///  Tests that extract works correctly when a larger left child is found
+        /// during the heapify operation. (Larger child should move up).
+        /// </summary>
+        [TestMethod]
+        public void MaxHeapTestValidAfterExtractRightChildLarger()
+        {
+            // Create and add elements so that the larger child is on the left.
+            // Note that we need to add enough elements so that there are still
+            // two children after the extract.
+            var maxHeap = new MaxHeapComplete();
+            maxHeap.Insert(5);
+            maxHeap.Insert(3);
+            maxHeap.Insert(4);
+            maxHeap.Insert(2);
+            Assert.IsTrue(maxHeap.CheckValid());
+
+            maxHeap.Extract();
+            Assert.IsTrue(maxHeap.CheckValid());
+        }
+
+        /// <summary>
         ///  Error Tests (Extract)
         /// </summary>
         [TestMethod]

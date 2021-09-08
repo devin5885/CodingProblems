@@ -202,6 +202,48 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
         }
 
         /// <summary>
+        ///  Tests that extract works correctly when a larger left child is found
+        /// during the heapify operation. (Smaller child should move up).
+        /// </summary>
+        [TestMethod]
+        public void MinHeapTestValidAfterExtractLeftChildLarger()
+        {
+            // Create and add elements so that the larger child is on the right.
+            // Note that we need to add enough elements so that there are still
+            // two children after the extract.
+            var minHeap = new MinHeap();
+            minHeap.Insert(2);
+            minHeap.Insert(4);
+            minHeap.Insert(3);
+            minHeap.Insert(5);
+            Assert.IsTrue(minHeap.CheckValid());
+
+            minHeap.Extract();
+            Assert.IsTrue(minHeap.CheckValid());
+        }
+
+        /// <summary>
+        ///  Tests that extract works correctly when a larger left child is found
+        /// during the heapify operation. (Smaller child should move up).
+        /// </summary>
+        [TestMethod]
+        public void MinHeapTestValidAfterExtractRightChildLarger()
+        {
+            // Create and add elements so that the larger child is on the left.
+            // Note that we need to add enough elements so that there are still
+            // two children after the extract.
+            var minHeap = new MinHeap();
+            minHeap.Insert(2);
+            minHeap.Insert(3);
+            minHeap.Insert(4);
+            minHeap.Insert(5);
+            Assert.IsTrue(minHeap.CheckValid());
+
+            minHeap.Extract();
+            Assert.IsTrue(minHeap.CheckValid());
+        }
+
+        /// <summary>
         ///  Error Test (Extract).
         /// </summary>
         [TestMethod]

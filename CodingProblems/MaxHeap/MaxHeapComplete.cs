@@ -17,7 +17,7 @@ namespace CodingProblems.MaxHeap
         {
             heap = new List<int>
             {
-                default
+                0
             };
         }
 
@@ -64,6 +64,15 @@ namespace CodingProblems.MaxHeap
                 throw new InvalidOperationException();
 
             return heap[1];
+        }
+
+        /// <summary>
+        ///  Gets the count of items in the heap.
+        /// </summary>
+        /// <returns>The count.</returns>
+        public int Count()
+        {
+            return heap.Count;
         }
 
         /// <summary>
@@ -138,12 +147,11 @@ namespace CodingProblems.MaxHeap
 
             if (rightChildIndex < heap.Count)
             {
-                childToCheck = (heap[rightChildIndex].CompareTo(heap[leftChildIndex]) < 0)
-                    ? rightChildIndex
-                    : leftChildIndex;
+                childToCheck = (heap[rightChildIndex].CompareTo(heap[leftChildIndex]) > 0)
+                    ? rightChildIndex // r > l
+                    : leftChildIndex; // r <= l
             }
-
-            if (leftChildIndex < heap.Count)
+            else if (leftChildIndex < heap.Count)
             {
                 childToCheck = leftChildIndex;
             }
