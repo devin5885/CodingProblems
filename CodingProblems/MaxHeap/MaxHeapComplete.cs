@@ -72,7 +72,7 @@ namespace CodingProblems.MaxHeap
         /// <returns>The count.</returns>
         public int Count()
         {
-            return heap.Count;
+            return heap.Count - 1;
         }
 
         /// <summary>

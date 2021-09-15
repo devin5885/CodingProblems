@@ -14,17 +14,32 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
         ///  Check that a min heap with a single element works correctly.
         /// </summary>
         [TestMethod]
+        public void MinHeapTestNoElement()
+        {
+            // Create and add a single element.
+            var minHeap = new MinHeap();
+            Assert.AreEqual(0, minHeap.Count());
+            Assert.IsTrue(minHeap.CheckValid());
+            CollectionAssert.AreEqual(new List<int> { default }, minHeap.GetHeap());
+        }
+
+        /// <summary>
+        ///  Check that a min heap with a single element works correctly.
+        /// </summary>
+        [TestMethod]
         public void MinHeapTestOneElement()
         {
             // Create and add a single element.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4 }, minHeap.GetHeap());
 
             // Extract and check the extraction.
             Assert.AreEqual(4, minHeap.Peek());
             Assert.AreEqual(4, minHeap.Extract());
+            Assert.AreEqual(0, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default }, minHeap.GetHeap());
         }
@@ -38,22 +53,26 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
             // Create and add a single element.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
 
             // Add a larger element & check state.
             minHeap.Insert(7);
             Assert.IsTrue(minHeap.CheckValid());
+            Assert.AreEqual(2, minHeap.Count());
             Assert.AreEqual(4, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 4, 7 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(4, minHeap.Extract());
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 7 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(7, minHeap.Extract());
+            Assert.AreEqual(0, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default }, minHeap.GetHeap());
         }
@@ -67,22 +86,26 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
             // Create and add a single element.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
 
             // Add a larger element & check state.
             minHeap.Insert(2);
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(2, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 2, 4 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(2, minHeap.Extract());
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(4, minHeap.Extract());
+            Assert.AreEqual(0, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default }, minHeap.GetHeap());
         }
@@ -96,23 +119,27 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
             // Create and add a single element.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
 
             // Add a larger element & check state.
             minHeap.Insert(7);
             Assert.IsTrue(minHeap.CheckValid());
+            Assert.AreEqual(2, minHeap.Count());
             Assert.AreEqual(4, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 4, 7 }, minHeap.GetHeap());
 
             // Add a smaller element & check state.
             minHeap.Insert(2);
+            Assert.AreEqual(3, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(2, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 2, 7, 4 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(2, minHeap.Extract());
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4, 7 }, minHeap.GetHeap());
 
@@ -128,23 +155,27 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
             // Create and add a single element.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
 
             // Add a smaller element & check state.
             minHeap.Insert(2);
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(2, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 2, 4 }, minHeap.GetHeap());
 
             // Add a larger element & check state.
             minHeap.Insert(7);
+            Assert.AreEqual(3, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(2, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 2, 4, 7 }, minHeap.GetHeap());
 
             // Extract the min and check state.
             Assert.AreEqual(2, minHeap.Extract());
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4, 7 }, minHeap.GetHeap());
 
@@ -160,43 +191,51 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
             // Create and add.
             var minHeap = new MinHeap();
             minHeap.Insert(4);
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 4 }, minHeap.GetHeap());
 
             // Add Larger.
             minHeap.Insert(5);
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(4, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 4, 5 }, minHeap.GetHeap());
 
             minHeap.Insert(3);
+            Assert.AreEqual(3, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(3, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 3, 5, 4 }, minHeap.GetHeap());
 
             minHeap.Insert(2);
+            Assert.AreEqual(4, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             Assert.AreEqual(2, minHeap.Peek());
             CollectionAssert.AreEqual(new List<int> { default, 2, 3, 4, 5 }, minHeap.GetHeap());
 
             // Extract.
             Assert.AreEqual(2, minHeap.Extract());
+            Assert.AreEqual(3, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 3, 5, 4 }, minHeap.GetHeap());
 
             // Extract.
             Assert.AreEqual(3, minHeap.Extract());
+            Assert.AreEqual(2, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4, 5 }, minHeap.GetHeap());
 
             // Extract.
             Assert.AreEqual(4, minHeap.Extract());
+            Assert.AreEqual(1, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 5 }, minHeap.GetHeap());
 
             // Extract.
             Assert.AreEqual(5, minHeap.Extract());
+            Assert.AreEqual(0, minHeap.Count());
             Assert.IsTrue(minHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default }, minHeap.GetHeap());
         }

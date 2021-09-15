@@ -72,6 +72,15 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
         }
 
         /// <summary>
+        ///  Gets the count of items in the heap.
+        /// </summary>
+        /// <returns>The count.</returns>
+        public int Count()
+        {
+            return heap.Count - 1;
+        }
+
+        /// <summary>
         ///  Determine whether the heap is valid.
         /// </summary>
         /// <param name="index">The index to check.</param>
