@@ -53,13 +53,13 @@ namespace CodingProblems.Utility.MinMaxHeap.UsingArray
 
             // Extract the max and check state.
             Assert.AreEqual(7, maxHeap.Extract());
-            Assert.AreEqual(3, maxHeap.Count());
+            Assert.AreEqual(1, maxHeap.Count());
             Assert.IsTrue(maxHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default, 4 }, maxHeap.GetHeap());
 
             // Extract the max and check state.
             Assert.AreEqual(4, maxHeap.Extract());
-            Assert.AreEqual(2, maxHeap.Count());
+            Assert.AreEqual(0, maxHeap.Count());
             Assert.IsTrue(maxHeap.CheckValid());
             CollectionAssert.AreEqual(new List<int> { default }, maxHeap.GetHeap());
         }
