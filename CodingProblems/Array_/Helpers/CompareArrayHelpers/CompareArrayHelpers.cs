@@ -16,17 +16,26 @@ namespace CodingProblems.Array_.Helpers.CompareArrayHelpers
         /// <typeparam name="T">The type of objects that the array stores.</typeparam>
         /// <param name="arrayOfArraysExpected">The expected array of arrays.</param>
         /// <param name="arraysOfArrayActual">The actual array of arrays.</param>
+        /// <param name="anyOrder">Whether the order of the elements in the array must match.</param>
         /// <returns>True if the arrays match, false otherwise.</returns>
-        public static bool CompareArrays<T>(List<List<T>> arrayOfArraysExpected, List<List<T>> arraysOfArrayActual)
+        public static bool CompareArrays<T>(List<List<T>> arrayOfArraysExpected, List<List<T>> arraysOfArrayActual, bool anyOrder = true)
             where T : IComparable
         {
             if (arrayOfArraysExpected.Count != arraysOfArrayActual.Count)
                 return false;
 
-            foreach (var arrayExpected in arrayOfArraysExpected)
+            for (var i = 0; i < arrayOfArraysExpected.Count(); i++)
             {
-                if (!ContainsArray(arrayExpected, arraysOfArrayActual))
-                    return false;
+                if (anyOrder)
+                {
+                    if (!ContainsArray(arrayOfArraysExpected[i], arraysOfArrayActual))
+                        return false;
+                }
+                else
+                {
+                    if (!CompareArrays(arrayOfArraysExpected[i], arraysOfArrayActual[i], false))
+                        return false;
+                }
             }
 
             return true;
@@ -58,15 +67,29 @@ namespace CodingProblems.Array_.Helpers.CompareArrayHelpers
         /// <typeparam name="T">The type of objects that the array stores.</typeparam>
         /// <param name="array1">The first array.</param>
         /// <param name="array2">The second array.</param>
+        /// <param name="anyOrder">Whether the order of the elements in the array must match.</param>
         /// <returns>True if the arrays match, false otherwise.</returns>
-        public static bool CompareArrays<T>(List<T> array1, List<T> array2)
+        public static bool CompareArrays<T>(List<T> array1, List<T> array2, bool anyOrder = true)
             where T : IComparable
         {
             if (array1.Count != array2.Count)
                 return false;
 
-            var result = array1.Intersect(array2);
-            return result.Count() == array2.Count;
+            for (var i = 0; i < array1.Count(); i++)
+            {
+                if (anyOrder)
+                {
+                    if (array2.IndexOf(array1[i]) == -1)
+                        return false;
+                }
+                else
+                {
+                    if (array1[i].CompareTo(array2[i]) != 0)
+                        return false;
+                }
+            }
+
+            return true;
         }
     }
 }
