@@ -61,6 +61,8 @@
     <Compile Include="Array_\FindMatchingPairs\FindMatchingPairs2SortAndParseCompleteTests.cs" />
     <Compile Include="Array_\FizzBuzz\FizzBuzz1StandardComplete.cs" />
     <Compile Include="Array_\FizzBuzz\FizzBuzz1STandardCompleteTests.cs" />
+    <Compile Include="Array_\Helpers\CompareArrayHelpers\CompareArrayHelpers.cs" />
+    <Compile Include="Array_\Helpers\CompareArrayHelpers\CompareArrayHelpersTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex1BruteForceComplete.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex1BruteForceCompleteTests.cs" />
     <Compile Include="Array_\MagicIndex\MagicIndex2BinarySearchComplete.cs" />
