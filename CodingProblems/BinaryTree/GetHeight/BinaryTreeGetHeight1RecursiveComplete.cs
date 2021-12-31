@@ -15,6 +15,7 @@ namespace CodingProblems.BinaryTree.GetHeight
         /// <param name="node">The top node of the tree</param>
         /// <returns>The height as an int.</returns>
         public static int GetHeight1RecursiveComplete<T>(BinaryTreeNode<T> node)
+            where T : IComparable
         {
             if (node == null)
                 return 0;

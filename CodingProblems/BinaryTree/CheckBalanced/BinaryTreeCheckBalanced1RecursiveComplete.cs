@@ -16,6 +16,7 @@ namespace CodingProblems.BinaryTree.CheckBalanced
         /// <param name="node">The root node for the tree being checked.</param>
         /// <returns>True if the true is balanced, false otherwise.</returns>
         public static bool CheckBalanced1RecursiveComplete<T>(BinaryTreeNode<T> node)
+            where T : IComparable
         {
             // Base case.
             if (node == null)

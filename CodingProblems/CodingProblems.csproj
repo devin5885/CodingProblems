@@ -105,6 +105,8 @@
     <Compile Include="Array_\StackOfBoxes\Box.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountComplete.cs" />
     <Compile Include="Array_\StackOfBoxes\StackOfBoxes1ComputeAndCountCompleteTests.cs" />
+    <Compile Include="BinaryTree\Helpers\CompareBinaryTreeHelpers\CompareBinaryTreeHelpers.cs" />
+    <Compile Include="BinaryTree\Helpers\CompareBinaryTreeHelpers\CompareBinaryTreeHelpersTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MaxHeap\MaxHeapCompleteTests.cs" />
     <Compile Include="MaxHeap\MaxHeapComplete.cs" />

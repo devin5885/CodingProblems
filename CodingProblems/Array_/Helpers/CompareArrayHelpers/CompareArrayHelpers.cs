@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CodingProblems.Array_.Helpers.CompareArrayHelpers
 {
@@ -24,7 +23,7 @@ namespace CodingProblems.Array_.Helpers.CompareArrayHelpers
             if (arrayOfArraysExpected.Count != arraysOfArrayActual.Count)
                 return false;
 
-            for (var i = 0; i < arrayOfArraysExpected.Count(); i++)
+            for (var i = 0; i < arrayOfArraysExpected.Count; i++)
             {
                 if (anyOrder)
                 {
@@ -75,7 +74,7 @@ namespace CodingProblems.Array_.Helpers.CompareArrayHelpers
             if (array1.Count != array2.Count)
                 return false;
 
-            for (var i = 0; i < array1.Count(); i++)
+            for (var i = 0; i < array1.Count; i++)
             {
                 if (anyOrder)
                 {

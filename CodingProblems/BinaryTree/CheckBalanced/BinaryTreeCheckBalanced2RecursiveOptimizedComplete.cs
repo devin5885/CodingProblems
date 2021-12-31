@@ -15,6 +15,7 @@ namespace CodingProblems.BinaryTree.CheckBalanced
         /// <param name="node">The root node for the tree being checked.</param>
         /// <returns>True if the true is balanced, false otherwise.</returns>
         public static bool CheckBalanced2OptimizedComplete<T>(BinaryTreeNode<T> node)
+            where T : IComparable
         {
             return CheckHeight(node) != -1;
         }
@@ -26,6 +27,7 @@ namespace CodingProblems.BinaryTree.CheckBalanced
         /// <param name="node">The root node for the tree being checked.</param>
         /// <returns>If the tree is balanced the actual height, -1 otherwise.</returns>
         public static int CheckHeight<T>(BinaryTreeNode<T> node)
+            where T : IComparable
         {
             // If no sub-tree, return 0.
             if (node == null)

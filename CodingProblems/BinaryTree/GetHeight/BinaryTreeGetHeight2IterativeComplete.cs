@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodingProblems.BinaryTree.Node;
 
 namespace CodingProblems.BinaryTree.GetHeight
@@ -15,6 +16,7 @@ namespace CodingProblems.BinaryTree.GetHeight
         /// <param name="node">The top node of the tree</param>
         /// <returns>The height as an int.</returns>
         public static int GetHeight2IterativeComplete<T>(BinaryTreeNode<T> node)
+            where T : IComparable
         {
             // Init nodes list for first call.
             var nodes = new List<BinaryTreeNode<T>>

@@ -1,10 +1,13 @@
-﻿namespace CodingProblems.BinaryTree.Node
+﻿using System;
+
+namespace CodingProblems.BinaryTree.Node
 {
     /// <summary>
     /// Class that represents a node in a binary tree.
     /// </summary>
     /// <typeparam name="T">The type for the node data.</typeparam>
     public class BinaryTreeNode<T>
+        where T : IComparable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BinaryTreeNode{T}"/> class
