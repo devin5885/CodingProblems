@@ -197,7 +197,7 @@ namespace CodingProblems.BinaryTree.Node
             //   2
             //   | 1
             // Height = 2
-            // IsBST = True
+            // IsBST = False
             // Balanced = True
             // Complete = False
             // Full = False
@@ -587,6 +587,8 @@ namespace CodingProblems.BinaryTree.Node
             //             0       |      3
             //             | 1            |     5
             //                               4  |
+            // Height = 4
+            // IsBST = Yes
             TreeFromSampleData1 = new BinaryTreeNode<int>(2)
             {
                 Left = new BinaryTreeNode<int>(0)
