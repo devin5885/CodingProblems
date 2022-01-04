@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using CodingProblems.BinaryTree.Node;
+﻿using CodingProblems.BinaryTree.Node;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodingProblems.BinaryTree.Traverse.PostOrder
@@ -17,7 +15,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree1()
         {
-            var expected = new List<int> { 1 };
+            var expected = BinaryTreeNodeTestData.Tree1PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree1);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -28,7 +26,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree2()
         {
-            var expected = new List<int> { 1, 2 };
+            var expected = BinaryTreeNodeTestData.Tree2PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree2);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -39,8 +37,8 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree3()
         {
-            var expected = new List<int> { 1, 2 };
-            var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree2);
+            var expected = BinaryTreeNodeTestData.Tree3PostOrder;
+            var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree3);
             CollectionAssert.AreEqual(expected, actual);
         }
 
@@ -50,7 +48,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree4()
         {
-            var expected = new List<int> { 1, 3, 2 };
+            var expected = BinaryTreeNodeTestData.Tree4PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree4);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -61,7 +59,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree5()
         {
-            var expected = new List<int> { 4, 8, 7, 11, 18, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree5PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree5);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -72,7 +70,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree6()
         {
-            var expected = new List<int> { 8, 9, 7, 11, 18, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree6PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree6);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -83,7 +81,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree7()
         {
-            var expected = new List<int> { 5, 6, 7, 11, 18, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree7PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree7);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -94,7 +92,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree8()
         {
-            var expected = new List<int> { 4, 8, 7, 11, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree8PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree8);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -105,7 +103,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree9()
         {
-            var expected = new List<int> { 9, 7, 18, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree9PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree9);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -116,7 +114,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree10()
         {
-            var expected = new List<int> { 5, 8, 7, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree10PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree10);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -127,7 +125,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree11()
         {
-            var expected = new List<int> { 8, 7, 11, 13, 12, 18, 15, 10 };
+            var expected = BinaryTreeNodeTestData.Tree11PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree11);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -138,7 +136,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree12()
         {
-            var expected = new List<int> { 5, 7, 6, 10, 12, 11, 9, 16, 18, 17, 24, 26, 25, 23, 15 };
+            var expected = BinaryTreeNodeTestData.Tree12PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree12);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -149,7 +147,7 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree13()
         {
-            var expected = new List<int> { 3, 2, 1 };
+            var expected = BinaryTreeNodeTestData.Tree13PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree13);
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -160,8 +158,19 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         [TestMethod]
         public void PostOrderTestTree14()
         {
-            var expected = new List<int> { 6, 4, 2, 7, 5, 3, 1 };
+            var expected = BinaryTreeNodeTestData.Tree14PostOrder;
             var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.Tree14);
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Tests with sample tree 1.
+        /// </summary>
+        [TestMethod]
+        public void PostOrderTestSampleTree1()
+        {
+            var expected = BinaryTreeNodeTestData.TreeFromSampleData1PostOrder;
+            var actual = BinaryTreeTraversePostOrder1RecursiveComplete.TraversePostOrder(BinaryTreeNodeTestData.TreeFromSampleData1);
             CollectionAssert.AreEqual(expected, actual);
         }
 
