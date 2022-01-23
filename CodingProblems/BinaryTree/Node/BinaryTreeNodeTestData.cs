@@ -159,6 +159,14 @@ namespace CodingProblems.BinaryTree.Node
         public static readonly List<int> TreeFromSampleData1InOrder;
         public static readonly List<int> TreeFromSampleData1PostOrder;
 
+        /// <summary>
+        /// Sample Data Tree 2
+        /// </summary>
+        public static readonly BinaryTreeNode<int> TreeFromSampleData2;
+        public static readonly List<int> TreeFromSampleData2PreOrder;
+        public static readonly List<int> TreeFromSampleData2InOrder;
+        public static readonly List<int> TreeFromSampleData2PostOrder;
+
         static BinaryTreeNodeTestData()
         {
             // tree1 (1 level)
@@ -607,6 +615,32 @@ namespace CodingProblems.BinaryTree.Node
             TreeFromSampleData1PreOrder = new List<int> { 2, 0, 1, 3, 5, 4 };
             TreeFromSampleData1InOrder = new List<int> { 0, 1, 2, 3, 4, 5 };
             TreeFromSampleData1PostOrder = new List<int> { 1, 0, 4, 5, 3, 2 };
+
+            // TreeFromSampleData2
+            //                     30
+            //             20       |      40
+            //           10 | 25
+            //                 | 40
+            //
+            // Height = 4
+            // IsBST = No
+            TreeFromSampleData2 = new BinaryTreeNode<int>(30)
+            {
+                Left = new BinaryTreeNode<int>(20)
+                {
+                    Left = new BinaryTreeNode<int>(10),
+                    Right = new BinaryTreeNode<int>(25)
+                    {
+                        Right = new BinaryTreeNode<int>(40)
+                    }
+                },
+                Right = new BinaryTreeNode<int>(40)
+            };
+
+            // TODO
+            TreeFromSampleData2PreOrder = new List<int> { 2, 0, 1, 3, 5, 4 };
+            TreeFromSampleData2InOrder = new List<int> { 0, 1, 2, 3, 4, 5 };
+            TreeFromSampleData2PostOrder = new List<int> { 1, 0, 4, 5, 3, 2 };
         }
     }
 }
