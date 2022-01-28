@@ -14,14 +14,16 @@ namespace CodingProblems.BinaryTree.IsComplete
         /// </summary>
         /// <param name="binaryTree">The tree</param>
         /// <returns>True if the tree is complete, false otherwise.</returns>
-        public static bool IsComplete(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static bool IsComplete<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
             // Check for null.
             if (binaryTree == null)
                 return true;
 
             // Initialize the nodeQueue.
-            var nodeQueue = new Queue<BinaryTreeNode<int>>();
+            var nodeQueue = new Queue<BinaryTreeNode<T>>();
             nodeQueue.Enqueue(binaryTree);
 
             // Initialize flag for indicating that a non-full node was found.

@@ -20,7 +20,7 @@ namespace CodingProblems.BinaryTree.BinaryTreeFromPreOrderAndInOrderTraversals
         /// <returns>The in-order list of node values.</returns>
         public static BinaryTreeNode<T> FromPreOrderAndInOrderTraversals(List<T> preOrder, List<T> inOrder)
         {
-            if (preOrder == null || inOrder == null)
+            if (preOrder == null || inOrder == null || preOrder.Count == 0 || inOrder.Count == 0)
                 return null;
 
             return FromPreOrderAndInOrderTraversalsHelper(inOrder, 0, inOrder.Count - 1, preOrder, 0, preOrder.Count - 1);

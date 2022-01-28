@@ -11,29 +11,14 @@ namespace CodingProblems.BinaryTree.IsFull
     public class BinaryTreeIsFull1CompleteTests
     {
         /// <summary>
-        /// Run all tests.
+        /// Tests IsFull.
         /// </summary>
-        [TestMethod]
-        public void TestIsFull1CompleteAllTests()
+        /// <param name="data">The test data.</param>
+        [DataTestMethod]
+        [BinaryTreeDataSource]
+        public void TestIsFull(BinaryTreeNodeTestData data)
         {
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(null));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree1));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree2));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree3));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree4));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree5));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree6));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree7));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree8));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree9));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree10));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree11));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree12));
-            Assert.IsTrue(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree12));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree13));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree14));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree15));
-            Assert.IsFalse(BinaryTreeIsFull1Complete.IsFull(BinaryTreeNodeTestData.Tree16));
+            Assert.AreEqual(data.Full, BinaryTreeIsFull1Complete.IsFull(data.Root));
         }
     }
 }

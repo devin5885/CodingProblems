@@ -18,6 +18,9 @@ namespace CodingProblems.BinaryTree.GetHeight
         public static int GetHeight2IterativeComplete<T>(BinaryTreeNode<T> node)
             where T : IComparable
         {
+            if (node == null)
+                return 0;
+
             // Init nodes list for first call.
             var nodes = new List<BinaryTreeNode<T>>
             {

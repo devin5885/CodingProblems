@@ -11,28 +11,14 @@ namespace CodingProblems.BinaryTree.IsPerfect
     public class BinaryTreeIsPerfect1CompleteTests
     {
         /// <summary>
-        /// Run all tests.
+        /// Tests IsPerfect.
         /// </summary>
-        [TestMethod]
-        public void TestIsPerfect1CompleteAllTests()
+        /// <param name="data">The test data.</param>
+        [DataTestMethod]
+        [BinaryTreeDataSource]
+        public void TestIsPerfect(BinaryTreeNodeTestData data)
         {
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(null));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree1));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree2));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree3));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree4));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree5));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree6));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree7));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree8));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree9));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree10));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree11));
-            Assert.IsTrue(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree12));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree13));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree14));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree15));
-            Assert.IsFalse(BinaryTreeIsPerfect1Complete.IsPerfect(BinaryTreeNodeTestData.Tree16));
+            Assert.AreEqual(data.Perfect, BinaryTreeIsPerfect1Complete.IsPerfect(data.Root));
         }
     }
 }

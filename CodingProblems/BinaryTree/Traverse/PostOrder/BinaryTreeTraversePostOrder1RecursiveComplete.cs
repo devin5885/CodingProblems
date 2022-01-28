@@ -14,9 +14,17 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         /// </summary>
         /// <param name="binaryTree">The tree.</param>
         /// <returns>The post-order list of node values.</returns>
-        public static List<int> TraversePostOrder(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static List<T> TraversePostOrder<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
-            var result = new List<int>();
+            // Initialize result.
+            var result = new List<T>();
+
+            // Check for null.
+            if (binaryTree == null)
+                return result;
+
             TraversePostOrderHelper(binaryTree, result);
             return result;
         }
@@ -26,19 +34,23 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         /// </summary>
         /// <param name="binaryTree">The binary tree.</param>
         /// <param name="postOrder">The resulting post-order list.</param>
-        private static void TraversePostOrderHelper(BinaryTreeNode<int> binaryTree, List<int> postOrder)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        private static void TraversePostOrderHelper<T>(BinaryTreeNode<T> binaryTree, List<T> postOrder)
+            where T : IComparable
         {
-            if (binaryTree != null)
-            {
-                // Go left.
+            if (binaryTree == null)
+                return;
+
+            // Go left.
+            if (binaryTree.Left != null)
                 TraversePostOrderHelper(binaryTree.Left, postOrder);
 
-                // Go right.
+            // Go right.
+            if (binaryTree.Right != null)
                 TraversePostOrderHelper(binaryTree.Right, postOrder);
 
-                // Add this node.
-                postOrder.Add(binaryTree.Value);
-            }
+            // Add this node.
+            postOrder.Add(binaryTree.Value);
         }
     }
 }

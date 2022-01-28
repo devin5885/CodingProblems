@@ -14,17 +14,19 @@ namespace CodingProblems.BinaryTree.Traverse.PreOrder
         /// </summary>
         /// <param name="binaryTree">The tree.</param>
         /// <returns>The pre-order list of node values.</returns>
-        public static List<int> TraversePreOrder(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static List<T> TraversePreOrder<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
             // Initialize result.
-            var result = new List<int>();
+            var result = new List<T>();
 
             // Check for null.
             if (binaryTree == null)
                 return result;
 
             // Create stack & push root.
-            var st = new Stack<BinaryTreeNode<int>>();
+            var st = new Stack<BinaryTreeNode<T>>();
             st.Push(binaryTree);
 
             // Continue while we have stacked nodes.

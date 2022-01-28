@@ -14,9 +14,15 @@ namespace CodingProblems.BinaryTree.Traverse.InOrder
         /// </summary>
         /// <param name="binaryTree">The tree.</param>
         /// <returns>The in-order list of node values.</returns>
-        public static List<int> TraverseInOrder(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static List<T> TraverseInOrder<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
-            var result = new List<int>();
+            var result = new List<T>();
+
+            if (binaryTree == null)
+                return result;
+
             TraverseInOrderHelper(binaryTree, result);
             return result;
         }
@@ -26,19 +32,22 @@ namespace CodingProblems.BinaryTree.Traverse.InOrder
         /// </summary>
         /// <param name="binaryTree">The binary tree.</param>
         /// <param name="inOrder">The resulting in-order list.</param>
-        private static void TraverseInOrderHelper(BinaryTreeNode<int> binaryTree, List<int> inOrder)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        private static void TraverseInOrderHelper<T>(BinaryTreeNode<T> binaryTree, List<T> inOrder)
+            where T : IComparable
         {
-            if (binaryTree != null)
-            {
-                // Go left.
+            if (binaryTree == null)
+                return;
+
+            // Go left.
+            if (binaryTree.Left != null)
                 TraverseInOrderHelper(binaryTree.Left, inOrder);
 
-                // Add this node.
-                inOrder.Add(binaryTree.Value);
+            // Add this node.
+            inOrder.Add(binaryTree.Value);
 
-                // Go right.
+            if (binaryTree.Right != null)
                 TraverseInOrderHelper(binaryTree.Right, inOrder);
-            }
         }
     }
 }

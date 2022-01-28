@@ -14,14 +14,16 @@ namespace CodingProblems.BinaryTree.IsPerfect
         /// </summary>
         /// <param name="binaryTree">The tree</param>
         /// <returns>True if the tree is perfect, false otherwise.</returns>
-        public static bool IsPerfect(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static bool IsPerfect<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
             // Check for null.
             if (binaryTree == null)
                 return true;
 
             // Initialize the nodeList.
-            var nodeList = new List<BinaryTreeNode<int>>
+            var nodeList = new List<BinaryTreeNode<T>>
             {
                 binaryTree
             };
@@ -30,7 +32,7 @@ namespace CodingProblems.BinaryTree.IsPerfect
             var level = 1;
             while (nodeList.Count > 0)
             {
-                var nodeListChildren = new List<BinaryTreeNode<int>>();
+                var nodeListChildren = new List<BinaryTreeNode<T>>();
 
                 foreach (var node in nodeList)
                 {

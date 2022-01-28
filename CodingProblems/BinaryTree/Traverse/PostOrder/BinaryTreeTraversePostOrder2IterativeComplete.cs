@@ -14,21 +14,23 @@ namespace CodingProblems.BinaryTree.Traverse.PostOrder
         /// </summary>
         /// <param name="binaryTree">The tree.</param>
         /// <returns>The post-order list of node values.</returns>
-        public static List<int> TraversePostOrder(BinaryTreeNode<int> binaryTree)
+        /// <typeparam name="T">Type for node data.</typeparam>
+        public static List<T> TraversePostOrder<T>(BinaryTreeNode<T> binaryTree)
+            where T : IComparable
         {
             // Initialize result.
-            var result = new List<int>();
+            var result = new List<T>();
 
             // Check for null.
             if (binaryTree == null)
                 return result;
 
             // Create stack & push root.
-            var st1 = new Stack<BinaryTreeNode<int>>();
+            var st1 = new Stack<BinaryTreeNode<T>>();
             st1.Push(binaryTree);
 
             // Initialize second stack.
-            var st2 = new Stack<BinaryTreeNode<int>>();
+            var st2 = new Stack<BinaryTreeNode<T>>();
 
             // Continue while we have stacked nodes.
             while (st1.Count > 0)
