@@ -34,6 +34,7 @@ namespace CodingProblems.BinaryTree.Node
             {
                 // Tree2 (2 level - left node only)
                 //   2
+                // 1 |
                 DisplayName = "Tree2",
                 Height = 2,
                 IsBST = true,

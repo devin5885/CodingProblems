@@ -18,7 +18,6 @@ namespace CodingProblems.BinaryTree.Node
         public IEnumerable<object[]> GetData(MethodInfo methodInfo)
         {
             yield return new object[] { BinaryTreeNodeTestDataHolder.NullTree };
-
             yield return new object[] { BinaryTreeNodeTestDataHolder.Tree1 };
             yield return new object[] { BinaryTreeNodeTestDataHolder.Tree2 };
             yield return new object[] { BinaryTreeNodeTestDataHolder.Tree3 };

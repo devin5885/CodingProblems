@@ -31,15 +31,15 @@ namespace CodingProblems.BinaryTree.BinaryTreeFromPreOrderAndInOrderTraversals
             // Create the node (Current node in the pre-order is node to be created).
             var newNode = new BinaryTreeNode<T>(preOrder[preOrderStartIndex]);
 
-            // Find the corresponding node in the InOrder sequence.
+            // Find the corresponding node in the InOrderPending sequence.
             var inOrderIndexNext = inOrder.IndexOf(preOrder[preOrderStartIndex]);
 
-            // Determine the indexes of the elements to the left of the current node in the InOrder sequence.
+            // Determine the indexes of the elements to the left of the current node in the InOrderPending sequence.
             var newInOrderStartLeft = inOrderStartIndex;
             var newInOrderEndLeft = inOrderIndexNext - 1;
             var newLeftSize = newInOrderEndLeft - newInOrderStartLeft + 1;
 
-            // Determine the indexes of the elements to the right of the current node in the InOrder sequence.
+            // Determine the indexes of the elements to the right of the current node in the InOrderPending sequence.
             var newInOrderStartRight = inOrderIndexNext + 1;
             var newInOrderEndRight = inOrderEndIndex;
             var newRightSize = newInOrderEndRight - newInOrderStartRight + 1;

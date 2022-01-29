@@ -113,6 +113,13 @@
     <Compile Include="BinaryTree\Helpers\CompareBinaryTreeHelpers\CompareBinaryTreeHelpersTests.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeDataSourceAttribute.cs" />
     <Compile Include="BinaryTree\Node\BinaryTreeNodeTestDataHolder.cs" />
+    <Compile Include="BinaryTree\Traverse\Helpers\TraversalNodeData.cs" />
+    <Compile Include="BinaryTree\Traverse\Helpers\TraversalNodeState.cs" />
+    <Compile Include="BinaryTree\Traverse\Helpers\TraversalType.cs" />
+    <Compile Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder1RecursiveComplete.cs" />
+    <Compile Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder1RecursiveCompleteTests.cs" />
+    <Compile Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder2IterativeComplete.cs" />
+    <Compile Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder2IterativeCompleteTests.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MaxHeap\MaxHeapCompleteTests.cs" />
     <Compile Include="MaxHeap\MaxHeapComplete.cs" />
@@ -332,6 +339,9 @@
     <None Include="BinaryTree\BinaryTreeFromPreOrderAndInOrderTraversals\BinaryTreeFromPreOrderAndInOrderTraversals1Recursive.md" />
     <None Include="BinaryTree\BSTFromPreOrderTraversal\BSTFromPreOrderTraversal.md" />
     <None Include="BinaryTree\BSTFromPreOrderTraversal\BSTFromPreOrderTraversal1Recursive.md" />
+    <None Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder.md" />
+    <None Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder1Recursive.md" />
+    <None Include="BinaryTree\Traverse\PrePostInOrder\BinaryTreeTraversePrePostInOrder2Iterative.md" />
     <None Include="NumberSwapper\NumberSwapper.md" />
     <None Include="NumberSwapper\NumberSwapper1UseTempVar.md" />
     <None Include="BinaryTree\CheckBalanced\BinaryTreeCheckBalanced.md" />
